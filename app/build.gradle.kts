@@ -1,21 +1,43 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
 }
 
+/**
+ * Release signing, read from `keystore.properties` at the repository root. Both it and the
+ * keystore are gitignored, so a fresh clone still builds debug and an unsigned release.
+ */
+val signingProps = rootProject.file("keystore.properties").takeIf { it.exists() }?.let { file ->
+    Properties().apply { file.inputStream().use { load(it) } }
+}
+
 android {
-    namespace = "com.shhh"
+    namespace = "app.flipsilence"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.shhh"
+        applicationId = "app.flipsilence"
         minSdk = 34
         targetSdk = 36
-        versionCode = 2
+        versionCode = 3
         versionName = "1.1"
+    }
+
+    signingConfigs {
+        if (signingProps != null) {
+            create("release") {
+                storeFile = rootProject.file(signingProps.getProperty("storeFile"))
+                storePassword = signingProps.getProperty("storePassword")
+                keyAlias = signingProps.getProperty("keyAlias")
+                keyPassword = signingProps.getProperty("keyPassword")
+            }
+        }
     }
 
     buildTypes {
         getByName("release") {
+            signingConfigs.findByName("release")?.let { signingConfig = it }
             isMinifyEnabled = false
         }
     }

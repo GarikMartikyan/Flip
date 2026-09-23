@@ -1,0 +1,32 @@
+App name:
+Flip: Telungkupkan, Senyap
+
+Short description:
+Telungkupkan ponsel, langsung senyap. Angkat lagi, suaranya kembali.
+
+Full description:
+Telungkupkan ponsel di atas meja, langsung senyap. Angkat lagi, suaranya kembali. Tanpa tombol, tanpa jadwal, dan tak perlu lagi ingat mematikan Jangan ganggu.
+
+CARA KERJANYA
+• Telungkup, datar, dan diam. Flip menunggu sampai ponsel tertelungkup di permukaan dan sudutnya stabil, lalu menyalakan Jangan ganggu. Ponsel di saku atau di genggaman tidak dihitung.
+• Angkat. Begitu diangkat, suaranya kembali.
+• Dua getaran singkat. Karena layarnya menghadap meja, getaran singkat menandai setiap perubahan. Bisa dimatikan.
+
+YANG TETAP BISA MASUK
+• Orang: biarkan kontak favorit tetap berdering, begitu juga penelepon berulang.
+• Aplikasi: pilih aplikasi yang notifikasinya tetap sampai saat yang lain senyap.
+• Alarm selalu berbunyi.
+
+SENSITIVITAS
+• Ketat, Seimbang, atau Longgar, dari "hanya di meja yang benar-benar datar" sampai "di atas bantal atau diletakkan sekilas".
+
+HARI DAN MALAM ANDA
+• Lihat momen senyap hari ini di linimasa.
+• Lihat tadi malam: kapan ponsel diletakkan dan kapan diangkat lagi. Pemantauan tidur bisa dimatikan di Pengaturan.
+
+PRIVAT SEJAK AWAL
+• Tanpa akun, tanpa iklan, tanpa analitik
+• Tanpa izin internet, jadi tidak ada data yang keluar dari ponsel
+• Isi notifikasi tidak pernah dibaca, hanya aplikasi pengirimnya
+
+Memerlukan Android 14 atau yang lebih baru.

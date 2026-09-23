@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <app.flipsilence.ContentColumn
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/gutter"
+        android:paddingTop="12dp"
+        android:paddingBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-12dp"
+            android:gravity="center_vertical"
+            android:minHeight="56dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back"
+                android:src="@drawable/ic_arrow_back" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/night_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:accessibilityHeading="true"
+                    android:fontFamily="@font/plus_jakarta_sans_semibold"
+                    android:letterSpacing="-0.02"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/ink"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/night_dates"
+                    style="@style/RowCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/empty"
+            style="@style/Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jakarta"
+            android:text="@string/night_gone"
+            android:textColor="@color/ink_dim"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingTop="20dp">
+
+                <!-- One text each, so on a narrow screen or a large font they wrap between words. -->
+                <TextView
+                    android:id="@+id/total"
+                    style="@style/BigNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3" />
+
+                <TextView
+                    android:id="@+id/compare"
+                    style="@style/Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <app.flipsilence.NightDial
+                        android:id="@+id/dial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/RowCaption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/put_down" />
+
+                        <TextView
+                            android:id="@+id/bed_time"
+                            style="@style/DialTime" />
+
+                        <TextView
+                            style="@style/RowCaption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="@string/woke_up" />
+
+                        <TextView
+                            android:id="@+id/wake_time"
+                            style="@style/DialTime" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/border" />
+
+                <!-- One row per colour on the dial. -->
+                <LinearLayout
+                    android:id="@+id/legend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/laps"
+                    style="@style/RowCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_gap"
+                android:accessibilityHeading="true"
+                android:text="@string/at_a_glance" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/StatCard">
+
+                    <TextView
+                        style="@style/FactLabel"
+                        android:maxLines="2"
+                        android:text="@string/silenced"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/stat_silenced_value"
+                        style="@style/StatValue" />
+
+                    <TextView
+                        android:id="@+id/stat_silenced_caption"
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/StatCard"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        style="@style/FactLabel"
+                        android:maxLines="2"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:text="@string/stat_woke_up"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/stat_woke_value"
+                        style="@style/StatValue" />
+
+                    <TextView
+                        android:id="@+id/stat_woke_caption"
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/StatCard">
+
+                    <TextView
+                        style="@style/FactLabel"
+                        android:maxLines="2"
+                        android:drawableStart="@drawable/ic_screen"
+                        android:text="@string/stat_screen_on"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/stat_screen_value"
+                        style="@style/StatValue" />
+
+                    <TextView
+                        android:id="@+id/stat_screen_caption"
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/StatCard"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        style="@style/FactLabel"
+                        android:maxLines="2"
+                        android:drawableStart="@drawable/ic_bell"
+                        android:text="@string/stat_alarms"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/stat_alarms_value"
+                        style="@style/StatValue" />
+
+                    <TextView
+                        android:id="@+id/stat_alarms_caption"
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_gap"
+                android:accessibilityHeading="true"
+                android:text="@string/through_the_night" />
+
+            <LinearLayout
+                android:id="@+id/events"
+                style="@style/Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="6dp" />
+
+            <TextView
+                style="@style/RowCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:paddingHorizontal="4dp"
+                android:text="@string/night_how_read" />
+        </LinearLayout>
+    </app.flipsilence.ContentColumn>
+</ScrollView>

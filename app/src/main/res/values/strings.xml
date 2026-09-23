@@ -1,15 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Shhh</string>
-    <string name="diagnostics">Diagnostics</string>
-    <string name="sensitivity">Sensitivity</string>
-    <string name="today">Today</string>
-    <string name="notification">Notification</string>
-    <string name="notification_show">Show details</string>
-    <string name="notification_blurb">Android requires a notification while Shhh is watching, so it can’t be removed outright — but you can swipe it away, and turning this off strips it to nothing and delays it.</string>
-    <string name="notification_settings">Hide it completely…</string>
+    <string name="app_name" translatable="false">Flip</string>
+    <string name="today">today</string>
+    <string name="notification_show">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="back">Back</string>
     <string name="grant_dnd">Grant Do Not Disturb access</string>
-    <string name="grant_notif">Allow notifications</string>
-    <string name="battery_button">Battery settings — set to Unrestricted</string>
     <string name="history_empty">Nothing yet today. Put the phone face down and it’ll show up here.</string>
+    <string name="last_night">last night</string>
+    <string name="night_empty">No night yet. Leave Flip on overnight and it’ll show up here in the morning.</string>
+    <string name="asleep">asleep</string>
+    <string name="now">now</string>
+    <string name="of_quiet">of quiet</string>
+    <string name="went_to_bed">Went to bed</string>
+    <string name="woke_up">Woke up</string>
+    <string name="picked_up">Picked up</string>
+    <string name="legend_silenced">Silenced, face down</string>
+    <string name="legend_left_alone">Left alone, sound on</string>
+    <string name="legend_awake">Awake with the phone</string>
+    <string name="night_not_silenced">Not silenced — it wasn’t face down</string>
+    <string name="sleep_history">Sleep history</string>
+    <string name="today_empty">No silences since you woke up. Put the phone face down and it’ll show up here.</string>
+
+    <!-- Sleep screens -->
+    <string name="sleep">Sleep</string>
+    <string name="nights_7">7 nights</string>
+    <string name="nights_30">30 nights</string>
+    <string name="average_sleep">Average sleep</string>
+    <string name="a_night">a night</string>
+    <string name="bedtime">Bedtime</string>
+    <string name="wake_up">Wake-up</string>
+    <string name="silenced">Silenced</string>
+    <string name="of_time_asleep">of the time asleep</string>
+    <string name="times_a_night">times a night</string>
+    <string name="when_you_slept">when you slept</string>
+    <string name="average_lines">your average bedtime and wake-up</string>
+    <string name="every_night">every night</string>
+    <string name="through_the_night">through the night</string>
+    <string name="history_empty_nights">No nights in this range yet. Leave Flip on overnight and each night will be added here in the morning.</string>
+    <string name="sleep_footnote">Flip can’t see sleep itself. A night is the time the phone was left alone with its screen off, and the gaps are the times you picked it up.</string>
+    <string name="night_gone">This night is no longer on record.</string>
+
+    <!-- Settings page -->
+    <string name="theme">theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="sensitivity">sensitivity</string>
+    <string name="feedback">feedback</string>
+    <string name="haptics">Haptic ticks</string>
+    <string name="haptics_blurb">Two quick ticks when it silences and again when it lets go. The screen is against the table, so this is the only sign it worked.</string>
+    <string name="system">system</string>
+    <string name="dnd_access">Do Not Disturb access</string>
+    <string name="dnd_granted">Granted</string>
+    <string name="dnd_missing">Not granted — Flip cannot silence anything</string>
+    <string name="battery">Battery</string>
+    <string name="battery_unrestricted">Unrestricted</string>
+    <string name="battery_optimized">Optimized — set to Unrestricted so Android does not pause Flip</string>
+    <string name="diagnostics">diagnostics</string>
+
+    <!-- What still gets through while face down -->
+    <plurals name="people">
+        <item quantity="one">%d person</item>
+        <item quantity="other">%d people</item>
+    </plurals>
+    <plurals name="apps">
+        <item quantity="one">%d app</item>
+        <item quantity="other">%d apps</item>
+    </plurals>
+    <string name="still_gets_through">still gets through</string>
+    <string name="still_get_through">still get through</string>
+    <string name="no_exceptions_yet">No exceptions yet</string>
+    <string name="tap_to_choose_who_rings">Tap to choose who still rings</string>
+    <string name="apps_need_access">Apps need notification access</string>
+    <string name="gets_through">Gets through</string>
+    <string name="gets_through_blurb">While the phone is face down, these still reach you. Everything else waits until you pick it up.</string>
+    <string name="people">people</string>
+    <string name="apps">apps</string>
+    <string name="people_empty">Nobody yet. Their calls will ring even when the phone is face down.</string>
+    <string name="people_need_contacts">Flip needs access to your contacts to show and choose people.</string>
+    <string name="people_note">These are your phone’s Favourites. Adding someone here stars them, and removing them unstars them, everywhere on the phone. To silence them all but keep them starred, switch Favourites off.</string>
+    <string name="favourites">Favourites</string>
+    <string name="favourites_blurb">Your starred contacts’ calls ring</string>
+    <string name="repeat_callers">Repeat callers</string>
+    <string name="repeat_callers_blurb">Anyone who calls again within 15 minutes</string>
+    <string name="add_person">Add person</string>
+    <string name="apps_empty">No apps yet. Flip will still sound for the ones you add.</string>
+    <string name="apps_note">Flip sounds for these itself, the way the phone was set before it went quiet: sound and vibration, vibration only, or nothing if it was on silent. If Android says the setting is restricted, open Flip’s App info, tap ⋮ and allow restricted settings.</string>
+    <string name="add_app">Add app</string>
+    <string name="notification_access">Notification access</string>
+    <string name="listener_missing">Not granted — chosen apps stay silent</string>
+    <string name="listener_ask_title">Notification access first</string>
+    <string name="listener_ask_body">To sound for an app while the phone is face down, Flip needs to see that its notifications arrived. It never reads what they say.\n\nNext, switch Flip on and come back here. If Android says the setting is restricted, open Flip’s App info, tap ⋮ and allow restricted settings.</string>
+    <string name="not_now">Not now</string>
+    <string name="open_settings">Open settings</string>
+    <string name="remove_x">Remove %1$s</string>
+    <string name="choose_apps">Apps</string>
+    <string name="choose_apps_blurb">Switched on, an app still makes a sound when the phone is face down.</string>
+    <string name="loading_apps">Loading apps…</string>
+    <string name="gets_through_state">Gets through</string>
+    <string name="silenced_state">Silenced</string>
+    <!-- Main screen -->
+    <string name="power_on">On</string>
+    <string name="power_off">Off</string>
+    <string name="watching">Watching</string>
+    <string name="not_watching">Not watching</string>
+    <string name="dnd_needed">Flip needs Do Not Disturb access before it can silence anything.</string>
+    <string name="avg_7_nights">7-night avg %1$s</string>
+    <string name="history_avg">%1$s avg</string>
+    <string name="last_night_description">Last night: asleep %1$s, from %2$s to %3$s, silenced for %4$s</string>
+    <string name="since_you_woke">since you woke at %1$s</string>
+    <string name="today_once">Once face down today, at %1$s.</string>
+    <plurals name="today_many">
+        <item quantity="one">%1$d time face down today. The longest was %2$s, at %3$s.</item>
+        <item quantity="other">%1$d times face down today. The longest was %2$s, at %3$s.</item>
+    </plurals>
+    <string name="today_description">Today: quiet for %1$s. %2$s</string>
+    <string name="coach_grant">Grant Do Not Disturb access to begin.</string>
+    <string name="coach_turn_on">Turn on to start watching.</string>
+    <string name="coach_silenced">Silenced. Pick it up to stop.</string>
+    <string name="coach_starting">Starting up.</string>
+    <string name="coach_tilting">Still tilting — let go of it.</string>
+    <string name="coach_almost">Almost — hold it there.</string>
+    <string name="coach_hold_still">Hold still.</string>
+    <string name="coach_put_down">Put the phone face down on a flat surface.</string>
+
+    <!-- The gauge -->
+    <string name="gauge_since">since %1$s</string>
+    <string name="gauge_description">%1$d degrees from face down</string>
+
+    <!-- Lengths of time -->
+    <string name="duration_s">%1$ds</string>
+    <string name="duration_m">%1$dm</string>
+    <string name="duration_hm">%1$dh %2$02dm</string>
+    <string name="times_never">Never</string>
+    <string name="times_once">Once</string>
+    <string name="times_twice">Twice</string>
+    <plurals name="times_count">
+        <item quantity="one">%d time</item>
+        <item quantity="other">%d times</item>
+    </plurals>
+
+    <!-- Sleep history and a single night -->
+    <plurals name="chart_description">
+        <item quantity="one">Bedtimes and wake-ups for the last %d night</item>
+        <item quantity="other">Bedtimes and wake-ups for the last %d nights</item>
+    </plurals>
+    <string name="one_night_so_far">1 night so far</string>
+    <string name="shortest_longest">Shortest %1$s · longest %2$s</string>
+    <string name="between_times">between %1$s and %2$s</string>
+    <string name="open_this_night">%1$s, %2$s. Open this night</string>
+    <string name="night_row_description">%1$s, %2$s, asleep %3$s</string>
+    <string name="night_title">%1$s night</string>
+    <string name="put_down">Put down</string>
+    <string name="night_laps">Longer than twelve hours, so the night goes round the clock again on the inner ring.</string>
+    <string name="asleep_from_to">Asleep from %1$s to %2$s</string>
+    <string name="about_the_same">About the same as the week before</string>
+    <string name="longer_than_before">%1$s longer than the week before</string>
+    <string name="shorter_than_before">%1$s shorter than the week before</string>
+    <string name="event_alarm">Alarm</string>
+    <string name="at_a_glance">at a glance</string>
+    <string name="stat_woke_up">Got up</string>
+    <string name="stat_screen_on">Screen on</string>
+    <string name="stat_alarms">Alarms</string>
+    <string name="stat_silenced_caption">%1$s of it face down</string>
+    <string name="stat_woke_none">Slept through</string>
+    <string name="stat_woke_caption">%1$s awake in all</string>
+    <string name="stat_not_recorded">Not recorded that night</string>
+    <string name="stat_screen_none">Stayed dark</string>
+    <string name="stat_screen_caption">%1$s in all</string>
+    <string name="stat_alarms_none">None rang</string>
+    <string name="stat_alarms_caption">First at %1$s</string>
+    <string name="tl_put_down">Put the phone down</string>
+    <string name="tl_put_down_silenced">Face down, sound off</string>
+    <string name="tl_put_down_sound_on">Sound still on</string>
+    <string name="tl_moved">Phone moved</string>
+    <string name="tl_moved_detail">Sound came back for %1$s</string>
+    <string name="tl_silenced">Silenced</string>
+    <string name="tl_silenced_again">Silenced again</string>
+    <string name="tl_silenced_detail">Turned face down</string>
+    <string name="tl_picked_up">Picked up</string>
+    <string name="tl_for">For %1$s</string>
+    <string name="tl_unlocked">Unlocked the phone</string>
+    <string name="tl_screen_lit">Screen lit up</string>
+    <string name="tl_screen_lit_detail">%1$s, not unlocked</string>
+    <string name="tl_stretch_silenced">%1$s silenced</string>
+    <string name="tl_stretch_sound_on">%1$s with sound on</string>
+    <string name="tl_stretch_awake">%1$s awake</string>
+    <string name="night_how_read">Flip doesn’t measure sleep itself. It reads the hours your phone lay untouched, screen off or face down, and counts those as the night.</string>
+
+    <!-- Sensitivity -->
+    <string name="sens_strict">Strict</string>
+    <string name="sens_strict_blurb">Wants a properly flat, properly still surface. Fewest pocket false alarms, and the most likely to ignore a soft or sloped one.</string>
+    <string name="sens_balanced">Balanced</string>
+    <string name="sens_balanced_blurb">Tuned against the placements actually measured on this phone. Start here.</string>
+    <string name="sens_relaxed">Relaxed</string>
+    <string name="sens_relaxed_blurb">Triggers on a slope, a cushion, or a quick set-down. Silences more readily, and is the most likely to fire in a pocket.</string>
+    <string name="expanded">Expanded</string>
+    <string name="collapsed">Collapsed</string>
+
+    <!-- The service notification and the Do Not Disturb rule -->
+    <string name="channel_name">Flip is watching</string>
+    <string name="channel_description">Required by Android while Flip watches for the phone being placed face down.</string>
+    <string name="notification_engaged">Face down — Do Not Disturb is on</string>
+    <string name="notification_watching">Watching for the phone to go face down</string>
+    <string name="zen_rule_name">Flip (face down)</string>
+    <string name="condition_face_down">Face down</string>
+    <string name="condition_face_up">Face up</string>
+
+    <!-- Language -->
+    <string name="language">language</string>
+    <string name="language_title">Language</string>
+    <string name="language_system">System default</string>
+    <string name="language_blurb">Flip follows the phone’s language unless you pick one here.</string>
+
+    <!-- Settings → sleep, and the face-down explainer under its switch. -->
+    <string name="sleep_section">sleep</string>
+    <string name="sleep_monitoring">Sleep monitoring</string>
+    <string name="sleep_monitoring_blurb">Works out last night from how long the phone lies face down. Turned off, nothing new is recorded, and the nights so far are kept.</string>
+    <string name="explainer_step_bed">Before bed, turn your phone face down.</string>
+    <string name="explainer_step_night">While it lies there, Flip keeps it quiet and counts your sleep.</string>
+    <string name="explainer_step_morning">In the morning, last night is waiting on the main screen.</string>
+
+    <!-- All of today's silences on a screen of their own -->
+    <string name="today_title">Today</string>
+    <string name="show_all">Show all %1$d</string>
 </resources>

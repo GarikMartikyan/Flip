@@ -1,0 +1,32 @@
+App name:
+Flip: Virou, silenciou
+
+Short description:
+Vire o celular para baixo e ele fica em silêncio. Pegou de volta, o som volta.
+
+Full description:
+Vire o celular com a tela para baixo na mesa e ele fica em silêncio. Pegou de volta, o som volta. Sem botões, sem horários e sem precisar lembrar de desativar o Não perturbe.
+
+COMO FUNCIONA
+• Virado para baixo, reto e parado. O Flip espera o celular ficar com a tela para baixo sobre uma superfície e firme no ângulo, e então ativa o Não perturbe. No bolso ou na mão não conta.
+• Pegue de volta. Assim que você levanta, o som volta.
+• Dois toques rápidos. Como a tela fica contra a mesa, uma vibração curta confirma cada mudança. Dá para desativar.
+
+O QUE AINDA PASSA
+• Pessoas: deixe tocar as chamadas dos seus contatos favoritos e as chamadas repetidas.
+• Apps: escolha os apps cujas notificações ainda chegam até você enquanto todo o resto fica em silêncio.
+• Alarmes sempre tocam.
+
+SENSIBILIDADE
+• Rígida, Equilibrada ou Flexível, de "só numa mesa bem reta" até "numa almofada ou largado com pressa".
+
+SEUS DIAS E SUAS NOITES
+• Veja os momentos de silêncio do dia numa linha do tempo.
+• Veja a noite passada: quando você deixou o celular e quando pegou de novo. O monitoramento do sono pode ser desativado nas Configurações.
+
+PRIVADO DESDE A ORIGEM
+• Sem conta, sem anúncios, sem análises
+• Sem permissão de internet, então nada sai do seu celular
+• O conteúdo das notificações nunca é lido, só qual app as enviou
+
+Requer Android 14 ou mais recente.

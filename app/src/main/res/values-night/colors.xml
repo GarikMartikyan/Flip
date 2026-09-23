@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bg">#101319</color>
-    <color name="surface">#191D26</color>
-    <color name="border">#2C3240</color>
-    <color name="track">#232936</color>
-    <color name="ink">#E7EAF1</color>
-    <color name="ink_dim">#939BAC</color>
-    <color name="awake">#E2A949</color>
-    <color name="quiet">#7FA3C4</color>
+    <color name="bg">#151412</color>
+    <color name="surface">#1E1C19</color>
+    <color name="border">#302D28</color>
+    <color name="track">#282521</color>
+    <color name="ink">#ECE7DD</color>
+    <color name="ink_dim">#A29C90</color>
+    <color name="awake">#ECE7DD</color>
+    <color name="on_awake">#151412</color>
+    <color name="quiet">#A3B77E</color>
+    <color name="segment_selected">#35322C</color>
+    <color name="phone_edge">#A9A293</color>
+    <color name="phone_shadow">#000000</color>
+    <!-- Press feedback: ink at low alpha, so it reads on every surface. -->
+    <color name="ripple">#24ECE7DD</color>
 </resources>

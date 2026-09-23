@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">сегодня</string>
+    <string name="notification_show">Уведомления</string>
+    <string name="settings">Настройки</string>
+    <string name="back">Назад</string>
+    <string name="grant_dnd">Дать доступ к «Не беспокоить»</string>
+    <string name="history_empty">Сегодня пока пусто. Положите телефон экраном вниз, и здесь появится запись.</string>
+    <string name="last_night">прошлая ночь</string>
+    <string name="night_empty">Ночей пока нет. Оставьте Flip включённым на ночь, и утром она появится здесь.</string>
+    <string name="asleep">сон</string>
+    <string name="now">сейчас</string>
+    <string name="of_quiet">тишины</string>
+    <string name="went_to_bed">Легли спать</string>
+    <string name="woke_up">Проснулись</string>
+    <string name="picked_up">Брали в руки</string>
+    <string name="legend_silenced">Без звука, экраном вниз</string>
+    <string name="legend_left_alone">Лежал, звук включён</string>
+    <string name="legend_awake">Не спали, с телефоном</string>
+    <string name="night_not_silenced">Звук не выключался — телефон не лежал экраном вниз</string>
+    <string name="sleep_history">История сна</string>
+    <string name="today_empty">С момента пробуждения тишины не было. Положите телефон экраном вниз, и здесь появится запись.</string>
+
+    <!-- Sleep screens -->
+    <string name="sleep">Сон</string>
+    <string name="nights_7">7 ночей</string>
+    <string name="nights_30">30 ночей</string>
+    <string name="average_sleep">Средний сон</string>
+    <string name="a_night">за ночь</string>
+    <string name="bedtime">Отбой</string>
+    <string name="wake_up">Подъём</string>
+    <string name="silenced">Без звука</string>
+    <string name="of_time_asleep">времени сна</string>
+    <string name="times_a_night">раз за ночь</string>
+    <string name="when_you_slept">когда вы спали</string>
+    <string name="average_lines">ваши средние отбой и подъём</string>
+    <string name="every_night">каждую ночь</string>
+    <string name="through_the_night">за ночь</string>
+    <string name="history_empty_nights">В этом периоде ночей пока нет. Оставляйте Flip включённым на ночь, и каждая ночь будет появляться здесь утром.</string>
+    <string name="sleep_footnote">Сам сон Flip не видит. Ночь — это время, когда телефон лежал нетронутым с выключенным экраном, а разрывы — моменты, когда вы брали его в руки.</string>
+    <string name="night_gone">Этой ночи больше нет в записях.</string>
+
+    <!-- Settings page -->
+    <string name="theme">тема</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="sensitivity">чувствительность</string>
+    <string name="feedback">отклик</string>
+    <string name="haptics">Вибро-щелчки</string>
+    <string name="haptics_blurb">Два коротких щелчка, когда звук выключается, и ещё два, когда включается. Экран лежит на столе, так что это единственный знак, что всё сработало.</string>
+    <string name="system">система</string>
+    <string name="dnd_access">Доступ к «Не беспокоить»</string>
+    <string name="dnd_granted">Разрешён</string>
+    <string name="dnd_missing">Не разрешён — Flip ничего не сможет заглушить</string>
+    <string name="battery">Батарея</string>
+    <string name="battery_unrestricted">Без ограничений</string>
+    <string name="battery_optimized">Оптимизировано — выберите «Без ограничений», чтобы Android не останавливал Flip</string>
+    <string name="diagnostics">диагностика</string>
+
+    <!-- What still gets through while face down -->
+    <plurals name="people">
+        <item quantity="one">%d человек</item>
+        <item quantity="few">%d человека</item>
+        <item quantity="many">%d человек</item>
+        <item quantity="other">%d человека</item>
+    </plurals>
+    <plurals name="apps">
+        <item quantity="one">%d приложение</item>
+        <item quantity="few">%d приложения</item>
+        <item quantity="many">%d приложений</item>
+        <item quantity="other">%d приложения</item>
+    </plurals>
+    <string name="still_gets_through">всё равно дойдёт до вас</string>
+    <string name="still_get_through">всё равно дойдут до вас</string>
+    <string name="no_exceptions_yet">Исключений пока нет</string>
+    <string name="tap_to_choose_who_rings">Нажмите, чтобы выбрать, кто сможет пробиться</string>
+    <string name="apps_need_access">Приложениям нужен доступ к уведомлениям</string>
+    <string name="gets_through">Исключения</string>
+    <string name="gets_through_blurb">Пока телефон лежит экраном вниз, эти всё равно дойдут до вас. Всё остальное подождёт, пока вы его не возьмёте.</string>
+    <string name="people">люди</string>
+    <string name="apps">приложения</string>
+    <string name="people_empty">Пока никого. Их звонки будут звучать, даже когда телефон лежит экраном вниз.</string>
+    <string name="people_need_contacts">Flip нужен доступ к контактам, чтобы показывать и выбирать людей.</string>
+    <string name="people_note">Это «Избранное» вашего телефона. Добавленный здесь контакт получает звёздочку, а удалённый теряет её — во всём телефоне. Чтобы заглушить их всех, но сохранить звёздочки, выключите «Избранное».</string>
+    <string name="favourites">Избранное</string>
+    <string name="favourites_blurb">Звонки избранных контактов звучат</string>
+    <string name="repeat_callers">Повторные вызовы</string>
+    <string name="repeat_callers_blurb">Любой, кто перезвонит в течение 15 минут</string>
+    <string name="add_person">Добавить человека</string>
+    <string name="apps_empty">Приложений пока нет. Для добавленных Flip будет подавать звук.</string>
+    <string name="apps_note">Flip сам подаёт звук для этих приложений — так, как телефон был настроен до тишины: звук и вибрация, только вибрация или ничего, если стоял беззвучный режим. Если Android пишет, что настройка ограничена, откройте «Сведения о приложении» Flip, нажмите ⋮ и разрешите ограниченные настройки.</string>
+    <string name="add_app">Добавить приложение</string>
+    <string name="notification_access">Доступ к уведомлениям</string>
+    <string name="listener_missing">Не разрешён — выбранные приложения останутся без звука</string>
+    <string name="listener_ask_title">Сначала доступ к уведомлениям</string>
+    <string name="listener_ask_body">Чтобы подать звук для приложения, пока телефон лежит экраном вниз, Flip должен видеть, что пришло уведомление. Их содержимое он никогда не читает.\n\nДалее включите Flip и вернитесь сюда. Если Android пишет, что настройка ограничена, откройте «Сведения о приложении» Flip, нажмите ⋮ и разрешите ограниченные настройки.</string>
+    <string name="not_now">Не сейчас</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="remove_x">Удалить: %1$s</string>
+    <string name="choose_apps">Приложения</string>
+    <string name="choose_apps_blurb">Включённое приложение подаёт звук, даже когда телефон лежит экраном вниз.</string>
+    <string name="loading_apps">Загрузка приложений…</string>
+    <string name="gets_through_state">Со звуком</string>
+    <string name="silenced_state">Без звука</string>
+
+    <!-- Main screen -->
+    <string name="power_on">Вкл</string>
+    <string name="power_off">Выкл</string>
+    <string name="watching">Следит</string>
+    <string name="not_watching">Не следит</string>
+    <string name="dnd_needed">Чтобы что-то заглушить, Flip нужен доступ к «Не беспокоить».</string>
+    <string name="avg_7_nights">В среднем за 7 ночей: %1$s</string>
+    <string name="history_avg">в среднем %1$s</string>
+    <string name="last_night_description">Прошлая ночь: сон %1$s, с %2$s до %3$s, без звука %4$s</string>
+    <string name="since_you_woke">с пробуждения в %1$s</string>
+    <string name="today_once">Сегодня один раз экраном вниз, в %1$s.</string>
+    <plurals name="today_many">
+        <item quantity="one">Сегодня %1$d раз экраном вниз. Дольше всего — %2$s, в %3$s.</item>
+        <item quantity="few">Сегодня %1$d раза экраном вниз. Дольше всего — %2$s, в %3$s.</item>
+        <item quantity="many">Сегодня %1$d раз экраном вниз. Дольше всего — %2$s, в %3$s.</item>
+        <item quantity="other">Сегодня %1$d раза экраном вниз. Дольше всего — %2$s, в %3$s.</item>
+    </plurals>
+    <string name="today_description">Сегодня: тишина %1$s. %2$s</string>
+    <string name="coach_grant">Дайте доступ к «Не беспокоить», чтобы начать.</string>
+    <string name="coach_turn_on">Включите, чтобы Flip начал следить.</string>
+    <string name="coach_silenced">Звук выключен. Возьмите телефон, чтобы вернуть.</string>
+    <string name="coach_starting">Запуск.</string>
+    <string name="coach_tilting">Ещё наклоняется — отпустите.</string>
+    <string name="coach_almost">Почти — держите так.</string>
+    <string name="coach_hold_still">Не двигайте.</string>
+    <string name="coach_put_down">Положите телефон экраном вниз на ровную поверхность.</string>
+
+    <!-- The gauge -->
+    <string name="gauge_since">с %1$s</string>
+    <string name="gauge_description">%1$d° от положения экраном вниз</string>
+
+    <!-- Lengths of time -->
+    <string name="duration_s">%1$d с</string>
+    <string name="duration_m">%1$d мин</string>
+    <string name="duration_hm">%1$d ч %2$02d мин</string>
+    <string name="times_never">Ни разу</string>
+    <string name="times_once">Один раз</string>
+    <string name="times_twice">Два раза</string>
+    <plurals name="times_count">
+        <item quantity="one">%d раз</item>
+        <item quantity="few">%d раза</item>
+        <item quantity="many">%d раз</item>
+        <item quantity="other">%d раза</item>
+    </plurals>
+
+    <!-- Sleep history and a single night -->
+    <plurals name="chart_description">
+        <item quantity="one">Отбой и подъём за последнюю %d ночь</item>
+        <item quantity="few">Отбой и подъём за последние %d ночи</item>
+        <item quantity="many">Отбой и подъём за последние %d ночей</item>
+        <item quantity="other">Отбой и подъём за последние %d ночи</item>
+    </plurals>
+    <string name="one_night_so_far">Пока 1 ночь</string>
+    <string name="shortest_longest">Короче всего %1$s · дольше всего %2$s</string>
+    <string name="between_times">с %1$s до %2$s</string>
+    <string name="open_this_night">%1$s, %2$s. Открыть эту ночь</string>
+    <string name="night_row_description">%1$s, %2$s, сон %3$s</string>
+    <string name="night_title">Ночь, %1$s</string>
+    <string name="put_down">Отложен</string>
+    <string name="night_laps">Дольше двенадцати часов — ночь идёт по циферблату второй круг, на внутреннем кольце.</string>
+    <string name="asleep_from_to">Сон с %1$s до %2$s</string>
+    <string name="about_the_same">Примерно как на прошлой неделе</string>
+    <string name="longer_than_before">На %1$s дольше, чем на прошлой неделе</string>
+    <string name="shorter_than_before">На %1$s короче, чем на прошлой неделе</string>
+    <string name="event_alarm">Будильник</string>
+    <string name="at_a_glance">коротко</string>
+    <string name="stat_woke_up">Вставали</string>
+    <string name="stat_screen_on">Экран</string>
+    <string name="stat_alarms">Будильники</string>
+    <string name="stat_silenced_caption">%1$s экраном вниз</string>
+    <string name="stat_woke_none">Спали без перерывов</string>
+    <string name="stat_woke_caption">Всего %1$s без сна</string>
+    <string name="stat_not_recorded">За эту ночь не записано</string>
+    <string name="stat_screen_none">Не включался</string>
+    <string name="stat_screen_caption">Всего %1$s</string>
+    <string name="stat_alarms_none">Не звонили</string>
+    <string name="stat_alarms_caption">Первый в %1$s</string>
+    <string name="tl_put_down">Телефон отложен</string>
+    <string name="tl_put_down_silenced">Экраном вниз, без звука</string>
+    <string name="tl_put_down_sound_on">Звук ещё включён</string>
+    <string name="tl_moved">Телефон сдвинулся</string>
+    <string name="tl_moved_detail">Звук вернулся на %1$s</string>
+    <string name="tl_silenced">Без звука</string>
+    <string name="tl_silenced_again">Снова без звука</string>
+    <string name="tl_silenced_detail">Перевёрнут экраном вниз</string>
+    <string name="tl_picked_up">Взяли в руки</string>
+    <string name="tl_for">На %1$s</string>
+    <string name="tl_unlocked">Разблокировали</string>
+    <string name="tl_screen_lit">Загорелся экран</string>
+    <string name="tl_screen_lit_detail">%1$s, без разблокировки</string>
+    <string name="tl_stretch_silenced">%1$s без звука</string>
+    <string name="tl_stretch_sound_on">%1$s со звуком</string>
+    <string name="tl_stretch_awake">%1$s без сна</string>
+    <string name="night_how_read">Flip не измеряет сон напрямую. Он смотрит, сколько часов телефон лежал нетронутым — с погасшим экраном или экраном вниз, — и считает это ночью.</string>
+
+    <!-- Sensitivity -->
+    <string name="sens_strict">Строгая</string>
+    <string name="sens_strict_blurb">Нужна по-настоящему ровная и неподвижная поверхность. Меньше всего ложных срабатываний в кармане, но может не сработать на мягком или наклонном.</string>
+    <string name="sens_balanced">Обычная</string>
+    <string name="sens_balanced_blurb">Настроена по замерам реальных положений на этом телефоне. Начните с неё.</string>
+    <string name="sens_relaxed">Мягкая</string>
+    <string name="sens_relaxed_blurb">Срабатывает на наклоне, на подушке и при быстром касании стола. Глушит охотнее всех, но чаще срабатывает в кармане.</string>
+    <string name="expanded">Развёрнуто</string>
+    <string name="collapsed">Свёрнуто</string>
+
+    <!-- The service notification and the Do Not Disturb rule -->
+    <string name="channel_name">Flip следит</string>
+    <string name="channel_description">Android требует это уведомление, пока Flip следит, не лёг ли телефон экраном вниз.</string>
+    <string name="notification_engaged">Экраном вниз — режим «Не беспокоить» включён</string>
+    <string name="notification_watching">Ждёт, когда телефон ляжет экраном вниз</string>
+    <string name="zen_rule_name">Flip (экраном вниз)</string>
+    <string name="condition_face_down">Экраном вниз</string>
+    <string name="condition_face_up">Экраном вверх</string>
+
+    <!-- Language -->
+    <string name="language">язык</string>
+    <string name="language_title">Язык</string>
+    <string name="language_system">Как в системе</string>
+    <string name="language_blurb">Flip говорит на языке телефона, если здесь не выбран другой.</string>
+
+    <!-- Settings → sleep, and the face-down explainer under its switch. -->
+    <string name="sleep_section">сон</string>
+    <string name="sleep_monitoring">Отслеживание сна</string>
+    <string name="sleep_monitoring_blurb">Определяет прошлую ночь по тому, сколько телефон лежал экраном вниз. Если выключить, новое не записывается, а сохранённые ночи остаются.</string>
+    <string name="explainer_step_bed">Перед сном положите телефон экраном вниз.</string>
+    <string name="explainer_step_night">Пока он так лежит, Flip держит тишину и считает ваш сон.</string>
+    <string name="explainer_step_morning">Утром прошлая ночь ждёт на главном экране.</string>
+
+    <!-- All of today's silences on a screen of their own -->
+    <string name="today_title">Сегодня</string>
+    <string name="show_all">Показать все (%1$d)</string>
+</resources>

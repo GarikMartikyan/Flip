@@ -1,0 +1,32 @@
+App name:
+Flip: Capovolgilo e silenzio
+
+Short description:
+Metti il telefono a faccia in giù e si zittisce. Riprendilo e torna il suono.
+
+Full description:
+Appoggia il telefono sul tavolo a faccia in giù e si zittisce. Riprendilo e il suono torna. Niente pulsanti, niente orari, niente da ricordarsi per disattivare Non disturbare.
+
+COME FUNZIONA
+• A faccia in giù, piatto e fermo. Flip aspetta che il telefono sia appoggiato a faccia in giù su una superficie e mantenga l’inclinazione, poi attiva Non disturbare. In tasca o in mano non conta.
+• Riprendilo. Appena lo sollevi, il suono torna.
+• Due brevi vibrazioni. Visto che lo schermo è contro il tavolo, una breve vibrazione conferma ogni cambio. Puoi disattivarla.
+
+COSA PASSA COMUNQUE
+• Persone: lascia squillare i contatti preferiti e anche le chiamate ripetute.
+• App: scegli le app le cui notifiche ti raggiungono comunque mentre tutto il resto tace.
+• Le sveglie suonano sempre.
+
+SENSIBILITÀ
+• Rigida, Bilanciata o Tollerante: da «solo su un tavolo davvero piano» a «su un cuscino o appoggiato di fretta».
+
+LE TUE GIORNATE E LE TUE NOTTI
+• Rivedi i momenti di silenzio della giornata su una linea del tempo.
+• Rivedi la notte scorsa: quando hai messo giù il telefono e quando l’hai ripreso. Il monitoraggio del sonno si può disattivare nelle Impostazioni.
+
+PRIVACY FIN DAL PROGETTO
+• Nessun account, nessuna pubblicità, nessuna analisi
+• Nessun permesso Internet: niente lascia il tuo telefono
+• Il contenuto delle notifiche non viene mai letto, solo quale app le ha inviate
+
+Richiede Android 14 o versioni successive.

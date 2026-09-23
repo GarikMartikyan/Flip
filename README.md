@@ -1,23 +1,16 @@
-# Shhh
+# Flip
 
 Put the phone face down on a table and it goes quiet. Pick it up and the sound comes back.
 
 <p align="center">
-  <a href="https://github.com/GarikMartikyan/Shhh-App/releases/latest/download/shhh.apk">
+  <a href="https://play.google.com/store/apps/details?id=app.flipsilence">
     <picture>
-      <source media="(prefers-color-scheme: dark)"
-              srcset="https://raw.githubusercontent.com/GarikMartikyan/Shhh-App/main/.github/download-dark.svg">
-      <img src="https://raw.githubusercontent.com/GarikMartikyan/Shhh-App/main/.github/download-light.svg"
-           alt="Download app" width="198" height="48">
+      <source media="(prefers-color-scheme: dark)" srcset=".github/download-dark.svg">
+      <img src=".github/download-light.svg" alt="Get it on Google Play" width="198" height="48">
     </picture>
   </a>
   <br>
-  <sub>
-    <a href="https://github.com/GarikMartikyan/Shhh-App/releases/latest"><img
-       src="https://img.shields.io/github/v/release/GarikMartikyan/Shhh-App?style=flat-square&label=&color=4B6B88"
-       alt="Latest release"></a>
-    &nbsp;Android 14 or newer
-  </sub>
+  <sub>On Google Play · Android 14 or newer</sub>
 </p>
 
 This is Pixel's **Flip to Shhh** rebuilt for a Samsung phone, which does not ship it — One UI's
@@ -26,7 +19,7 @@ fingerprint, S Pen and button triggers, and "Mute with gestures" only silences a
 is already ringing. So it is an app.
 
 Two quick haptic ticks confirm each transition, because the screen is against the table and there is
-nothing else to tell you it worked.
+nothing else to tell you it worked. They can be turned off in Settings.
 
 ## Why it watches the accelerometer and not the proximity sensor
 
@@ -70,18 +63,22 @@ slope, a cushion or a quick set-down, and is the most likely to fire in a pocket
 ## How the silencing works
 
 Since Android 15 an app cannot set the device's global Do Not Disturb state — `setInterruptionFilter`
-creates an implicit rule instead, and an app may only clear a rule it owns. So Shhh owns exactly one
+creates an implicit rule instead, and an app may only clear a rule it owns. So Flip owns exactly one
 `AutomaticZenRule` and drives both edges of it. Owning the *off* transition as well as the *on* one
 is what makes face-up reliably un-silence.
 
-The rule is created with no `ZenPolicy`, so it inherits whatever Do Not Disturb configuration you
-already have — starred contacts, repeat callers, alarm exceptions. That is what Flip to Shhh does.
+The rule carries its own `ZenPolicy` for calls only: starred contacts ring if you want them to,
+and so do repeat callers, per the two switches in settings. Alarms are allowed explicitly, since
+Flip's haptics and its alerts for allowed apps go out as alarms. Everything else the policy leaves
+unset is inherited from your own Do Not Disturb settings.
 
 Two things keep the phone from getting stranded in Do Not Disturb:
 
 - **A screen-on backstop.** Picking the phone up almost always turns the screen on, which wakes the
-  service even if the CPU had suspended and accelerometer samples were missed. `ACTION_SCREEN_ON`
-  while engaged forces a release.
+  service even if the CPU had suspended and accelerometer samples were missed. If no sample
+  arrives within 1.5 s of `ACTION_SCREEN_ON` while engaged, it forces a release. A live sensor
+  decides for itself, so a call that lights the screen of a phone still lying face down does not
+  un-silence it.
 - **Reconciliation.** On every service start and every screen-on, the zen rule is driven back to
   whatever the detector currently believes, which bounds how long any drift — a process kill
   mid-engage, a stale rule from a previous install — can survive to "until you next look at your
@@ -90,12 +87,25 @@ Two things keep the phone from getting stranded in Do Not Disturb:
 The service samples at ~10 Hz on a wake-up accelerometer where the device exposes one, and takes a
 short, self-timing-out partial wake lock only while a candidate placement is finishing its debounce.
 
+The S26 Ultra does not expose one — its only accelerometer is `lsm6dsv_0 Accelerometer Non-wakeup` —
+and that appears to have cost whole nights. Pressing the power button and *then* laying the phone
+down is how most people go to bed, and in between the CPU can suspend: no samples arrive, the hold
+never completes, and the phone lies face down until morning without silencing. The recorded history
+fits that on six nights out of nine: the screen dark from about half past one, and a silence that
+only began when something woke the CPU at 07:22. So when the screen goes off, the service keeps the
+CPU up for a further 15 seconds, which is long enough to reach over and set the phone down and still
+hold for Strict. Silencing releases it early.
+
 ## The app
 
-A single screen: a tilt gauge that fills as the hold completes, the on/off pill, the three
-sensitivity profiles, today's silences as a bar chart, and a collapsible diagnostics readout
-(service state, sensor name, whether it is a wake-up sensor, sample rate, live gravity Z / motion /
-drift / held-ms against the current thresholds, and the raw proximity reading for the record).
+The main screen is a tilt gauge that fills as the hold completes, the on/off pill, today's silences
+laid on a midnight-to-midnight strip, last night on an evening-to-noon one, and the notification
+switch. Everything set once and then
+left alone lives on a separate Settings page: the three sensitivity profiles, the haptic ticks
+(on by default), Do Not Disturb access and the battery setting with their current state, and a
+collapsible diagnostics readout (service state, sensor name, whether it is a wake-up sensor, sample
+rate, live gravity Z / motion / drift / held-ms against the current thresholds, and the raw
+proximity reading for the record).
 
 Android requires a notification for every foreground service, so it can never be absent. It can be
 unobtrusive: it is dismissible by swipe, and turning it off in the app strips it of text and defers
@@ -104,15 +114,34 @@ it out of the way.
 **Permissions:** Do Not Disturb access (`ACCESS_NOTIFICATION_POLICY`), notifications, and — for the
 service to survive idle — Battery → Unrestricted. The app links straight to each settings screen.
 
-## Modules
+## Last night
 
-- **`:app`** (`com.shhh`) — Shhh itself.
-- **`:torch`** (`com.shhh.torch`) — an unrelated one-tap flashlight, built to be a target for
-  Samsung RegiStar's back-tap action. It exists because the torch is scoped to the process that
-  asked for it: a bare activity finishes in milliseconds and leaves an empty process, the first
-  thing a low-memory kill reclaims, holding the beam. A foreground service keeps the process at a
-  priority that is not casually reclaimed and buys a shade entry to switch the light off without
-  picking the phone up.
+People put the phone face down to sleep, so Flip already knows roughly when you went to bed and when
+you got up. The main screen shows it: last night's span, how long it lasted, how much of it the phone
+spent silenced, and how many times it was picked up in between.
+
+It does not measure sleep, only the phone being left alone, and it reads that from two things:
+**the screen being dark**, recorded by the service whenever it is running, and **the face-down
+silences**. Neither is enough alone. The screen going dark is exact to the second, while a silence
+can start hours after the phone was put down (see the non-wakeup accelerometer above); a phone set
+face down with its screen still on has been left alone but is not dark yet.
+
+Those intervals are merged, and the night is found in them like this:
+
+- The screen coming on for **2 minutes or less** does not break a stretch: checking the time,
+  snoozing an alarm, a notification lighting it up.
+- A stretch shorter than **2 hours** is not sleep, and is never joined onto a night — that is what
+  keeps an evening with the phone on the charger from being counted as an early night.
+- The night is the longest such stretch **centred after midnight**, joined to any other one no more
+  than **an hour** away. Each gap joined over counts as a wake-up and is left out of the total.
+
+Measured on the device the night before this was written: the screen went dark at 01:30:06 and stayed
+dark, apart from two three-second wakes at 07:22 and 08:51, until 09:47:47, giving 01:30 – 09:47,
+8 h 17 m. The silences alone would have said 07:22 – 09:47.
+
+The window runs from 18:00 to noon. Until 06:00 the night in progress has not been slept yet, so
+"last night" is still the one before. Dark-screen stretches of a minute or more are kept for three
+days, on the device only.
 
 ## Build
 
@@ -122,7 +151,6 @@ API 36.
 ```sh
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 ./gradlew :app:installDebug     # or :app:assembleDebug for just the APK
-./gradlew :torch:installDebug   # optional
 ```
 
 `local.properties` is not committed; point `sdk.dir` at your SDK, or let Android Studio write it.
@@ -131,13 +159,20 @@ Minimum SDK 34, target and compile SDK 36. No dependencies beyond the Android pl
 plain views and hand-drawn `Canvas`, and there is no AndroidX, no Compose, no Kotlin plugin (AGP 9
 registers the `kotlin` extension itself).
 
+The type is Plus Jakarta Sans throughout (semibold for display, regular and medium for body), under
+the SIL Open Font License 1.1 (the licence text travels inside each font's name table). The four
+weights in `app/src/main/res/font` are subset to Latin with fontTools: about 60 KB each instead of
+130 KB.
+
 ### Handy while tuning
 
 ```sh
-adb shell am start -n com.shhh/.MainActivity --ez enable true   # start the service
-adb shell am start -n com.shhh/.MainActivity --es force on      # force the zen rule on/off
-adb logcat -s Shhh                                              # transitions + 15 s heartbeat
+adb shell am start -n app.flipsilence/.MainActivity --ez enable true   # start the service
+adb shell am start -n app.flipsilence/.MainActivity --es force on      # force the zen rule on/off
+adb logcat -s Flip                                              # transitions + 15 s heartbeat
 ```
+
+The two `am start` hooks work in debug builds only.
 
 The heartbeat line is the only way to know whether the sensor keeps delivering once the screen is
 off and the device idles.

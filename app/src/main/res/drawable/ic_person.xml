@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A head and shoulders: the empty place a contact's face will take on the strip. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="14dp"
+    android:height="14dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M12,5 A3.5,3.5 0 1,1 12,12 A3.5,3.5 0 1,1 12,5 Z M5,20 C6.2,16.4 9,14.5 12,14.5 C15,14.5 17.8,16.4 19,20"
+        android:strokeWidth="1.8"
+        android:strokeColor="@color/ink_dim"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

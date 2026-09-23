@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">hoje</string>
+    <string name="notification_show">Notificações</string>
+    <string name="settings">Configurações</string>
+    <string name="back">Voltar</string>
+    <string name="grant_dnd">Permitir acesso ao Não perturbe</string>
+    <string name="history_empty">Nada ainda hoje. Coloque o celular com a tela para baixo e aparecerá aqui.</string>
+    <string name="last_night">ontem à noite</string>
+    <string name="night_empty">Nenhuma noite ainda. Deixe o Flip ligado durante a noite e ela aparecerá aqui de manhã.</string>
+    <string name="asleep">dormindo</string>
+    <string name="now">agora</string>
+    <string name="of_quiet">de silêncio</string>
+    <string name="went_to_bed">Foi dormir</string>
+    <string name="woke_up">Acordou</string>
+    <string name="picked_up">Pegou o celular</string>
+    <string name="legend_silenced">Silenciado, virado para baixo</string>
+    <string name="legend_left_alone">Parado, com som</string>
+    <string name="legend_awake">Acordado com o celular</string>
+    <string name="night_not_silenced">Não silenciado — não estava virado para baixo</string>
+    <string name="sleep_history">Histórico de sono</string>
+    <string name="today_empty">Nenhum silêncio desde que você acordou. Coloque o celular com a tela para baixo e aparecerá aqui.</string>
+
+    <!-- Sleep screens -->
+    <string name="sleep">Sono</string>
+    <string name="nights_7">7 noites</string>
+    <string name="nights_30">30 noites</string>
+    <string name="average_sleep">Sono médio</string>
+    <string name="a_night">por noite</string>
+    <string name="bedtime">Hora de dormir</string>
+    <string name="wake_up">Despertar</string>
+    <string name="silenced">Silenciado</string>
+    <string name="of_time_asleep">do tempo dormindo</string>
+    <string name="times_a_night">vezes por noite</string>
+    <string name="when_you_slept">quando você dormiu</string>
+    <string name="average_lines">seus horários médios de dormir e acordar</string>
+    <string name="every_night">todas as noites</string>
+    <string name="through_the_night">ao longo da noite</string>
+    <string name="history_empty_nights">Nenhuma noite neste período ainda. Deixe o Flip ligado durante a noite e cada noite será adicionada aqui de manhã.</string>
+    <string name="sleep_footnote">O Flip não consegue ver o sono em si. Uma noite é o tempo em que o celular ficou parado com a tela apagada, e os intervalos são as vezes em que você o pegou.</string>
+    <string name="night_gone">Esta noite não está mais registrada.</string>
+
+    <!-- Settings page -->
+    <string name="theme">tema</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="sensitivity">sensibilidade</string>
+    <string name="feedback">retorno</string>
+    <string name="haptics">Toques de vibração</string>
+    <string name="haptics_blurb">Dois toques rápidos ao silenciar e de novo ao liberar. A tela fica contra a mesa, então este é o único sinal de que funcionou.</string>
+    <string name="system">sistema</string>
+    <string name="dnd_access">Acesso ao Não perturbe</string>
+    <string name="dnd_granted">Permitido</string>
+    <string name="dnd_missing">Não permitido — o Flip não consegue silenciar nada</string>
+    <string name="battery">Bateria</string>
+    <string name="battery_unrestricted">Sem restrições</string>
+    <string name="battery_optimized">Otimizado — mude para Sem restrições para o Android não pausar o Flip</string>
+    <string name="diagnostics">diagnóstico</string>
+
+    <!-- What still gets through while face down -->
+    <plurals name="people">
+        <item quantity="one">%d pessoa</item>
+        <item quantity="many">%d pessoas</item>
+        <item quantity="other">%d pessoas</item>
+    </plurals>
+    <plurals name="apps">
+        <item quantity="one">%d app</item>
+        <item quantity="many">%d apps</item>
+        <item quantity="other">%d apps</item>
+    </plurals>
+    <string name="still_gets_through">ainda passa</string>
+    <string name="still_get_through">ainda passam</string>
+    <string name="no_exceptions_yet">Nenhuma exceção ainda</string>
+    <string name="tap_to_choose_who_rings">Toque para escolher quem ainda toca</string>
+    <string name="apps_need_access">Os apps precisam de acesso às notificações</string>
+    <string name="gets_through">Passa</string>
+    <string name="gets_through_blurb">Com o celular virado para baixo, estes ainda chegam até você. Todo o resto espera até você pegá-lo.</string>
+    <string name="people">pessoas</string>
+    <string name="apps">apps</string>
+    <string name="people_empty">Ninguém ainda. As chamadas dessas pessoas tocarão mesmo com o celular virado para baixo.</string>
+    <string name="people_need_contacts">O Flip precisa de acesso aos seus contatos para mostrar e escolher pessoas.</string>
+    <string name="people_note">Estes são os Favoritos do seu celular. Adicionar alguém aqui marca a pessoa como favorita, e remover desmarca, em todo o celular. Para silenciar todos sem desmarcá-los, desative Favoritos.</string>
+    <string name="favourites">Favoritos</string>
+    <string name="favourites_blurb">As chamadas dos seus contatos favoritos tocam</string>
+    <string name="repeat_callers">Chamadas repetidas</string>
+    <string name="repeat_callers_blurb">Quem ligar de novo em até 15 minutos</string>
+    <string name="add_person">Adicionar pessoa</string>
+    <string name="apps_empty">Nenhum app ainda. O Flip ainda vai tocar para os que você adicionar.</string>
+    <string name="apps_note">O Flip toca para estes por conta própria, do jeito que o celular estava antes de silenciar: som e vibração, só vibração ou nada, se estava no silencioso. Se o Android disser que a configuração é restrita, abra Informações do app do Flip, toque em ⋮ e permita as configurações restritas.</string>
+    <string name="add_app">Adicionar app</string>
+    <string name="notification_access">Acesso às notificações</string>
+    <string name="listener_missing">Não permitido — os apps escolhidos ficam em silêncio</string>
+    <string name="listener_ask_title">Primeiro, acesso às notificações</string>
+    <string name="listener_ask_body">Para tocar para um app com o celular virado para baixo, o Flip precisa ver que as notificações dele chegaram. Ele nunca lê o que elas dizem.\n\nEm seguida, ative o Flip e volte aqui. Se o Android disser que a configuração é restrita, abra Informações do app do Flip, toque em ⋮ e permita as configurações restritas.</string>
+    <string name="not_now">Agora não</string>
+    <string name="open_settings">Abrir configurações</string>
+    <string name="remove_x">Remover %1$s</string>
+    <string name="choose_apps">Apps</string>
+    <string name="choose_apps_blurb">Ativado, o app ainda emite som quando o celular está virado para baixo.</string>
+    <string name="loading_apps">Carregando apps…</string>
+    <string name="gets_through_state">Passa</string>
+    <string name="silenced_state">Silenciado</string>
+
+    <!-- Main screen -->
+    <string name="power_on">Ligado</string>
+    <string name="power_off">Desligado</string>
+    <string name="watching">Observando</string>
+    <string name="not_watching">Sem observar</string>
+    <string name="dnd_needed">O Flip precisa de acesso ao Não perturbe antes de poder silenciar qualquer coisa.</string>
+    <string name="avg_7_nights">Média de 7 noites: %1$s</string>
+    <string name="history_avg">%1$s em média</string>
+    <string name="last_night_description">Ontem à noite: dormiu %1$s, das %2$s às %3$s, silenciado por %4$s</string>
+    <string name="since_you_woke">desde que você acordou às %1$s</string>
+    <string name="today_once">Uma vez virado para baixo hoje, às %1$s.</string>
+    <plurals name="today_many">
+        <item quantity="one">%1$d vez virado para baixo hoje. A mais longa foi de %2$s, às %3$s.</item>
+        <item quantity="many">%1$d vezes virado para baixo hoje. A mais longa foi de %2$s, às %3$s.</item>
+        <item quantity="other">%1$d vezes virado para baixo hoje. A mais longa foi de %2$s, às %3$s.</item>
+    </plurals>
+    <string name="today_description">Hoje: em silêncio por %1$s. %2$s</string>
+    <string name="coach_grant">Permita o acesso ao Não perturbe para começar.</string>
+    <string name="coach_turn_on">Ligue para começar a observar.</string>
+    <string name="coach_silenced">Silenciado. Pegue o celular para parar.</string>
+    <string name="coach_starting">Iniciando.</string>
+    <string name="coach_tilting">Ainda inclinando — solte-o.</string>
+    <string name="coach_almost">Quase — mantenha assim.</string>
+    <string name="coach_hold_still">Não mexa.</string>
+    <string name="coach_put_down">Coloque o celular com a tela para baixo numa superfície plana.</string>
+
+    <!-- The gauge -->
+    <string name="gauge_since">desde %1$s</string>
+    <string name="gauge_description">%1$d graus da posição com a tela para baixo</string>
+
+    <!-- Lengths of time -->
+    <string name="duration_s">%1$d s</string>
+    <string name="duration_m">%1$d min</string>
+    <string name="duration_hm">%1$d h %2$02d min</string>
+    <string name="times_never">Nunca</string>
+    <string name="times_once">Uma vez</string>
+    <string name="times_twice">Duas vezes</string>
+    <plurals name="times_count">
+        <item quantity="one">%d vez</item>
+        <item quantity="many">%d vezes</item>
+        <item quantity="other">%d vezes</item>
+    </plurals>
+
+    <!-- Sleep history and a single night -->
+    <plurals name="chart_description">
+        <item quantity="one">Horários de dormir e acordar das últimas %d noites</item>
+        <item quantity="many">Horários de dormir e acordar das últimas %d noites</item>
+        <item quantity="other">Horários de dormir e acordar das últimas %d noites</item>
+    </plurals>
+    <string name="one_night_so_far">1 noite até agora</string>
+    <string name="shortest_longest">Mais curta %1$s · mais longa %2$s</string>
+    <string name="between_times">entre %1$s e %2$s</string>
+    <string name="open_this_night">%1$s, %2$s. Abrir esta noite</string>
+    <string name="night_row_description">%1$s, %2$s, dormiu %3$s</string>
+    <string name="night_title">Noite de %1$s</string>
+    <string name="put_down">Deixou</string>
+    <string name="night_laps">Mais de doze horas: a noite dá outra volta no relógio pelo anel interno.</string>
+    <string name="asleep_from_to">Dormiu das %1$s às %2$s</string>
+    <string name="about_the_same">Quase igual à semana anterior</string>
+    <string name="longer_than_before">%1$s a mais que na semana anterior</string>
+    <string name="shorter_than_before">%1$s a menos que na semana anterior</string>
+    <string name="event_alarm">Alarme</string>
+    <string name="at_a_glance">num relance</string>
+    <string name="stat_woke_up">Levantou</string>
+    <string name="stat_screen_on">Tela</string>
+    <string name="stat_alarms">Alarmes</string>
+    <string name="stat_silenced_caption">%1$s virado para baixo</string>
+    <string name="stat_woke_none">Dormiu direto</string>
+    <string name="stat_woke_caption">%1$s acordado no total</string>
+    <string name="stat_not_recorded">Não registrado nessa noite</string>
+    <string name="stat_screen_none">Ficou apagada</string>
+    <string name="stat_screen_caption">%1$s no total</string>
+    <string name="stat_alarms_none">Nenhum tocou</string>
+    <string name="stat_alarms_caption">O primeiro às %1$s</string>
+    <string name="tl_put_down">Deixou o celular</string>
+    <string name="tl_put_down_silenced">Virado para baixo, sem som</string>
+    <string name="tl_put_down_sound_on">Som ainda ligado</string>
+    <string name="tl_moved">O celular se mexeu</string>
+    <string name="tl_moved_detail">O som voltou por %1$s</string>
+    <string name="tl_silenced">Silenciado</string>
+    <string name="tl_silenced_again">Silenciado de novo</string>
+    <string name="tl_silenced_detail">Virado para baixo</string>
+    <string name="tl_picked_up">Pegou o celular</string>
+    <string name="tl_for">Por %1$s</string>
+    <string name="tl_unlocked">Desbloqueou o celular</string>
+    <string name="tl_screen_lit">A tela acendeu</string>
+    <string name="tl_screen_lit_detail">%1$s, sem desbloquear</string>
+    <string name="tl_stretch_silenced">%1$s em silêncio</string>
+    <string name="tl_stretch_sound_on">%1$s com som</string>
+    <string name="tl_stretch_awake">%1$s acordado</string>
+    <string name="night_how_read">O Flip não mede o sono em si. Ele lê as horas em que o celular ficou intocado, com a tela apagada ou virada para baixo, e conta isso como a noite.</string>
+
+    <!-- Sensitivity -->
+    <string name="sens_strict">Rígida</string>
+    <string name="sens_strict_blurb">Exige uma superfície bem plana e bem parada. Menos alarmes falsos no bolso, e a mais propensa a ignorar uma superfície macia ou inclinada.</string>
+    <string name="sens_balanced">Equilibrada</string>
+    <string name="sens_balanced_blurb">Ajustada com posições realmente medidas neste celular. Comece por aqui.</string>
+    <string name="sens_relaxed">Flexível</string>
+    <string name="sens_relaxed_blurb">Ativa numa inclinação, numa almofada ou ao largar rápido. Silencia com mais facilidade e é a mais propensa a disparar no bolso.</string>
+    <string name="expanded">Expandido</string>
+    <string name="collapsed">Recolhido</string>
+
+    <!-- The service notification and the Do Not Disturb rule -->
+    <string name="channel_name">Flip está observando</string>
+    <string name="channel_description">Exigida pelo Android enquanto o Flip observa se o celular é colocado com a tela para baixo.</string>
+    <string name="notification_engaged">Virado para baixo — Não perturbe ativado</string>
+    <string name="notification_watching">Aguardando o celular ficar com a tela para baixo</string>
+    <string name="zen_rule_name">Flip (tela para baixo)</string>
+    <string name="condition_face_down">Tela para baixo</string>
+    <string name="condition_face_up">Tela para cima</string>
+
+    <!-- Language -->
+    <string name="language">idioma</string>
+    <string name="language_title">Idioma</string>
+    <string name="language_system">Padrão do sistema</string>
+    <string name="language_blurb">O Flip usa o idioma do celular, a menos que você escolha outro aqui.</string>
+
+    <!-- Settings → sleep, and the face-down explainer under its switch. -->
+    <string name="sleep_section">sono</string>
+    <string name="sleep_monitoring">Monitoramento do sono</string>
+    <string name="sleep_monitoring_blurb">Calcula a noite anterior pelo tempo que o celular fica virado para baixo. Desligado, nada novo é registrado e as noites já salvas são mantidas.</string>
+    <string name="explainer_step_bed">Antes de dormir, vire o celular para baixo.</string>
+    <string name="explainer_step_night">Enquanto ele fica assim, o Flip o mantém em silêncio e conta seu sono.</string>
+    <string name="explainer_step_morning">De manhã, a noite anterior está esperando na tela principal.</string>
+
+    <!-- All of today's silences on a screen of their own -->
+    <string name="today_title">Hoje</string>
+    <string name="show_all">Ver todos os %1$d</string>
+</resources>

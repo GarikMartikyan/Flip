@@ -1,0 +1,32 @@
+App name:
+Flip: Boca abajo y silencio
+
+Short description:
+Pon el móvil boca abajo y se queda en silencio. Levántalo y vuelve el sonido.
+
+Full description:
+Pon el móvil boca abajo sobre la mesa y se queda en silencio. Levántalo y vuelve el sonido. Sin botones, sin horarios y sin tener que acordarte de desactivar No molestar.
+
+CÓMO FUNCIONA
+• Boca abajo, en plano y quieto. Flip espera a que el móvil esté boca abajo sobre una superficie y mantenga el ángulo, y entonces activa No molestar. En el bolsillo o en la mano no cuenta.
+• Levántalo. En cuanto lo levantas, vuelve el sonido.
+• Dos toques rápidos. Como la pantalla está contra la mesa, una breve vibración confirma cada cambio. Puedes desactivarla.
+
+LO QUE SIGUE PASANDO
+• Personas: deja que suenen tus contactos favoritos y también las llamadas repetidas.
+• Apps: elige qué apps pueden seguir avisándote mientras todo lo demás calla.
+• Las alarmas siempre suenan.
+
+SENSIBILIDAD
+• Estricta, Equilibrada o Flexible: desde «solo sobre una mesa bien plana» hasta «sobre un cojín o al dejarlo con prisa».
+
+TUS DÍAS Y TUS NOCHES
+• Consulta los ratos de silencio del día en una línea de tiempo.
+• Consulta la noche anterior: cuándo dejaste el móvil y cuándo lo volviste a coger. El seguimiento del sueño se puede desactivar en Ajustes.
+
+PRIVADO DESDE EL DISEÑO
+• Sin cuenta, sin anuncios, sin analíticas
+• Sin permiso de internet: nada sale de tu móvil
+• Nunca lee el contenido de las notificaciones, solo qué app las envió
+
+Requiere Android 14 o posterior.

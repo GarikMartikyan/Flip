@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">bugün</string>
+    <string name="notification_show">Bildirimler</string>
+    <string name="settings">Ayarlar</string>
+    <string name="back">Geri</string>
+    <string name="grant_dnd">Rahatsız Etmeyin erişimi ver</string>
+    <string name="history_empty">Bugün henüz bir şey yok. Telefonu yüzüstü koyun, burada görünecek.</string>
+    <string name="last_night">dün gece</string>
+    <string name="night_empty">Henüz gece yok. Flip\'i gece boyunca açık bırakın, sabah burada görünecek.</string>
+    <string name="asleep">uyku</string>
+    <string name="now">şimdi</string>
+    <string name="of_quiet">sessizlik</string>
+    <string name="went_to_bed">Yatış</string>
+    <string name="woke_up">Uyanış</string>
+    <string name="picked_up">Elinize aldınız</string>
+    <string name="legend_silenced">Sessiz, yüzüstü</string>
+    <string name="legend_left_alone">Kendi hâlinde, ses açık</string>
+    <string name="legend_awake">Uyanık, telefon elde</string>
+    <string name="night_not_silenced">Sessize alınmadı — yüzüstü değildi</string>
+    <string name="sleep_history">Uyku geçmişi</string>
+    <string name="today_empty">Uyandığınızdan beri sessizlik yok. Telefonu yüzüstü koyun, burada görünecek.</string>
+
+    <!-- Sleep screens -->
+    <string name="sleep">Uyku</string>
+    <string name="nights_7">7 gece</string>
+    <string name="nights_30">30 gece</string>
+    <string name="average_sleep">Ortalama uyku</string>
+    <string name="a_night">gecelik</string>
+    <string name="bedtime">Yatış</string>
+    <string name="wake_up">Uyanış</string>
+    <string name="silenced">Sessiz</string>
+    <string name="of_time_asleep">uyku süresinin</string>
+    <string name="times_a_night">kez / gece</string>
+    <string name="when_you_slept">ne zaman uyudunuz</string>
+    <string name="average_lines">ortalama yatış ve uyanış saatiniz</string>
+    <string name="every_night">her gece</string>
+    <string name="through_the_night">gece boyunca</string>
+    <string name="history_empty_nights">Bu aralıkta henüz gece yok. Flip\'i gece boyunca açık bırakın, her gece sabah buraya eklenecek.</string>
+    <string name="sleep_footnote">Flip uykunun kendisini göremez. Bir gece, telefonun ekranı kapalı ve dokunulmadan kaldığı süredir; aradaki boşluklar onu elinize aldığınız anlardır.</string>
+    <string name="night_gone">Bu gece artık kayıtlarda yok.</string>
+
+    <!-- Settings page -->
+    <string name="theme">tema</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+    <string name="sensitivity">hassasiyet</string>
+    <string name="feedback">geri bildirim</string>
+    <string name="haptics">Titreşimli tıklar</string>
+    <string name="haptics_blurb">Sessize aldığında iki kısa tık, bıraktığında yine iki tık. Ekran masaya dönük olduğu için işe yaradığının tek işareti bu.</string>
+    <string name="system">sistem</string>
+    <string name="dnd_access">Rahatsız Etmeyin erişimi</string>
+    <string name="dnd_granted">Verildi</string>
+    <string name="dnd_missing">Verilmedi — Flip hiçbir şeyi sessize alamaz</string>
+    <string name="battery">Pil</string>
+    <string name="battery_unrestricted">Kısıtlanmamış</string>
+    <string name="battery_optimized">Optimize edildi — Android\'in Flip\'i duraklatmaması için Kısıtlanmamış olarak ayarlayın</string>
+    <string name="diagnostics">tanılama</string>
+
+    <!-- What still gets through while face down -->
+    <plurals name="people">
+        <item quantity="one">%d kişi</item>
+        <item quantity="other">%d kişi</item>
+    </plurals>
+    <plurals name="apps">
+        <item quantity="one">%d uygulama</item>
+        <item quantity="other">%d uygulama</item>
+    </plurals>
+    <string name="still_gets_through">yine de size ulaşır</string>
+    <string name="still_get_through">yine de size ulaşır</string>
+    <string name="no_exceptions_yet">Henüz istisna yok</string>
+    <string name="tap_to_choose_who_rings">Hâlâ kimin çalacağını seçmek için dokunun</string>
+    <string name="apps_need_access">Uygulamalar için bildirim erişimi gerekli</string>
+    <string name="gets_through">İstisnalar</string>
+    <string name="gets_through_blurb">Telefon yüzüstüyken bunlar yine de size ulaşır. Geri kalan her şey telefonu elinize alana kadar bekler.</string>
+    <string name="people">kişiler</string>
+    <string name="apps">uygulamalar</string>
+    <string name="people_empty">Henüz kimse yok. Eklediğiniz kişilerin aramaları telefon yüzüstüyken de çalar.</string>
+    <string name="people_need_contacts">Kişileri gösterip seçebilmek için Flip\'in rehberinize erişmesi gerekiyor.</string>
+    <string name="people_note">Bunlar telefonunuzun Favorileri. Buraya birini eklemek onu tüm telefonda yıldızlar, kaldırmak ise yıldızını kaldırır. Hepsini sessize alıp yıldızlarını korumak için Favoriler\'i kapatın.</string>
+    <string name="favourites">Favoriler</string>
+    <string name="favourites_blurb">Yıldızlı kişilerinizin aramaları çalar</string>
+    <string name="repeat_callers">Tekrar arayanlar</string>
+    <string name="repeat_callers_blurb">15 dakika içinde tekrar arayan herkes</string>
+    <string name="add_person">Kişi ekle</string>
+    <string name="apps_empty">Henüz uygulama yok. Eklediklerinizde Flip yine de ses çıkarır.</string>
+    <string name="apps_note">Flip bunlar için sesi kendisi çalar, telefon sessize geçmeden önceki ayara göre: ses ve titreşim, yalnızca titreşim ya da sessizdeyse hiçbir şey. Android ayarın kısıtlı olduğunu söylerse Flip\'in Uygulama bilgileri\'ni açın, ⋮ simgesine dokunun ve kısıtlanmış ayarlara izin verin.</string>
+    <string name="add_app">Uygulama ekle</string>
+    <string name="notification_access">Bildirim erişimi</string>
+    <string name="listener_missing">Verilmedi — seçilen uygulamalar sessiz kalır</string>
+    <string name="listener_ask_title">Önce bildirim erişimi</string>
+    <string name="listener_ask_body">Telefon yüzüstüyken bir uygulama için ses çıkarabilmek için Flip\'in bildirimlerinin geldiğini görmesi gerekir. İçeriklerini asla okumaz.\n\nArdından Flip\'i açın ve buraya geri dönün. Android ayarın kısıtlı olduğunu söylerse Flip\'in Uygulama bilgileri\'ni açın, ⋮ simgesine dokunun ve kısıtlanmış ayarlara izin verin.</string>
+    <string name="not_now">Şimdi değil</string>
+    <string name="open_settings">Ayarları aç</string>
+    <string name="remove_x">Kaldır: %1$s</string>
+    <string name="choose_apps">Uygulamalar</string>
+    <string name="choose_apps_blurb">Açık olan uygulama, telefon yüzüstüyken de ses çıkarır.</string>
+    <string name="loading_apps">Uygulamalar yükleniyor…</string>
+    <string name="gets_through_state">Ulaşır</string>
+    <string name="silenced_state">Sessiz</string>
+
+    <!-- Main screen -->
+    <string name="power_on">Açık</string>
+    <string name="power_off">Kapalı</string>
+    <string name="watching">İzliyor</string>
+    <string name="not_watching">İzlemiyor</string>
+    <string name="dnd_needed">Flip\'in bir şeyi sessize alabilmesi için Rahatsız Etmeyin erişimi gerekiyor.</string>
+    <string name="avg_7_nights">7 gece ort. %1$s</string>
+    <string name="history_avg">ort. %1$s</string>
+    <string name="last_night_description">Dün gece: %1$s uyku, %2$s ile %3$s arası, %4$s sessiz</string>
+    <string name="since_you_woke">uyandığınızdan beri (%1$s)</string>
+    <string name="today_once">Bugün bir kez yüzüstü, saat %1$s.</string>
+    <plurals name="today_many">
+        <item quantity="one">Bugün %1$d kez yüzüstü. En uzunu %2$s, saat %3$s.</item>
+        <item quantity="other">Bugün %1$d kez yüzüstü. En uzunu %2$s, saat %3$s.</item>
+    </plurals>
+    <string name="today_description">Bugün: %1$s sessizlik. %2$s</string>
+    <string name="coach_grant">Başlamak için Rahatsız Etmeyin erişimi verin.</string>
+    <string name="coach_turn_on">İzlemeye başlamak için açın.</string>
+    <string name="coach_silenced">Sessiz. Durdurmak için elinize alın.</string>
+    <string name="coach_starting">Başlatılıyor.</string>
+    <string name="coach_tilting">Hâlâ eğiliyor — bırakın.</string>
+    <string name="coach_almost">Neredeyse — öyle tutun.</string>
+    <string name="coach_hold_still">Kıpırdatmayın.</string>
+    <string name="coach_put_down">Telefonu düz bir yüzeye yüzüstü koyun.</string>
+
+    <!-- The gauge -->
+    <string name="gauge_since">%1$s itibarıyla</string>
+    <string name="gauge_description">Yüzüstünden %1$d derece</string>
+
+    <!-- Lengths of time -->
+    <string name="duration_s">%1$d sn</string>
+    <string name="duration_m">%1$d dk</string>
+    <string name="duration_hm">%1$d sa %2$02d dk</string>
+    <string name="times_never">Hiç</string>
+    <string name="times_once">Bir kez</string>
+    <string name="times_twice">İki kez</string>
+    <plurals name="times_count">
+        <item quantity="one">%d kez</item>
+        <item quantity="other">%d kez</item>
+    </plurals>
+
+    <!-- Sleep history and a single night -->
+    <plurals name="chart_description">
+        <item quantity="one">Son %d gecenin yatış ve uyanış saatleri</item>
+        <item quantity="other">Son %d gecenin yatış ve uyanış saatleri</item>
+    </plurals>
+    <string name="one_night_so_far">Şimdilik 1 gece</string>
+    <string name="shortest_longest">En kısa %1$s · en uzun %2$s</string>
+    <string name="between_times">%1$s ile %2$s arası</string>
+    <string name="open_this_night">%1$s, %2$s. Bu geceyi aç</string>
+    <string name="night_row_description">%1$s, %2$s, %3$s uyku</string>
+    <string name="night_title">%1$s gecesi</string>
+    <string name="put_down">Bırakıldı</string>
+    <string name="night_laps">On iki saatten uzun; gece iç halkada saatin etrafında bir tur daha dönüyor.</string>
+    <string name="asleep_from_to">%1$s ile %2$s arası uyku</string>
+    <string name="about_the_same">Önceki haftayla hemen hemen aynı</string>
+    <string name="longer_than_before">Önceki haftadan %1$s daha uzun</string>
+    <string name="shorter_than_before">Önceki haftadan %1$s daha kısa</string>
+    <string name="event_alarm">Alarm</string>
+    <string name="at_a_glance">kısaca</string>
+    <string name="stat_woke_up">Kalktın</string>
+    <string name="stat_screen_on">Ekran</string>
+    <string name="stat_alarms">Alarmlar</string>
+    <string name="stat_silenced_caption">%1$s yüzüstü</string>
+    <string name="stat_woke_none">Hiç uyanmadan</string>
+    <string name="stat_woke_caption">Toplam %1$s uyanık</string>
+    <string name="stat_not_recorded">O gece kaydedilmedi</string>
+    <string name="stat_screen_none">Hiç açılmadı</string>
+    <string name="stat_screen_caption">Toplam %1$s</string>
+    <string name="stat_alarms_none">Hiçbiri çalmadı</string>
+    <string name="stat_alarms_caption">İlki %1$s</string>
+    <string name="tl_put_down">Telefon bırakıldı</string>
+    <string name="tl_put_down_silenced">Yüzüstü, sessiz</string>
+    <string name="tl_put_down_sound_on">Ses hâlâ açık</string>
+    <string name="tl_moved">Telefon kıpırdadı</string>
+    <string name="tl_moved_detail">Ses %1$s geri geldi</string>
+    <string name="tl_silenced">Sessize alındı</string>
+    <string name="tl_silenced_again">Yeniden sessize alındı</string>
+    <string name="tl_silenced_detail">Yüzüstü çevrildi</string>
+    <string name="tl_picked_up">Elinize aldınız</string>
+    <string name="tl_for">%1$s boyunca</string>
+    <string name="tl_unlocked">Kilit açıldı</string>
+    <string name="tl_screen_lit">Ekran yandı</string>
+    <string name="tl_screen_lit_detail">%1$s, kilit açılmadan</string>
+    <string name="tl_stretch_silenced">%1$s sessiz</string>
+    <string name="tl_stretch_sound_on">%1$s sesli</string>
+    <string name="tl_stretch_awake">%1$s uyanık</string>
+    <string name="night_how_read">Flip uykuyu doğrudan ölçmez. Telefonunuzun dokunulmadan kaldığı saatleri (ekran kapalı ya da yüzüstü) okur ve bunları gece olarak sayar.</string>
+
+    <!-- Sensitivity -->
+    <string name="sens_strict">Katı</string>
+    <string name="sens_strict_blurb">Gerçekten düz ve hareketsiz bir yüzey ister. Cepte en az yanlış alarm verir; yumuşak ya da eğimli yüzeyi yok sayma olasılığı en yüksektir.</string>
+    <string name="sens_balanced">Dengeli</string>
+    <string name="sens_balanced_blurb">Bu telefonda gerçekten ölçülen yerleştirmelere göre ayarlandı. Buradan başlayın.</string>
+    <string name="sens_relaxed">Esnek</string>
+    <string name="sens_relaxed_blurb">Eğimde, yastıkta ya da hızlıca bırakıldığında tetiklenir. Daha kolay sessize alır; cepte tetiklenme olasılığı en yüksektir.</string>
+    <string name="expanded">Genişletildi</string>
+    <string name="collapsed">Daraltıldı</string>
+
+    <!-- The service notification and the Do Not Disturb rule -->
+    <string name="channel_name">Flip izliyor</string>
+    <string name="channel_description">Flip telefonun yüzüstü konmasını izlerken Android bu bildirimi zorunlu tutar.</string>
+    <string name="notification_engaged">Yüzüstü — Rahatsız Etmeyin açık</string>
+    <string name="notification_watching">Telefonun yüzüstü konması bekleniyor</string>
+    <string name="zen_rule_name">Flip (yüzüstü)</string>
+    <string name="condition_face_down">Yüzüstü</string>
+    <string name="condition_face_up">Yüzü yukarı</string>
+
+    <!-- Language -->
+    <string name="language">dil</string>
+    <string name="language_title">Dil</string>
+    <string name="language_system">Sistem varsayılanı</string>
+    <string name="language_blurb">Burada başka bir dil seçmezseniz Flip telefonun dilini kullanır.</string>
+
+    <!-- Settings → sleep, and the face-down explainer under its switch. -->
+    <string name="sleep_section">uyku</string>
+    <string name="sleep_monitoring">Uyku takibi</string>
+    <string name="sleep_monitoring_blurb">Dün geceyi telefonun ne kadar süre ekranı aşağı bakacak şekilde durduğundan çıkarır. Kapalıyken yeni bir şey kaydedilmez, kayıtlı geceler korunur.</string>
+    <string name="explainer_step_bed">Yatmadan önce telefonunu ekranı aşağı bakacak şekilde bırak.</string>
+    <string name="explainer_step_night">O şekilde durduğu sürece Flip onu sessiz tutar ve uykunu sayar.</string>
+    <string name="explainer_step_morning">Sabah, dün gece ana ekranda seni bekler.</string>
+
+    <!-- All of today's silences on a screen of their own -->
+    <string name="today_title">Bugün</string>
+    <string name="show_all">Tümünü göster (%1$d)</string>
+</resources>

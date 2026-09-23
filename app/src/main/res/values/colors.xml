@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_background">#1B2030</color>
+    <!-- Ensō: sumi ink on washi paper, and one colour. -->
+    <color name="ic_launcher_background">#EFEBE3</color>
+    <color name="ic_launcher_ink">#1F1D1A</color>
+    <!-- The launcher dot: the one light left on, so it takes the quiet colour. -->
+    <color name="ic_launcher_quiet">#5A6B3E</color>
 
-    <color name="bg">#F1F3F7</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="border">#D3D9E3</color>
-    <color name="track">#DDE2EA</color>
-    <color name="ink">#161A22</color>
-    <color name="ink_dim">#5D6575</color>
-    <!-- Amber is the sound that is still getting through. -->
-    <color name="awake">#A96F14</color>
-    <!-- Colour drains to this the moment the phone goes quiet. -->
-    <color name="quiet">#4B6B88</color>
+    <color name="bg">#EFEBE3</color>
+    <color name="surface">#F8F5EF</color>
+    <color name="border">#DCD5C8</color>
+    <color name="track">#E3DDD2</color>
+    <color name="ink">#1F1D1A</color>
+    <color name="ink_dim">#65605A</color>
+    <!-- Sound still getting through is drawn in plain ink. -->
+    <color name="awake">#1F1D1A</color>
+    <color name="on_awake">#F8F5EF</color>
+    <!-- Moss is the only colour in the app, and it is kept for the quiet. -->
+    <color name="quiet">#5A6B3E</color>
+    <color name="segment_selected">#F8F5EF</color>
+    <!-- The sleep explainer's phone: the side of its frame, and the shadow it casts on the table. -->
+    <color name="phone_edge">#57524B</color>
+    <color name="phone_shadow">#1F1D1A</color>
+    <!-- Press feedback: ink at low alpha, so it reads on every surface. -->
+    <color name="ripple">#1F1F1D1A</color>
 </resources>

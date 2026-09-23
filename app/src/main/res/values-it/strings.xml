@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">oggi</string>
+    <string name="notification_show">Notifiche</string>
+    <string name="settings">Impostazioni</string>
+    <string name="back">Indietro</string>
+    <string name="grant_dnd">Consenti l’accesso a Non disturbare</string>
+    <string name="history_empty">Ancora niente oggi. Appoggia il telefono a faccia in giù e comparirà qui.</string>
+    <string name="last_night">ieri notte</string>
+    <string name="night_empty">Ancora nessuna notte. Lascia Flip attivo durante la notte e al mattino comparirà qui.</string>
+    <string name="asleep">di sonno</string>
+    <string name="now">ora</string>
+    <string name="of_quiet">di silenzio</string>
+    <string name="went_to_bed">A letto</string>
+    <string name="woke_up">Sveglia</string>
+    <string name="picked_up">Preso in mano</string>
+    <string name="legend_silenced">Silenzioso, a faccia in giù</string>
+    <string name="legend_left_alone">Appoggiato, suono attivo</string>
+    <string name="legend_awake">Sveglio con il telefono</string>
+    <string name="night_not_silenced">Non silenziato — non era a faccia in giù</string>
+    <string name="sleep_history">Cronologia del sonno</string>
+    <string name="today_empty">Nessun silenzio da quando ti sei svegliato. Appoggia il telefono a faccia in giù e comparirà qui.</string>
+
+    <!-- Sleep screens -->
+    <string name="sleep">Sonno</string>
+    <string name="nights_7">7 notti</string>
+    <string name="nights_30">30 notti</string>
+    <string name="average_sleep">Sonno medio</string>
+    <string name="a_night">a notte</string>
+    <string name="bedtime">A letto</string>
+    <string name="wake_up">Sveglia</string>
+    <string name="silenced">Silenzioso</string>
+    <string name="of_time_asleep">del tempo di sonno</string>
+    <string name="times_a_night">volte a notte</string>
+    <string name="when_you_slept">quando hai dormito</string>
+    <string name="average_lines">i tuoi orari medi di letto e sveglia</string>
+    <string name="every_night">ogni notte</string>
+    <string name="through_the_night">nel corso della notte</string>
+    <string name="history_empty_nights">Ancora nessuna notte in questo periodo. Lascia Flip attivo durante la notte e ogni notte verrà aggiunta qui al mattino.</string>
+    <string name="sleep_footnote">Flip non può vedere il sonno in sé. Una notte è il tempo in cui il telefono è rimasto appoggiato con lo schermo spento, e le interruzioni sono i momenti in cui l’hai preso in mano.</string>
+    <string name="night_gone">Questa notte non è più registrata.</string>
+
+    <!-- Settings page -->
+    <string name="theme">tema</string>
+    <string name="theme_system">Sistema</string>
+    <string name="theme_light">Chiaro</string>
+    <string name="theme_dark">Scuro</string>
+    <string name="sensitivity">sensibilità</string>
+    <string name="feedback">riscontro</string>
+    <string name="haptics">Vibrazioni</string>
+    <string name="haptics_blurb">Due brevi vibrazioni quando silenzia e di nuovo quando rilascia. Lo schermo è contro il tavolo, quindi è l’unico segnale che ha funzionato.</string>
+    <string name="system">sistema</string>
+    <string name="dnd_access">Accesso a Non disturbare</string>
+    <string name="dnd_granted">Consentito</string>
+    <string name="dnd_missing">Non consentito — Flip non può silenziare nulla</string>
+    <string name="battery">Batteria</string>
+    <string name="battery_unrestricted">Senza restrizioni</string>
+    <string name="battery_optimized">Ottimizzata — imposta Senza restrizioni perché Android non metta in pausa Flip</string>
+    <string name="diagnostics">diagnostica</string>
+
+    <!-- What still gets through while face down -->
+    <plurals name="people">
+        <item quantity="one">%d persona</item>
+        <item quantity="many">%d persone</item>
+        <item quantity="other">%d persone</item>
+    </plurals>
+    <plurals name="apps">
+        <item quantity="one">%d app</item>
+        <item quantity="many">%d app</item>
+        <item quantity="other">%d app</item>
+    </plurals>
+    <string name="still_gets_through">passa comunque</string>
+    <string name="still_get_through">passano comunque</string>
+    <string name="no_exceptions_yet">Ancora nessuna eccezione</string>
+    <string name="tap_to_choose_who_rings">Tocca per scegliere chi può ancora suonare</string>
+    <string name="apps_need_access">Le app richiedono l’accesso alle notifiche</string>
+    <string name="gets_through">Passa comunque</string>
+    <string name="gets_through_blurb">Con il telefono a faccia in giù, questi ti raggiungono comunque. Tutto il resto aspetta finché non lo riprendi.</string>
+    <string name="people">persone</string>
+    <string name="apps">app</string>
+    <string name="people_empty">Ancora nessuno. Le loro chiamate squilleranno anche con il telefono a faccia in giù.</string>
+    <string name="people_need_contacts">Flip ha bisogno di accedere ai contatti per mostrare e scegliere le persone.</string>
+    <string name="people_note">Questi sono i Preferiti del telefono. Aggiungere qualcuno qui lo aggiunge ai preferiti, e rimuoverlo lo toglie, in tutto il telefono. Per silenziarli tutti ma tenerli nei preferiti, disattiva Preferiti.</string>
+    <string name="favourites">Preferiti</string>
+    <string name="favourites_blurb">Le chiamate dei contatti preferiti squillano</string>
+    <string name="repeat_callers">Chiamate ripetute</string>
+    <string name="repeat_callers_blurb">Chi richiama entro 15 minuti</string>
+    <string name="add_person">Aggiungi persona</string>
+    <string name="apps_empty">Ancora nessuna app. Flip suonerà comunque per quelle che aggiungi.</string>
+    <string name="apps_note">Flip suona per queste da sé, come era impostato il telefono prima del silenzio: suono e vibrazione, solo vibrazione o niente se era in modalità silenziosa. Se Android dice che l’impostazione è limitata, apri Informazioni app di Flip, tocca ⋮ e consenti le impostazioni con restrizioni.</string>
+    <string name="add_app">Aggiungi app</string>
+    <string name="notification_access">Accesso alle notifiche</string>
+    <string name="listener_missing">Non consentito — le app scelte restano silenziose</string>
+    <string name="listener_ask_title">Prima l’accesso alle notifiche</string>
+    <string name="listener_ask_body">Per suonare per un’app con il telefono a faccia in giù, Flip deve vedere che le sue notifiche sono arrivate. Non legge mai il loro contenuto.\n\nPoi attiva Flip e torna qui. Se Android dice che l’impostazione è limitata, apri Informazioni app di Flip, tocca ⋮ e consenti le impostazioni con restrizioni.</string>
+    <string name="not_now">Non ora</string>
+    <string name="open_settings">Apri impostazioni</string>
+    <string name="remove_x">Rimuovi %1$s</string>
+    <string name="choose_apps">App</string>
+    <string name="choose_apps_blurb">Se attivata, un’app suona comunque quando il telefono è a faccia in giù.</string>
+    <string name="loading_apps">Caricamento app…</string>
+    <string name="gets_through_state">Passa comunque</string>
+    <string name="silenced_state">Silenziata</string>
+
+    <!-- Main screen -->
+    <string name="power_on">On</string>
+    <string name="power_off">Off</string>
+    <string name="watching">Attivo</string>
+    <string name="not_watching">Non attivo</string>
+    <string name="dnd_needed">Flip ha bisogno dell’accesso a Non disturbare prima di poter silenziare qualcosa.</string>
+    <string name="avg_7_nights">Media 7 notti %1$s</string>
+    <string name="history_avg">%1$s di media</string>
+    <string name="last_night_description">Ieri notte: %1$s di sonno, dalle %2$s alle %3$s, silenzioso per %4$s</string>
+    <string name="since_you_woke">da quando ti sei svegliato alle %1$s</string>
+    <string name="today_once">Una volta a faccia in giù oggi, alle %1$s.</string>
+    <plurals name="today_many">
+        <item quantity="one">%1$d volta a faccia in giù oggi. La più lunga è stata di %2$s, alle %3$s.</item>
+        <item quantity="many">%1$d volte a faccia in giù oggi. La più lunga è stata di %2$s, alle %3$s.</item>
+        <item quantity="other">%1$d volte a faccia in giù oggi. La più lunga è stata di %2$s, alle %3$s.</item>
+    </plurals>
+    <string name="today_description">Oggi: %1$s di silenzio. %2$s</string>
+    <string name="coach_grant">Consenti l’accesso a Non disturbare per iniziare.</string>
+    <string name="coach_turn_on">Attiva per iniziare.</string>
+    <string name="coach_silenced">Silenzioso. Riprendilo per smettere.</string>
+    <string name="coach_starting">Avvio in corso.</string>
+    <string name="coach_tilting">Ancora inclinato — lascialo andare.</string>
+    <string name="coach_almost">Quasi — tienilo così.</string>
+    <string name="coach_hold_still">Tienilo fermo.</string>
+    <string name="coach_put_down">Appoggia il telefono a faccia in giù su una superficie piana.</string>
+
+    <!-- The gauge -->
+    <string name="gauge_since">dalle %1$s</string>
+    <string name="gauge_description">%1$d gradi dalla faccia in giù</string>
+
+    <!-- Lengths of time -->
+    <string name="duration_s">%1$d s</string>
+    <string name="duration_m">%1$d min</string>
+    <string name="duration_hm">%1$d h %2$02d min</string>
+    <string name="times_never">Mai</string>
+    <string name="times_once">Una volta</string>
+    <string name="times_twice">Due volte</string>
+    <plurals name="times_count">
+        <item quantity="one">%d volta</item>
+        <item quantity="many">%d volte</item>
+        <item quantity="other">%d volte</item>
+    </plurals>
+
+    <!-- Sleep history and a single night -->
+    <plurals name="chart_description">
+        <item quantity="one">Orari di letto e sveglia dell’ultima notte</item>
+        <item quantity="many">Orari di letto e sveglia delle ultime %d notti</item>
+        <item quantity="other">Orari di letto e sveglia delle ultime %d notti</item>
+    </plurals>
+    <string name="one_night_so_far">1 notte finora</string>
+    <string name="shortest_longest">Più breve %1$s · più lunga %2$s</string>
+    <string name="between_times">tra le %1$s e le %2$s</string>
+    <string name="open_this_night">%1$s, %2$s. Apri questa notte</string>
+    <string name="night_row_description">%1$s, %2$s, %3$s di sonno</string>
+    <string name="night_title">Notte di %1$s</string>
+    <string name="put_down">Appoggiato</string>
+    <string name="night_laps">Più di dodici ore: la notte fa un altro giro dell’orologio sull’anello interno.</string>
+    <string name="asleep_from_to">Addormentato dalle %1$s alle %2$s</string>
+    <string name="about_the_same">Più o meno come la settimana prima</string>
+    <string name="longer_than_before">%1$s in più rispetto alla settimana prima</string>
+    <string name="shorter_than_before">%1$s in meno rispetto alla settimana prima</string>
+    <string name="event_alarm">Sveglia</string>
+    <string name="at_a_glance">in breve</string>
+    <string name="stat_woke_up">Alzato</string>
+    <string name="stat_screen_on">Schermo</string>
+    <string name="stat_alarms">Sveglie</string>
+    <string name="stat_silenced_caption">%1$s a faccia in giù</string>
+    <string name="stat_woke_none">Dormito senza pause</string>
+    <string name="stat_woke_caption">%1$s sveglio in tutto</string>
+    <string name="stat_not_recorded">Non registrato quella notte</string>
+    <string name="stat_screen_none">Rimasto spento</string>
+    <string name="stat_screen_caption">%1$s in tutto</string>
+    <string name="stat_alarms_none">Nessuna ha suonato</string>
+    <string name="stat_alarms_caption">La prima alle %1$s</string>
+    <string name="tl_put_down">Telefono appoggiato</string>
+    <string name="tl_put_down_silenced">A faccia in giù, silenzioso</string>
+    <string name="tl_put_down_sound_on">Suono ancora attivo</string>
+    <string name="tl_moved">Telefono spostato</string>
+    <string name="tl_moved_detail">Suono tornato per %1$s</string>
+    <string name="tl_silenced">Silenzioso</string>
+    <string name="tl_silenced_again">Di nuovo silenzioso</string>
+    <string name="tl_silenced_detail">Girato a faccia in giù</string>
+    <string name="tl_picked_up">Preso in mano</string>
+    <string name="tl_for">Per %1$s</string>
+    <string name="tl_unlocked">Telefono sbloccato</string>
+    <string name="tl_screen_lit">Schermo acceso</string>
+    <string name="tl_screen_lit_detail">%1$s, senza sbloccare</string>
+    <string name="tl_stretch_silenced">%1$s in silenzioso</string>
+    <string name="tl_stretch_sound_on">%1$s con suono</string>
+    <string name="tl_stretch_awake">%1$s sveglio</string>
+    <string name="night_how_read">Flip non misura il sonno in sé. Legge le ore in cui il telefono è rimasto intatto, a schermo spento o a faccia in giù, e le conta come la notte.</string>
+
+    <!-- Sensitivity -->
+    <string name="sens_strict">Rigida</string>
+    <string name="sens_strict_blurb">Richiede una superficie davvero piana e ferma. Meno falsi allarmi in tasca, ma è la più propensa a ignorare una superficie morbida o inclinata.</string>
+    <string name="sens_balanced">Bilanciata</string>
+    <string name="sens_balanced_blurb">Tarata sulle posizioni misurate davvero su questo telefono. Inizia da qui.</string>
+    <string name="sens_relaxed">Tollerante</string>
+    <string name="sens_relaxed_blurb">Si attiva su un piano inclinato, un cuscino o un appoggio veloce. Silenzia più facilmente ed è la più propensa ad attivarsi in tasca.</string>
+    <string name="expanded">Espanso</string>
+    <string name="collapsed">Compresso</string>
+
+    <!-- The service notification and the Do Not Disturb rule -->
+    <string name="channel_name">Flip è attivo</string>
+    <string name="channel_description">Richiesta da Android mentre Flip controlla se il telefono viene appoggiato a faccia in giù.</string>
+    <string name="notification_engaged">A faccia in giù — Non disturbare è attivo</string>
+    <string name="notification_watching">In attesa che il telefono venga girato a faccia in giù</string>
+    <string name="zen_rule_name">Flip (a faccia in giù)</string>
+    <string name="condition_face_down">A faccia in giù</string>
+    <string name="condition_face_up">A faccia in su</string>
+
+    <!-- Language -->
+    <string name="language">lingua</string>
+    <string name="language_title">Lingua</string>
+    <string name="language_system">Predefinita di sistema</string>
+    <string name="language_blurb">Flip usa la lingua del telefono, a meno che tu non ne scelga un’altra qui.</string>
+
+    <!-- Settings → sleep, and the face-down explainer under its switch. -->
+    <string name="sleep_section">sonno</string>
+    <string name="sleep_monitoring">Monitoraggio del sonno</string>
+    <string name="sleep_monitoring_blurb">Ricava la notte appena passata da quanto a lungo il telefono resta a faccia in giù. Se disattivato, non registra nulla di nuovo e conserva le notti già salvate.</string>
+    <string name="explainer_step_bed">Prima di dormire, metti il telefono a faccia in giù.</string>
+    <string name="explainer_step_night">Finché resta così, Flip lo tiene in silenzio e conta il tuo sonno.</string>
+    <string name="explainer_step_morning">Al mattino, la notte appena passata ti aspetta nella schermata principale.</string>
+
+    <!-- All of today's silences on a screen of their own -->
+    <string name="today_title">Oggi</string>
+    <string name="show_all">Mostra tutti e %1$d</string>
+</resources>

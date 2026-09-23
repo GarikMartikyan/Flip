@@ -1,22 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="SectionLabel">
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">11sp</item>
-        <item name="android:letterSpacing">0.12</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
         <item name="android:textColor">@color/ink_dim</item>
     </style>
 
-    <style name="SegmentPill">
+    <!-- The quiet note at the right end of a section label: a date, a "since". -->
+    <style name="SectionAside">
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/jakarta</item>
+        <item name="android:textColor">@color/ink_dim</item>
+    </style>
+
+    <!-- The one number a card is about. In sp, so a large system font grows it too. -->
+    <style name="BigNumber">
+        <item name="android:textSize">44sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_semibold</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <!-- A small fact under a big number: its label with an icon, then the value. -->
+    <style name="FactLabel">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/pill</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ink_dim</item>
+        <item name="android:fontFamily">@font/jakarta</item>
+    </style>
+
+    <style name="FactValue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+    </style>
+
+    <!-- A card holding one statistic on the sleep screens. -->
+    <style name="StatCard" parent="Card">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="StatValue" parent="FactValue">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- Bedtime or wake-up beside a night's dial, under the word for which. -->
+    <style name="DialTime">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_semibold</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <!-- A short line of fact beside the main screen's small night dial. -->
+    <style name="NightLine">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="Body">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/ink_dim</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:fontFamily">@font/jakarta</item>
+    </style>
+
+    <style name="Card">
+        <item name="android:background">@drawable/card</item>
+        <item name="android:padding">@dimen/card_padding</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- A card that holds rows: no padding of its own, and it clips the rows' press ripples. -->
+    <style name="Card.Rows">
+        <item name="android:padding">0dp</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <!-- One line of a Card.Rows: a title (and maybe a caption) on the left, a control on the right. -->
+    <style name="CardRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingHorizontal">@dimen/card_padding</item>
+        <item name="android:paddingVertical">10dp</item>
+    </style>
+
+    <style name="CardRow.Clickable">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="RowTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:fontFamily">@font/jakarta</item>
+    </style>
+
+    <style name="RowCaption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/ink_dim</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:fontFamily">@font/jakarta</item>
+    </style>
+
+    <style name="RowDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/border</item>
+    </style>
+
+    <!--
+      One of three equal thirds. Fixed height plus uniform auto-size, so a large system font or a
+      narrow screen shrinks the label instead of wrapping "Balanced" onto two lines. The floor is
+      low because it is in sp too: at 200% font on a 320dp screen, 10sp no longer fits.
+    -->
+    <style name="Segment">
+        <item name="android:layout_height">44dp</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:gravity">center</item>
-        <item name="android:minHeight">44dp</item>
-        <item name="android:paddingVertical">12dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingHorizontal">4dp</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">8sp</item>
+        <item name="android:autoSizeMaxTextSize">14sp</item>
+        <item name="android:autoSizeStepGranularity">1sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+    </style>
+
+    <!-- A third of a segmented control that carries an icon beside its label. -->
+    <style name="IconSegment">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingHorizontal">4dp</item>
+    </style>
+
+    <style name="IconSegmentIcon">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <style name="IconSegmentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+    </style>
+
+    <!-- Buttons spell out every attribute, so One UI's DeviceDefault button look does not leak in. -->
+    <style name="FlipButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingHorizontal">22dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="FlipButton.Filled">
+        <item name="android:background">@drawable/button_filled</item>
+        <item name="android:textColor">@color/on_awake</item>
+    </style>
+
+    <style name="FlipButton.Outline">
+        <item name="android:background">@drawable/button_outline</item>
+        <item name="android:textColor">@color/ink</item>
     </style>
 </resources>

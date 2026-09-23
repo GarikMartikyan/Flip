@@ -8,3 +8,8 @@ local.properties
 *.iml
 captures/
 .DS_Store
+
+# Release signing. The keystore IS the app's identity — anyone holding it can
+# ship an update that installs over Flip. Never commit either of these.
+keystore/
+keystore.properties

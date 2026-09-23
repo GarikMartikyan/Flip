@@ -1,0 +1,75 @@
+App name:
+Flip: Face Down to Silence
+
+Short description:
+Put your phone face down and it goes quiet. Pick it up and the sound comes back.
+
+Full description:
+Put your phone face down on a table and it goes quiet. Pick it up and the sound comes back. No buttons, no schedules, no remembering to turn Do Not Disturb off again.
+
+HOW IT WORKS
+• Face down, flat and still. Flip waits until the phone is lying face down on a surface and holding its angle, then turns on Do Not Disturb. A phone in a pocket or held in your hand doesn't count.
+• Pick it up. The moment you lift it, the sound comes back.
+• Two quick taps. A short haptic tick confirms each change, because the screen is against the table. You can turn them off.
+
+WHAT STILL GETS THROUGH
+• People: let your starred contacts ring, and repeat callers too.
+• Apps: choose apps whose notifications still reach you while everything else is quiet.
+• Alarms always ring.
+
+SENSITIVITY
+• Strict, Balanced or Relaxed, from "only a proper flat table" to "a cushion or a quick set-down".
+
+YOUR DAY AND YOUR NIGHTS
+• See today's quiet stretches on a timeline.
+• See last night: when you put the phone down and when you picked it up again. Sleep can be turned off in Settings.
+
+PRIVATE BY DESIGN
+• No account, no ads, no analytics
+• No internet permission, so nothing leaves your phone
+• Notification content is never read, only which app posted it
+
+Requires Android 14 or newer.
+
+
+=== Play Console declarations (not part of the listing) ===
+
+Privacy policy URL:
+https://stikup.app/flip/privacy/
+
+App category: Tools
+Contact email: contact@stikup.app
+Website: https://stikup.app
+
+Ads: No ads.
+
+App access: All functionality is available without special access (no login).
+
+Content rating questionnaire: category "Utility, productivity, communication or other"; answer No to everything.
+
+Target audience: 13+ (13-15, 16-17, 18+). Not designed for children.
+
+Data safety:
+- Does your app collect or share any of the required user data types? -> No
+  (No INTERNET permission. Contacts, installed-app list and notification metadata are
+  processed on-device only and never leave it; Google's definition of "collected"
+  is data transmitted off the device.)
+- Is all data encrypted in transit? -> not applicable (no collection)
+- Account deletion -> not applicable (no accounts)
+
+Foreground service declaration (FOREGROUND_SERVICE_SPECIAL_USE):
+Type: Special use
+Description:
+Flip continuously reads the accelerometer to detect when the phone is placed face down
+and held still on a flat surface, and then turns on Do Not Disturb; it turns it off again
+the moment the phone is picked up. This must keep running while the screen is off and the
+app is not visible, because the user puts the phone down precisely when they are not
+looking at it. The user starts it with the switch on the main screen, it shows a
+persistent notification while running, and it can be stopped at any time from the app.
+Deferring or interrupting it (e.g. via WorkManager) would leave the phone ringing on the
+table or stuck in Do Not Disturb after it is picked up.
+Video: a screen recording showing the phone being put face down, Do Not Disturb turning
+on, and being picked up (media/flip-demo-music.mp4 can be uploaded to YouTube as unlisted).
+
+Health apps declaration: Not a health app. (If asked because of the sleep view: it shows
+only when the phone lay face down / screen off, no health data, no sensors on the body.)

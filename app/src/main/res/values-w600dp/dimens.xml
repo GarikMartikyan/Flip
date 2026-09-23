@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tablets, unfolded foldables, phones in landscape. The column itself is capped by ContentColumn. -->
+    <dimen name="gutter">32dp</dimen>
+    <dimen name="section_gap">36dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+</resources>

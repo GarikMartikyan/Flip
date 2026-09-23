@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">hari ini</string>
+    <string name="notification_show">Notifikasi</string>
+    <string name="settings">Pengaturan</string>
+    <string name="back">Kembali</string>
+    <string name="grant_dnd">Izinkan akses Jangan ganggu</string>
+    <string name="history_empty">Belum ada apa pun hari ini. Telungkupkan ponsel dan hasilnya akan muncul di sini.</string>
+    <string name="last_night">tadi malam</string>
+    <string name="night_empty">Belum ada malam. Biarkan Flip aktif semalaman dan hasilnya akan muncul di sini pada pagi hari.</string>
+    <string name="asleep">tidur</string>
+    <string name="now">sekarang</string>
+    <string name="of_quiet">senyap</string>
+    <string name="went_to_bed">Mulai tidur</string>
+    <string name="woke_up">Bangun</string>
+    <string name="picked_up">Diangkat</string>
+    <string name="legend_silenced">Disenyapkan, telungkup</string>
+    <string name="legend_left_alone">Dibiarkan, suara aktif</string>
+    <string name="legend_awake">Terjaga dengan ponsel</string>
+    <string name="night_not_silenced">Tidak disenyapkan — ponsel tidak telungkup</string>
+    <string name="sleep_history">Riwayat tidur</string>
+    <string name="today_empty">Belum ada senyap sejak Anda bangun. Telungkupkan ponsel dan hasilnya akan muncul di sini.</string>
+
+    <!-- Sleep screens -->
+    <string name="sleep">Tidur</string>
+    <string name="nights_7">7 malam</string>
+    <string name="nights_30">30 malam</string>
+    <string name="average_sleep">Rata-rata tidur</string>
+    <string name="a_night">per malam</string>
+    <string name="bedtime">Waktu tidur</string>
+    <string name="wake_up">Waktu bangun</string>
+    <string name="silenced">Disenyapkan</string>
+    <string name="of_time_asleep">dari waktu tidur</string>
+    <string name="times_a_night">kali per malam</string>
+    <string name="when_you_slept">kapan Anda tidur</string>
+    <string name="average_lines">rata-rata waktu tidur dan bangun Anda</string>
+    <string name="every_night">setiap malam</string>
+    <string name="through_the_night">sepanjang malam</string>
+    <string name="history_empty_nights">Belum ada malam dalam rentang ini. Biarkan Flip aktif semalaman dan setiap malam akan ditambahkan di sini pada pagi hari.</string>
+    <string name="sleep_footnote">Flip tidak dapat melihat tidur itu sendiri. Satu malam adalah waktu ponsel dibiarkan dengan layar mati, dan celahnya adalah saat Anda mengangkatnya.</string>
+    <string name="night_gone">Malam ini sudah tidak tercatat.</string>
+
+    <!-- Settings page -->
+    <string name="theme">tema</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Terang</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="sensitivity">sensitivitas</string>
+    <string name="feedback">umpan balik</string>
+    <string name="haptics">Getaran haptik</string>
+    <string name="haptics_blurb">Dua getaran singkat saat menyenyapkan dan sekali lagi saat melepaskan. Layar menghadap meja, jadi hanya ini tanda bahwa Flip bekerja.</string>
+    <string name="system">sistem</string>
+    <string name="dnd_access">Akses Jangan ganggu</string>
+    <string name="dnd_granted">Diizinkan</string>
+    <string name="dnd_missing">Tidak diizinkan — Flip tidak dapat menyenyapkan apa pun</string>
+    <string name="battery">Baterai</string>
+    <string name="battery_unrestricted">Tidak dibatasi</string>
+    <string name="battery_optimized">Dioptimalkan — ubah ke Tidak dibatasi agar Android tidak menjeda Flip</string>
+    <string name="diagnostics">diagnostik</string>
+
+    <!-- What still gets through while face down -->
+    <plurals name="people">
+        <item quantity="other">%d orang</item>
+    </plurals>
+    <plurals name="apps">
+        <item quantity="other">%d aplikasi</item>
+    </plurals>
+    <string name="still_gets_through">tetap bisa masuk</string>
+    <string name="still_get_through">tetap bisa masuk</string>
+    <string name="no_exceptions_yet">Belum ada pengecualian</string>
+    <string name="tap_to_choose_who_rings">Ketuk untuk memilih siapa yang tetap berdering</string>
+    <string name="apps_need_access">Aplikasi perlu akses notifikasi</string>
+    <string name="gets_through">Tetap masuk</string>
+    <string name="gets_through_blurb">Saat ponsel telungkup, ini tetap sampai ke Anda. Semua yang lain menunggu sampai Anda mengangkatnya.</string>
+    <string name="people">orang</string>
+    <string name="apps">aplikasi</string>
+    <string name="people_empty">Belum ada. Panggilan mereka akan tetap berdering meski ponsel telungkup.</string>
+    <string name="people_need_contacts">Flip memerlukan akses ke kontak untuk menampilkan dan memilih orang.</string>
+    <string name="people_note">Ini adalah Favorit di ponsel Anda. Menambahkan seseorang di sini menandainya sebagai favorit, dan menghapusnya membatalkan tanda itu, di seluruh ponsel. Untuk menyenyapkan semuanya tetapi tetap menandainya, matikan Favorit.</string>
+    <string name="favourites">Favorit</string>
+    <string name="favourites_blurb">Panggilan dari kontak favorit tetap berdering</string>
+    <string name="repeat_callers">Penelepon berulang</string>
+    <string name="repeat_callers_blurb">Siapa pun yang menelepon lagi dalam 15 menit</string>
+    <string name="add_person">Tambah orang</string>
+    <string name="apps_empty">Belum ada aplikasi. Flip tetap akan berbunyi untuk aplikasi yang Anda tambahkan.</string>
+    <string name="apps_note">Flip membunyikan aplikasi ini sendiri, sesuai pengaturan ponsel sebelum senyap: suara dan getar, hanya getar, atau tidak sama sekali jika dalam mode senyap. Jika Android menyebut pengaturan ini dibatasi, buka Info aplikasi Flip, ketuk ⋮, lalu izinkan pengaturan yang dibatasi.</string>
+    <string name="add_app">Tambah aplikasi</string>
+    <string name="notification_access">Akses notifikasi</string>
+    <string name="listener_missing">Tidak diizinkan — aplikasi yang dipilih tetap senyap</string>
+    <string name="listener_ask_title">Akses notifikasi dulu</string>
+    <string name="listener_ask_body">Untuk membunyikan aplikasi saat ponsel telungkup, Flip perlu tahu bahwa notifikasinya masuk. Flip tidak pernah membaca isinya.\n\nSelanjutnya, aktifkan Flip lalu kembali ke sini. Jika Android menyebut pengaturan ini dibatasi, buka Info aplikasi Flip, ketuk ⋮, lalu izinkan pengaturan yang dibatasi.</string>
+    <string name="not_now">Nanti saja</string>
+    <string name="open_settings">Buka pengaturan</string>
+    <string name="remove_x">Hapus %1$s</string>
+    <string name="choose_apps">Aplikasi</string>
+    <string name="choose_apps_blurb">Jika aktif, aplikasi tetap berbunyi saat ponsel telungkup.</string>
+    <string name="loading_apps">Memuat aplikasi…</string>
+    <string name="gets_through_state">Tetap masuk</string>
+    <string name="silenced_state">Disenyapkan</string>
+
+    <!-- Main screen -->
+    <string name="power_on">Aktif</string>
+    <string name="power_off">Mati</string>
+    <string name="watching">Memantau</string>
+    <string name="not_watching">Tidak memantau</string>
+    <string name="dnd_needed">Flip memerlukan akses Jangan ganggu sebelum dapat menyenyapkan apa pun.</string>
+    <string name="avg_7_nights">Rata-rata 7 malam %1$s</string>
+    <string name="history_avg">rata-rata %1$s</string>
+    <string name="last_night_description">Tadi malam: tidur %1$s, dari %2$s sampai %3$s, disenyapkan selama %4$s</string>
+    <string name="since_you_woke">sejak Anda bangun pukul %1$s</string>
+    <string name="today_once">Sekali telungkup hari ini, pukul %1$s.</string>
+    <plurals name="today_many">
+        <item quantity="other">%1$d kali telungkup hari ini. Yang terlama %2$s, pukul %3$s.</item>
+    </plurals>
+    <string name="today_description">Hari ini: senyap selama %1$s. %2$s</string>
+    <string name="coach_grant">Izinkan akses Jangan ganggu untuk memulai.</string>
+    <string name="coach_turn_on">Aktifkan untuk mulai memantau.</string>
+    <string name="coach_silenced">Disenyapkan. Angkat ponsel untuk berhenti.</string>
+    <string name="coach_starting">Memulai.</string>
+    <string name="coach_tilting">Masih miring — lepaskan.</string>
+    <string name="coach_almost">Hampir — tahan di situ.</string>
+    <string name="coach_hold_still">Jangan digerakkan.</string>
+    <string name="coach_put_down">Telungkupkan ponsel di permukaan datar.</string>
+
+    <!-- The gauge -->
+    <string name="gauge_since">sejak %1$s</string>
+    <string name="gauge_description">%1$d derajat dari telungkup</string>
+
+    <!-- Lengths of time -->
+    <string name="duration_s">%1$d dtk</string>
+    <string name="duration_m">%1$d mnt</string>
+    <string name="duration_hm">%1$d j %2$02d mnt</string>
+    <string name="times_never">Tidak pernah</string>
+    <string name="times_once">Sekali</string>
+    <string name="times_twice">Dua kali</string>
+    <plurals name="times_count">
+        <item quantity="other">%d kali</item>
+    </plurals>
+
+    <!-- Sleep history and a single night -->
+    <plurals name="chart_description">
+        <item quantity="other">Waktu tidur dan bangun selama %d malam terakhir</item>
+    </plurals>
+    <string name="one_night_so_far">Baru 1 malam</string>
+    <string name="shortest_longest">Terpendek %1$s · terlama %2$s</string>
+    <string name="between_times">antara %1$s dan %2$s</string>
+    <string name="open_this_night">%1$s, %2$s. Buka malam ini</string>
+    <string name="night_row_description">%1$s, %2$s, tidur %3$s</string>
+    <string name="night_title">Malam %1$s</string>
+    <string name="put_down">Diletakkan</string>
+    <string name="night_laps">Lebih dari dua belas jam, jadi malam ini berputar lagi di cincin bagian dalam.</string>
+    <string name="asleep_from_to">Tidur dari %1$s sampai %2$s</string>
+    <string name="about_the_same">Hampir sama dengan minggu sebelumnya</string>
+    <string name="longer_than_before">%1$s lebih lama dari minggu sebelumnya</string>
+    <string name="shorter_than_before">%1$s lebih singkat dari minggu sebelumnya</string>
+    <string name="event_alarm">Alarm</string>
+    <string name="at_a_glance">sekilas</string>
+    <string name="stat_woke_up">Bangun</string>
+    <string name="stat_screen_on">Layar menyala</string>
+    <string name="stat_alarms">Alarm</string>
+    <string name="stat_silenced_caption">%1$s di antaranya telungkup</string>
+    <string name="stat_woke_none">Tidur tanpa bangun</string>
+    <string name="stat_woke_caption">Total %1$s terjaga</string>
+    <string name="stat_not_recorded">Tidak tercatat malam itu</string>
+    <string name="stat_screen_none">Tetap gelap</string>
+    <string name="stat_screen_caption">Total %1$s</string>
+    <string name="stat_alarms_none">Tidak ada yang berbunyi</string>
+    <string name="stat_alarms_caption">Pertama pukul %1$s</string>
+    <string name="tl_put_down">Ponsel diletakkan</string>
+    <string name="tl_put_down_silenced">Telungkup, tanpa suara</string>
+    <string name="tl_put_down_sound_on">Suara masih aktif</string>
+    <string name="tl_moved">Ponsel bergeser</string>
+    <string name="tl_moved_detail">Suara aktif lagi selama %1$s</string>
+    <string name="tl_silenced">Disenyapkan</string>
+    <string name="tl_silenced_again">Disenyapkan lagi</string>
+    <string name="tl_silenced_detail">Dibalik telungkup</string>
+    <string name="tl_picked_up">Diangkat</string>
+    <string name="tl_for">Selama %1$s</string>
+    <string name="tl_unlocked">Ponsel dibuka</string>
+    <string name="tl_screen_lit">Layar menyala</string>
+    <string name="tl_screen_lit_detail">%1$s, tidak dibuka</string>
+    <string name="tl_stretch_silenced">%1$s senyap</string>
+    <string name="tl_stretch_sound_on">%1$s dengan suara</string>
+    <string name="tl_stretch_awake">%1$s terjaga</string>
+    <string name="night_how_read">Flip tidak mengukur tidur secara langsung. Flip membaca jam-jam saat ponsel dibiarkan tak tersentuh, layar mati atau telungkup, lalu menghitungnya sebagai malam.</string>
+
+    <!-- Sensitivity -->
+    <string name="sens_strict">Ketat</string>
+    <string name="sens_strict_blurb">Memerlukan permukaan yang benar-benar datar dan diam. Paling sedikit salah picu di saku, tetapi paling mungkin mengabaikan permukaan yang empuk atau miring.</string>
+    <string name="sens_balanced">Seimbang</string>
+    <string name="sens_balanced_blurb">Disetel berdasarkan posisi yang benar-benar diukur di ponsel ini. Mulai dari sini.</string>
+    <string name="sens_relaxed">Longgar</string>
+    <string name="sens_relaxed_blurb">Aktif di permukaan miring, di atas bantal, atau saat diletakkan dengan cepat. Lebih mudah menyenyapkan, dan paling mungkin terpicu di saku.</string>
+    <string name="expanded">Diperluas</string>
+    <string name="collapsed">Diciutkan</string>
+
+    <!-- The service notification and the Do Not Disturb rule -->
+    <string name="channel_name">Flip sedang memantau</string>
+    <string name="channel_description">Diwajibkan oleh Android selama Flip memantau apakah ponsel ditelungkupkan.</string>
+    <string name="notification_engaged">Telungkup — Jangan ganggu aktif</string>
+    <string name="notification_watching">Menunggu ponsel ditelungkupkan</string>
+    <string name="zen_rule_name">Flip (telungkup)</string>
+    <string name="condition_face_down">Telungkup</string>
+    <string name="condition_face_up">Telentang</string>
+
+    <!-- Language -->
+    <string name="language">bahasa</string>
+    <string name="language_title">Bahasa</string>
+    <string name="language_system">Default sistem</string>
+    <string name="language_blurb">Flip mengikuti bahasa ponsel, kecuali Anda memilih bahasa lain di sini.</string>
+
+    <!-- Settings → sleep, and the face-down explainer under its switch. -->
+    <string name="sleep_section">tidur</string>
+    <string name="sleep_monitoring">Pemantauan tidur</string>
+    <string name="sleep_monitoring_blurb">Menghitung tadi malam dari berapa lama ponsel tertelungkup. Jika dimatikan, tidak ada yang baru dicatat, dan malam yang sudah tercatat tetap disimpan.</string>
+    <string name="explainer_step_bed">Sebelum tidur, telungkupkan ponselmu.</string>
+    <string name="explainer_step_night">Selama tertelungkup, Flip menjaganya tetap senyap dan menghitung tidurmu.</string>
+    <string name="explainer_step_morning">Pagi harinya, tadi malam sudah menunggu di layar utama.</string>
+
+    <!-- All of today's silences on a screen of their own -->
+    <string name="today_title">Hari ini</string>
+    <string name="show_all">Lihat semua %1$d</string>
+</resources>

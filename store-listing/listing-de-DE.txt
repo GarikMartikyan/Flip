@@ -1,0 +1,32 @@
+App name:
+Flip: Umdrehen und Stille
+
+Short description:
+Leg dein Handy mit dem Display nach unten – es wird still. Heb es hoch – Ton an.
+
+Full description:
+Leg dein Handy mit dem Display nach unten auf den Tisch, und es wird still. Heb es hoch, und der Ton ist wieder da. Keine Knöpfe, keine Zeitpläne, und du musst nie wieder daran denken, „Nicht stören“ auszuschalten.
+
+SO FUNKTIONIERT'S
+• Display unten, flach und ruhig. Flip wartet, bis das Handy mit dem Display nach unten auf einer Fläche liegt und seinen Winkel hält, und schaltet dann „Nicht stören“ ein. In der Hosentasche oder in der Hand zählt das nicht.
+• Hochheben. Sobald du es anhebst, ist der Ton zurück.
+• Zwei kurze Ticks. Weil das Display auf dem Tisch liegt, bestätigt ein kurzes Vibrieren jede Änderung. Das lässt sich abschalten.
+
+WAS TROTZDEM DURCHKOMMT
+• Personen: Lass deine markierten Kontakte klingeln, und auch wiederholte Anrufer.
+• Apps: Wähle Apps, deren Benachrichtigungen dich weiterhin erreichen, während alles andere schweigt.
+• Wecker klingeln immer.
+
+EMPFINDLICHKEIT
+• Streng, Ausgewogen oder Locker – von „nur auf einem wirklich ebenen Tisch“ bis „auch auf dem Sofakissen oder beim schnellen Hinlegen“.
+
+DEIN TAG UND DEINE NÄCHTE
+• Sieh die ruhigen Phasen des Tages auf einer Zeitleiste.
+• Sieh dir die letzte Nacht an: wann du das Handy hingelegt und wann du es wieder in die Hand genommen hast. Die Schlafüberwachung lässt sich in den Einstellungen ausschalten.
+
+PRIVATSPHÄRE AB WERK
+• Kein Konto, keine Werbung, keine Analyse
+• Keine Internetberechtigung – nichts verlässt dein Handy
+• Inhalte von Benachrichtigungen werden nie gelesen, nur welche App sie gesendet hat
+
+Erfordert Android 14 oder neuer.

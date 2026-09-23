@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">今日</string>
+    <string name="notification_show">通知</string>
+    <string name="settings">設定</string>
+    <string name="back">戻る</string>
+    <string name="grant_dnd">サイレントモードへのアクセスを許可</string>
+    <string name="history_empty">今日はまだ記録がありません。スマートフォンを伏せて置くと、ここに表示されます。</string>
+    <string name="last_night">昨夜</string>
+    <string name="night_empty">まだ夜の記録がありません。Flip をオンにしたまま一晩過ごすと、朝ここに表示されます。</string>
+    <string name="asleep">睡眠</string>
+    <string name="now">現在</string>
+    <string name="of_quiet">の静かな時間</string>
+    <string name="went_to_bed">就寝</string>
+    <string name="woke_up">起床</string>
+    <string name="picked_up">手に取った回数</string>
+    <string name="legend_silenced">ミュート（伏せた状態）</string>
+    <string name="legend_left_alone">置いたまま（音あり）</string>
+    <string name="legend_awake">スマートフォンを使用</string>
+    <string name="night_not_silenced">ミュートなし — 伏せていませんでした</string>
+    <string name="sleep_history">睡眠の記録</string>
+    <string name="today_empty">起床後のミュートはまだありません。スマートフォンを伏せて置くと、ここに表示されます。</string>
+
+    <!-- Sleep screens -->
+    <string name="sleep">睡眠</string>
+    <string name="nights_7">7夜</string>
+    <string name="nights_30">30夜</string>
+    <string name="average_sleep">平均睡眠</string>
+    <string name="a_night">1夜あたり</string>
+    <string name="bedtime">就寝</string>
+    <string name="wake_up">起床</string>
+    <string name="silenced">ミュート中</string>
+    <string name="of_time_asleep">睡眠時間のうち</string>
+    <string name="times_a_night">1夜あたりの回数</string>
+    <string name="when_you_slept">眠った時間帯</string>
+    <string name="average_lines">平均の就寝・起床時刻</string>
+    <string name="every_night">毎晩</string>
+    <string name="through_the_night">夜の間</string>
+    <string name="history_empty_nights">この期間の夜の記録はまだありません。Flip をオンにしたまま一晩過ごすと、毎朝ここに追加されます。</string>
+    <string name="sleep_footnote">Flip は睡眠そのものは検知できません。夜とは画面がオフのままスマートフォンが置かれていた時間で、途切れている部分は手に取った時間です。</string>
+    <string name="night_gone">この夜の記録はもうありません。</string>
+
+    <!-- Settings page -->
+    <string name="theme">テーマ</string>
+    <string name="theme_system">システム</string>
+    <string name="theme_light">ライト</string>
+    <string name="theme_dark">ダーク</string>
+    <string name="sensitivity">感度</string>
+    <string name="feedback">フィードバック</string>
+    <string name="haptics">振動フィードバック</string>
+    <string name="haptics_blurb">ミュートになったときと解除されたときに、短く2回振動します。画面はテーブル側を向いているので、これが動作した唯一の合図です。</string>
+    <string name="system">システム</string>
+    <string name="dnd_access">サイレントモードへのアクセス</string>
+    <string name="dnd_granted">許可済み</string>
+    <string name="dnd_missing">未許可 — Flip はミュートできません</string>
+    <string name="battery">バッテリー</string>
+    <string name="battery_unrestricted">制限なし</string>
+    <string name="battery_optimized">最適化 — Android が Flip を停止しないよう「制限なし」に設定してください</string>
+    <string name="diagnostics">診断</string>
+
+    <!-- What still gets through while face down -->
+    <plurals name="people">
+        <item quantity="other">%d人</item>
+    </plurals>
+    <plurals name="apps">
+        <item quantity="other">%d個のアプリ</item>
+    </plurals>
+    <string name="still_gets_through">は引き続き通知されます</string>
+    <string name="still_get_through">は引き続き通知されます</string>
+    <string name="no_exceptions_yet">例外はまだありません</string>
+    <string name="tap_to_choose_who_rings">タップして、鳴らす相手を選択</string>
+    <string name="apps_need_access">アプリには通知へのアクセスが必要です</string>
+    <string name="gets_through">例外</string>
+    <string name="gets_through_blurb">スマートフォンを伏せている間も、これらは通知されます。それ以外は手に取るまで待機します。</string>
+    <string name="people">連絡先</string>
+    <string name="apps">アプリ</string>
+    <string name="people_empty">まだいません。追加した人からの電話は、伏せていても鳴ります。</string>
+    <string name="people_need_contacts">連絡先を表示して選ぶには、Flip に連絡先へのアクセスが必要です。</string>
+    <string name="people_note">これはスマートフォンのお気に入りです。ここで追加するとスマートフォン全体でお気に入りに登録され、削除すると解除されます。お気に入りのまま全員をミュートするには、お気に入りをオフにしてください。</string>
+    <string name="favourites">お気に入り</string>
+    <string name="favourites_blurb">お気に入りの連絡先からの電話が鳴ります</string>
+    <string name="repeat_callers">繰り返しの着信</string>
+    <string name="repeat_callers_blurb">15分以内に再度かけてきた相手</string>
+    <string name="add_person">連絡先を追加</string>
+    <string name="apps_empty">まだアプリはありません。追加したアプリは Flip が引き続き鳴らします。</string>
+    <string name="apps_note">Flip は、ミュート前のスマートフォンの設定どおりにこれらを鳴らします。音とバイブ、バイブのみ、またはマナーモードだった場合は何も鳴らしません。「制限付き設定」と表示された場合は、Flip のアプリ情報を開き、⋮ をタップして制限付き設定を許可してください。</string>
+    <string name="add_app">アプリを追加</string>
+    <string name="notification_access">通知へのアクセス</string>
+    <string name="listener_missing">未許可 — 選んだアプリもミュートされます</string>
+    <string name="listener_ask_title">まず通知へのアクセスを</string>
+    <string name="listener_ask_body">伏せている間にアプリの通知を鳴らすには、Flip が通知の到着を知る必要があります。通知の内容を読むことはありません。\n\n次の画面で Flip をオンにして、ここに戻ってください。「制限付き設定」と表示された場合は、Flip のアプリ情報を開き、⋮ をタップして制限付き設定を許可してください。</string>
+    <string name="not_now">後で</string>
+    <string name="open_settings">設定を開く</string>
+    <string name="remove_x">%1$s を削除</string>
+    <string name="choose_apps">アプリ</string>
+    <string name="choose_apps_blurb">オンにしたアプリは、スマートフォンを伏せていても音が鳴ります。</string>
+    <string name="loading_apps">アプリを読み込み中…</string>
+    <string name="gets_through_state">通知あり</string>
+    <string name="silenced_state">ミュート</string>
+
+    <!-- Main screen -->
+    <string name="power_on">オン</string>
+    <string name="power_off">オフ</string>
+    <string name="watching">検知中</string>
+    <string name="not_watching">検知していません</string>
+    <string name="dnd_needed">ミュートするには、Flip にサイレントモードへのアクセスが必要です。</string>
+    <string name="avg_7_nights">7夜の平均 %1$s</string>
+    <string name="history_avg">平均 %1$s</string>
+    <string name="last_night_description">昨夜: 睡眠 %1$s、%2$s〜%3$s、ミュート %4$s</string>
+    <string name="since_you_woke">%1$s の起床以降</string>
+    <string name="today_once">今日は %1$s に1回伏せました。</string>
+    <plurals name="today_many">
+        <item quantity="other">今日は%1$d回伏せました。最長は %3$s からの %2$s です。</item>
+    </plurals>
+    <string name="today_description">今日: 静かな時間 %1$s。%2$s</string>
+    <string name="coach_grant">サイレントモードへのアクセスを許可して開始します。</string>
+    <string name="coach_turn_on">オンにすると検知を開始します。</string>
+    <string name="coach_silenced">ミュート中です。手に取ると解除されます。</string>
+    <string name="coach_starting">起動しています。</string>
+    <string name="coach_tilting">まだ傾いています — 手を離してください。</string>
+    <string name="coach_almost">もう少し — そのままにしてください。</string>
+    <string name="coach_hold_still">動かさないでください。</string>
+    <string name="coach_put_down">スマートフォンを平らな場所に伏せて置いてください。</string>
+
+    <!-- The gauge -->
+    <string name="gauge_since">%1$s から</string>
+    <string name="gauge_description">伏せた状態から%1$d度</string>
+
+    <!-- Lengths of time -->
+    <string name="duration_s">%1$d秒</string>
+    <string name="duration_m">%1$d分</string>
+    <string name="duration_hm">%1$d時間%2$02d分</string>
+    <string name="times_never">なし</string>
+    <string name="times_once">1回</string>
+    <string name="times_twice">2回</string>
+    <plurals name="times_count">
+        <item quantity="other">%d回</item>
+    </plurals>
+
+    <!-- Sleep history and a single night -->
+    <plurals name="chart_description">
+        <item quantity="other">過去%d夜の就寝・起床時刻</item>
+    </plurals>
+    <string name="one_night_so_far">これまで1夜</string>
+    <string name="shortest_longest">最短 %1$s · 最長 %2$s</string>
+    <string name="between_times">%1$s〜%2$s</string>
+    <string name="open_this_night">%1$s、%2$s。この夜を開く</string>
+    <string name="night_row_description">%1$s、%2$s、睡眠 %3$s</string>
+    <string name="night_title">%1$sの夜</string>
+    <string name="put_down">置いた時刻</string>
+    <string name="night_laps">12時間を超えたため、内側の輪で時計をもう一周しています。</string>
+    <string name="asleep_from_to">%1$s〜%2$s まで睡眠</string>
+    <string name="about_the_same">前の週とほぼ同じ</string>
+    <string name="longer_than_before">前の週より %1$s 長い</string>
+    <string name="shorter_than_before">前の週より %1$s 短い</string>
+    <string name="event_alarm">アラーム</string>
+    <string name="at_a_glance">概要</string>
+    <string name="stat_woke_up">起きた回数</string>
+    <string name="stat_screen_on">画面点灯</string>
+    <string name="stat_alarms">アラーム</string>
+    <string name="stat_silenced_caption">うち %1$s は伏せた状態</string>
+    <string name="stat_woke_none">一度も起きず</string>
+    <string name="stat_woke_caption">起きていた時間 計 %1$s</string>
+    <string name="stat_not_recorded">この夜は記録なし</string>
+    <string name="stat_screen_none">点灯なし</string>
+    <string name="stat_screen_caption">計 %1$s</string>
+    <string name="stat_alarms_none">鳴らず</string>
+    <string name="stat_alarms_caption">最初は %1$s</string>
+    <string name="tl_put_down">スマートフォンを置いた</string>
+    <string name="tl_put_down_silenced">伏せて、ミュート</string>
+    <string name="tl_put_down_sound_on">音はオンのまま</string>
+    <string name="tl_moved">スマートフォンが動いた</string>
+    <string name="tl_moved_detail">%1$s 音がオンに戻った</string>
+    <string name="tl_silenced">ミュート</string>
+    <string name="tl_silenced_again">再びミュート</string>
+    <string name="tl_silenced_detail">伏せた</string>
+    <string name="tl_picked_up">手に取った</string>
+    <string name="tl_for">%1$s</string>
+    <string name="tl_unlocked">ロックを解除</string>
+    <string name="tl_screen_lit">画面が点灯</string>
+    <string name="tl_screen_lit_detail">%1$s、ロック解除なし</string>
+    <string name="tl_stretch_silenced">%1$s ミュート</string>
+    <string name="tl_stretch_sound_on">%1$s 音あり</string>
+    <string name="tl_stretch_awake">%1$s 起きていた</string>
+    <string name="night_how_read">Flip は睡眠そのものを測っていません。スマートフォンが触れられずに置かれていた時間（画面オフまたは伏せた状態）を読み取り、それを夜として数えます。</string>
+
+    <!-- Sensitivity -->
+    <string name="sens_strict">厳しめ</string>
+    <string name="sens_strict_blurb">完全に平らで静止した場所が必要です。ポケット内の誤作動が最も少ない一方、柔らかい場所や傾いた場所では反応しないことがあります。</string>
+    <string name="sens_balanced">標準</string>
+    <string name="sens_balanced_blurb">このスマートフォンで実際に測定した置き方に合わせて調整しています。まずはこちらから。</string>
+    <string name="sens_relaxed">ゆるめ</string>
+    <string name="sens_relaxed_blurb">傾いた場所やクッションの上、さっと置いたときにも反応します。ミュートしやすい反面、ポケット内で作動する可能性も最も高くなります。</string>
+    <string name="expanded">展開</string>
+    <string name="collapsed">折りたたみ</string>
+
+    <!-- The service notification and the Do Not Disturb rule -->
+    <string name="channel_name">Flip が検知中</string>
+    <string name="channel_description">Flip がスマートフォンが伏せられるのを検知する間、Android で必要です。</string>
+    <string name="notification_engaged">伏せた状態 — サイレントモードがオン</string>
+    <string name="notification_watching">スマートフォンが伏せられるのを待機中</string>
+    <string name="zen_rule_name">Flip（伏せた状態）</string>
+    <string name="condition_face_down">伏せた状態</string>
+    <string name="condition_face_up">上向き</string>
+
+    <!-- Language -->
+    <string name="language">言語</string>
+    <string name="language_title">言語</string>
+    <string name="language_system">システムのデフォルト</string>
+    <string name="language_blurb">ここで選ばない限り、Flip はスマートフォンの言語で表示されます。</string>
+
+    <!-- Settings → sleep, and the face-down explainer under its switch. -->
+    <string name="sleep_section">睡眠</string>
+    <string name="sleep_monitoring">睡眠の記録</string>
+    <string name="sleep_monitoring_blurb">スマホを伏せて置いていた時間から昨夜の睡眠を割り出します。オフにすると新しい記録は取らず、これまでの記録は残ります。</string>
+    <string name="explainer_step_bed">寝る前に、スマホを画面を下にして置きます。</string>
+    <string name="explainer_step_night">伏せてある間、Flip は消音を保ち、睡眠を数えます。</string>
+    <string name="explainer_step_morning">朝になると、昨夜の記録がメイン画面に表示されます。</string>
+
+    <!-- All of today's silences on a screen of their own -->
+    <string name="today_title">今日</string>
+    <string name="show_all">すべて表示（%1$d）</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ordinary phones. -->
+    <dimen name="gutter">24dp</dimen>
+    <dimen name="section_gap">32dp</dimen>
+    <dimen name="card_padding">18dp</dimen>
+</resources>

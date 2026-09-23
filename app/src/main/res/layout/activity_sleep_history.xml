@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <app.flipsilence.ContentColumn
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/gutter"
+        android:paddingTop="12dp"
+        android:paddingBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-12dp"
+            android:gravity="center_vertical"
+            android:minHeight="56dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:accessibilityHeading="true"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:letterSpacing="-0.02"
+                android:includeFontPadding="false"
+                android:text="@string/sleep"
+                android:textColor="@color/ink"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <!-- How far back: a week to see this week, a month to see a pattern. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/segment_track"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/range_7"
+                style="@style/Segment"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/nights_7" />
+
+            <TextView
+                android:id="@+id/range_30"
+                style="@style/Segment"
+                android:layout_width="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="@string/nights_30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/empty"
+            style="@style/Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/jakarta"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/history_empty_nights"
+            android:textColor="@color/ink_dim"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- The averages, the headline first. -->
+            <LinearLayout
+                style="@style/Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    style="@style/RowCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/average_sleep" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/avg_total"
+                        style="@style/BigNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        style="@style/Body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/a_night" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/avg_spread"
+                    style="@style/RowCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/StatCard">
+
+                    <TextView
+                        style="@style/FactLabel"
+                        android:drawableStart="@drawable/ic_moon"
+                        android:text="@string/bedtime"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/avg_bed"
+                        style="@style/StatValue" />
+
+                    <TextView
+                        android:id="@+id/avg_bed_range"
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/StatCard"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        style="@style/FactLabel"
+                        android:drawableStart="@drawable/ic_sun"
+                        android:text="@string/wake_up"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/avg_wake"
+                        style="@style/StatValue" />
+
+                    <TextView
+                        android:id="@+id/avg_wake_range"
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/StatCard">
+
+                    <TextView
+                        style="@style/FactLabel"
+                        android:text="@string/silenced"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/avg_silenced"
+                        style="@style/StatValue"
+                        android:textColor="@color/quiet" />
+
+                    <TextView
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/of_time_asleep"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/StatCard"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        style="@style/FactLabel"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:text="@string/picked_up"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/avg_pickups"
+                        style="@style/StatValue" />
+
+                    <TextView
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/times_a_night"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- When: one bar per night, tap to pick one; the picked night opens from its title. -->
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_gap"
+                android:accessibilityHeading="true"
+                android:text="@string/when_you_slept" />
+
+            <LinearLayout
+                style="@style/Card.Rows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/picked_row"
+                    style="@style/CardRow.Clickable">
+
+                    <TextView
+                        android:id="@+id/picked_day"
+                        style="@style/RowTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/plus_jakarta_sans_medium" />
+
+                    <TextView
+                        android:id="@+id/picked_detail"
+                        style="@style/RowCaption"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="8dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+                <app.flipsilence.SleepChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/card_padding"
+                    android:paddingTop="8dp" />
+
+                <TextView
+                    style="@style/RowCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:drawableStart="@drawable/dash_line"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/card_padding"
+                    android:paddingBottom="16dp"
+                    android:text="@string/average_lines"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_gap"
+                android:accessibilityHeading="true"
+                android:text="@string/every_night" />
+
+            <LinearLayout
+                android:id="@+id/nights"
+                style="@style/Card.Rows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                style="@style/RowCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/sleep_footnote"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </app.flipsilence.ContentColumn>
+</ScrollView>

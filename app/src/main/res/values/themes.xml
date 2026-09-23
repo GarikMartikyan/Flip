@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.DayNight">
+    <style name="AppTheme.Base" parent="@android:style/Theme.DeviceDefault.DayNight">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@color/bg</item>
         <item name="android:statusBarColor">@color/bg</item>
         <item name="android:navigationBarColor">@color/bg</item>
         <item name="android:textColorPrimary">@color/ink</item>
+        <item name="android:colorAccent">@color/awake</item>
+        <item name="android:colorControlHighlight">@color/ripple</item>
+        <!-- Every view falls back to the body face unless it asks for another. -->
+        <item name="android:fontFamily">@font/jakarta</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
         <!-- Light ground needs dark status-bar icons. -->
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>

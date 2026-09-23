@@ -1,0 +1,32 @@
+App name:
+Flip : Écran retourné, silence
+
+Short description:
+Retournez votre téléphone, il se tait. Reprenez-le, le son revient.
+
+Full description:
+Posez votre téléphone écran vers le bas sur la table, il se tait. Reprenez-le, le son revient. Pas de bouton, pas de programmation, et plus besoin de penser à désactiver Ne pas déranger.
+
+COMMENT ÇA MARCHE
+• Écran vers le bas, à plat et immobile. Flip attend que le téléphone repose écran vers le bas sur une surface et garde son inclinaison, puis active Ne pas déranger. Dans une poche ou dans la main, ça ne compte pas.
+• Reprenez-le. Dès que vous le soulevez, le son revient.
+• Deux petites vibrations. L’écran étant contre la table, une brève vibration confirme chaque changement. Vous pouvez la désactiver.
+
+CE QUI PASSE TOUJOURS
+• Personnes : laissez sonner vos contacts favoris, ainsi que les appels répétés.
+• Applis : choisissez les applis dont les notifications vous parviennent encore quand tout le reste se tait.
+• Les alarmes sonnent toujours.
+
+SENSIBILITÉ
+• Stricte, Équilibrée ou Souple : de « uniquement sur une table bien plane » à « sur un coussin ou posé à la va-vite ».
+
+VOS JOURNÉES ET VOS NUITS
+• Retrouvez les moments de calme de la journée sur une frise.
+• Revoyez la nuit dernière : quand vous avez posé le téléphone et quand vous l’avez repris. Le suivi du sommeil peut être désactivé dans les Paramètres.
+
+CONFIDENTIEL PAR CONCEPTION
+• Pas de compte, pas de pub, pas de statistiques
+• Aucune autorisation Internet : rien ne quitte votre téléphone
+• Le contenu des notifications n’est jamais lu, seulement l’appli qui les a envoyées
+
+Nécessite Android 14 ou version ultérieure.

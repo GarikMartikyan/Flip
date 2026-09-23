@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  16dp wide: Switch sizes itself to twice the thumb plus the track's side padding, so this and the
+  track's 4dp padding are what make the switch 40dp across.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:width="16dp" android:height="24dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:bottom="4dp" android:top="4dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/on_awake" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:width="16dp" android:height="24dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <item android:bottom="5dp" android:left="1dp" android:right="1dp" android:top="5dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/ink_dim" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

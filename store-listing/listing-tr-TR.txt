@@ -1,0 +1,32 @@
+App name:
+Flip: Ters Çevir, Sessize Al
+
+Short description:
+Telefonu yüzüstü koyun, sessize geçsin. Elinize alın, ses geri gelsin.
+
+Full description:
+Telefonu masaya yüzüstü koyun, sessize geçsin. Elinize alın, ses geri gelsin. Düğme yok, zamanlama yok, Rahatsız Etmeyin'i kapatmayı hatırlamak da yok.
+
+NASIL ÇALIŞIR
+• Yüzüstü, düz ve sabit. Flip, telefon bir yüzeye yüzüstü konup açısını koruyana kadar bekler, ardından Rahatsız Etmeyin'i açar. Cepteyken ya da eldeyken devreye girmez.
+• Elinize alın. Kaldırdığınız anda ses geri gelir.
+• İki kısa titreşim. Ekran masaya dönük olduğu için her değişiklik kısa bir titreşimle onaylanır. İsterseniz kapatabilirsiniz.
+
+YİNE DE SİZE ULAŞANLAR
+• Kişiler: Yıldızlı kişileriniz ve tekrar arayanlar yine çalabilir.
+• Uygulamalar: Her şey sessizken bildirimleri yine de size ulaşacak uygulamaları seçin.
+• Alarmlar her zaman çalar.
+
+HASSASİYET
+• Katı, Dengeli veya Esnek: "yalnızca gerçekten düz bir masada"dan "bir minderin üstünde ya da aceleyle bırakıldığında"ya kadar.
+
+GÜNÜNÜZ VE GECELERİNİZ
+• Bugünün sessiz anlarını bir zaman çizelgesinde görün.
+• Dün geceyi görün: telefonu ne zaman bıraktığınızı ve ne zaman yeniden elinize aldığınızı. Uyku takibi Ayarlar'dan kapatılabilir.
+
+TASARIMDAN GİZLİ
+• Hesap yok, reklam yok, analiz yok
+• İnternet izni yok, yani hiçbir şey telefonunuzdan çıkmaz
+• Bildirim içerikleri asla okunmaz, yalnızca hangi uygulamadan geldiğine bakılır
+
+Android 14 veya daha yeni bir sürüm gerekir.

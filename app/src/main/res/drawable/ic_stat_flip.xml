@@ -1,0 +1,20 @@
+<!-- The launcher's turned F, at status-bar size. White only: the system tints it. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?android:attr/colorControlNormal">
+    <path
+        android:pathData="M8,2 A2,2 0 0,1 10,4 V20 A2,2 0 0,1 8,22 A2,2 0 0,1 6,20 V4 A2,2 0 0,1 8,2 Z"
+        android:fillColor="#FFFFFFFF" />
+    <path
+        android:pathData="M8,10.4 H13.6 A2,2 0 0,1 13.6,14.4 H8 A2,2 0 0,1 8,10.4 Z"
+        android:fillColor="#FFFFFFFF" />
+    <path
+        android:pathData="M8,18 H16.8 A2,2 0 0,1 16.8,22 H8 A2,2 0 0,1 8,18 Z"
+        android:fillColor="#FFFFFFFF" />
+    <path
+        android:pathData="M14.8,5.2 A2,2 0 1,1 18.8,5.2 A2,2 0 1,1 14.8,5.2 Z"
+        android:fillColor="#FFFFFFFF" />
+</vector>

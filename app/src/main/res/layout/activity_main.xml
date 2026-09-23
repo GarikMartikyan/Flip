@@ -1,244 +1,514 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg"
     android:fillViewport="true"
     android:scrollbars="none">
 
-    <LinearLayout
+    <!-- Capped at a readable width and centred, so tablets and unfolded foldables get a column. -->
+    <app.flipsilence.ContentColumn
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:orientation="vertical"
-        android:paddingHorizontal="24dp"
-        android:paddingTop="40dp"
-        android:paddingBottom="40dp">
+        android:paddingHorizontal="@dimen/gutter"
+        android:paddingTop="20dp"
+        android:paddingBottom="32dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            android:minHeight="56dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="sans-serif-medium"
-                android:letterSpacing="-0.02"
-                android:text="@string/app_name"
-                android:textColor="@color/ink"
-                android:textSize="26sp" />
-
-            <TextView
-                android:id="@+id/power_pill"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/pill"
+                android:fontFamily="@font/plus_jakarta_sans_semibold"
+                android:letterSpacing="-0.02"
+                android:includeFontPadding="false"
+                android:text="@string/app_name"
+                android:textColor="@color/ink"
+                android:textSize="30sp" />
+
+            <!-- Settings sit by the name, so a long day of flips can never push them off screen. -->
+            <ImageButton
+                android:id="@+id/settings_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="4dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/settings"
+                android:src="@drawable/ic_settings"
+                android:tooltipText="@string/settings" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- The label and the phone-in-a-track switch are one target; the row speaks as a switch. -->
+            <LinearLayout
+                android:id="@+id/power_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:fontFamily="sans-serif-medium"
-                android:letterSpacing="0.08"
-                android:minHeight="40dp"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="10dp"
-                android:textAllCaps="true"
-                android:textSize="12sp" />
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:paddingStart="14dp"
+                android:paddingEnd="7dp">
+
+                <TextView
+                    android:id="@+id/power_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/plus_jakarta_sans_medium"
+                    android:importantForAccessibility="no"
+                    android:textSize="14sp" />
+
+                <app.flipsilence.PowerSwitch
+                    android:id="@+id/power_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
         </LinearLayout>
 
-        <com.shhh.TiltGauge
+        <app.flipsilence.TiltGauge
             android:id="@+id/gauge"
             android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:layout_marginTop="20dp" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp" />
 
         <TextView
             android:id="@+id/coach"
+            style="@style/Body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="14dp"
             android:gravity="center"
-            android:textColor="@color/ink_dim"
             android:textSize="16sp" />
+
+        <!--
+          Who and what still gets through while face down: faces for the people, icons for the
+          apps, and the count in words. Right under the gauge, because it qualifies what the gauge
+          promises.
+        -->
+        <LinearLayout
+            android:id="@+id/exceptions_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/strip"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="60dp"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="14dp">
+
+            <LinearLayout
+                android:id="@+id/exceptions_faces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <View
+                android:id="@+id/exceptions_divider"
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@color/border" />
+
+            <LinearLayout
+                android:id="@+id/exceptions_apps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/exceptions_title"
+                    style="@style/RowTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/exceptions_caption"
+                    style="@style/RowCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_chevron_right" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/permission_card"
+            style="@style/Card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:background="@drawable/card"
-            android:orientation="vertical"
-            android:padding="16dp"
             android:visibility="gone">
 
             <TextView
                 android:id="@+id/permission_text"
+                style="@style/Body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/ink"
-                android:textSize="15sp" />
+                android:textColor="@color/ink" />
 
             <Button
                 android:id="@+id/dnd_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                style="@style/FlipButton.Filled"
+                android:layout_marginTop="14dp"
                 android:text="@string/grant_dnd" />
-
-            <Button
-                android:id="@+id/notif_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/grant_notif" />
         </LinearLayout>
 
-        <!-- Sensitivity: the pocket-versus-desk call, handed to the user rather than guessed. -->
-        <TextView
-            style="@style/SectionLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@string/sensitivity" />
-
+        <!--
+          Last night first, because that is the question in the morning: how long, from when to
+          when, and whether Flip kept it quiet. The strip below says when; the rows say how much.
+        -->
         <LinearLayout
+            android:id="@+id/night_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:baselineAligned="false"
+            android:layout_marginTop="@dimen/section_gap"
+            android:baselineAligned="true"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/sens_strict"
-                style="@style/SegmentPill"
-                android:layout_width="0dp"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/sens_balanced"
-                style="@style/SegmentPill"
-                android:layout_width="0dp"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/sens_relaxed"
-                style="@style/SegmentPill"
-                android:layout_width="0dp"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/sens_blurb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/ink_dim"
-            android:textSize="14sp" />
-
-        <!-- The record of what happened while you were not looking at the screen. -->
-        <TextView
-            style="@style/SectionLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@string/today" />
-
-        <LinearLayout
-            android:id="@+id/history_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical" />
-
-        <TextView
-            android:id="@+id/history_summary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/ink_dim"
-            android:textSize="14sp" />
-
-        <!-- Notification -->
-        <TextView
-            style="@style/SectionLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@string/notification" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/notification_show"
-                android:textColor="@color/ink"
-                android:textSize="16sp" />
-
-            <Switch
-                android:id="@+id/notification_switch"
+                style="@style/SectionLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="48dp" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/notification_blurb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/notification_blurb"
-            android:textColor="@color/ink_dim"
-            android:textSize="14sp" />
-
-        <Button
-            android:id="@+id/notification_settings_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="@string/notification_settings" />
-
-        <TextView
-            android:id="@+id/diagnostics_toggle"
-            style="@style/SectionLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:focusable="true"
-            android:paddingVertical="18dp"
-            android:text="@string/diagnostics" />
-
-        <LinearLayout
-            android:id="@+id/diagnostics_body"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:visibility="gone">
+                android:accessibilityHeading="true"
+                android:text="@string/last_night" />
 
             <TextView
-                android:id="@+id/readout"
+                android:id="@+id/night_dates"
+                style="@style/SectionAside"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/night_card"
+            style="@style/Card.Rows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="monospace"
-                android:textColor="@color/ink_dim"
-                android:textSize="12sp" />
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/card_padding"
+                android:paddingVertical="16dp">
 
-            <Button
-                android:id="@+id/battery_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="@string/battery_button" />
+                <!-- A small dial of the night, and beside it how long, from when to when, how quiet. -->
+                <LinearLayout
+                    android:id="@+id/night_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <app.flipsilence.NightDial
+                        android:id="@+id/night_dial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:compact="true" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/night_total"
+                                style="@style/BigNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                style="@style/Body"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/asleep" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/night_bed"
+                                style="@style/NightLine"
+                                android:drawableStart="@drawable/ic_moon" />
+
+                            <TextView
+                                android:id="@+id/night_wake"
+                                style="@style/NightLine"
+                                android:layout_marginStart="14dp"
+                                android:drawableStart="@drawable/ic_sun" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/night_silenced"
+                            style="@style/NightLine"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/quiet" />
+
+                        <!-- Picked up gets a line of its own, label and count. -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/NightLine"
+                                android:drawableStart="@drawable/ic_phone"
+                                android:text="@string/picked_up"
+                                android:textColor="@color/ink_dim" />
+
+                            <TextView
+                                android:id="@+id/night_pickups"
+                                style="@style/NightLine"
+                                android:layout_marginStart="6dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/night_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <View style="@style/RowDivider" />
+
+            <LinearLayout
+                android:id="@+id/sleep_history_row"
+                style="@style/CardRow.Clickable">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_quiet"
+                    android:importantForAccessibility="no"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_moon"
+                    android:tint="@color/surface" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/RowTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sleep_history" />
+
+                    <!-- The week's average in moss, then how it moved against the week before. -->
+                    <TextView
+                        android:id="@+id/sleep_history_avg"
+                        style="@style/RowCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFeatureSettings="tnum" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_chevron_right" />
+            </LinearLayout>
         </LinearLayout>
 
-    </LinearLayout>
+        <!--
+          Today, counted from waking up so last night is not counted twice: the night's share of
+          the strip is struck through, and the silences are the ones since.
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_gap"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:accessibilityHeading="true"
+                android:text="@string/today" />
+
+            <TextView
+                android:id="@+id/today_since"
+                style="@style/SectionAside"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/today_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/today_total"
+                        style="@style/BigNumber"
+                        android:textSize="30sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/quiet" />
+
+                    <TextView
+                        style="@style/Body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/of_quiet" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/today_sentence"
+                    style="@style/Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <app.flipsilence.DayStrip
+                android:id="@+id/day_strip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/border" />
+
+            <LinearLayout
+                android:id="@+id/history_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Past the latest few, the rest of the day is one tap away. -->
+            <LinearLayout
+                android:id="@+id/today_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="-6dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/border" />
+
+                <LinearLayout
+                    android:id="@+id/today_all_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="44dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/today_all_label"
+                        style="@style/RowTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="8dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </app.flipsilence.ContentColumn>
 </ScrollView>

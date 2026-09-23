@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Shhh"
+rootProject.name = "Flip"
 include(":app")
-include(":torch")

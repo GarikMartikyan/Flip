@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="today">오늘</string>
+    <string name="notification_show">알림</string>
+    <string name="settings">설정</string>
+    <string name="back">뒤로</string>
+    <string name="grant_dnd">방해 금지 모드 접근 허용</string>
+    <string name="history_empty">오늘은 아직 기록이 없어요. 휴대전화를 뒤집어 놓으면 여기에 표시돼요.</string>
+    <string name="last_night">지난밤</string>
+    <string name="night_empty">아직 기록된 밤이 없어요. 밤새 Flip을 켜 두면 아침에 여기에 표시돼요.</string>
+    <string name="asleep">수면</string>
+    <string name="now">지금</string>
+    <string name="of_quiet">조용한 시간</string>
+    <string name="went_to_bed">잠든 시간</string>
+    <string name="woke_up">일어난 시간</string>
+    <string name="picked_up">집어 든 횟수</string>
+    <string name="legend_silenced">무음, 뒤집어 둠</string>
+    <string name="legend_left_alone">놓아 둠, 소리 켜짐</string>
+    <string name="legend_awake">휴대전화 사용 중</string>
+    <string name="night_not_silenced">무음 안 됨 — 뒤집어 두지 않았어요</string>
+    <string name="sleep_history">수면 기록</string>
+    <string name="today_empty">일어난 뒤로 무음 기록이 없어요. 휴대전화를 뒤집어 놓으면 여기에 표시돼요.</string>
+
+    <!-- Sleep screens -->
+    <string name="sleep">수면</string>
+    <string name="nights_7">7일 밤</string>
+    <string name="nights_30">30일 밤</string>
+    <string name="average_sleep">평균 수면</string>
+    <string name="a_night">하룻밤</string>
+    <string name="bedtime">취침</string>
+    <string name="wake_up">기상</string>
+    <string name="silenced">무음</string>
+    <string name="of_time_asleep">수면 시간 중</string>
+    <string name="times_a_night">하룻밤 횟수</string>
+    <string name="when_you_slept">잠든 시간대</string>
+    <string name="average_lines">평균 취침 및 기상 시간</string>
+    <string name="every_night">매일 밤</string>
+    <string name="through_the_night">밤사이</string>
+    <string name="history_empty_nights">이 기간에는 아직 기록된 밤이 없어요. 밤새 Flip을 켜 두면 매일 아침 여기에 추가돼요.</string>
+    <string name="sleep_footnote">Flip은 수면 자체를 감지하지 못해요. 밤은 화면이 꺼진 채 휴대전화를 놓아 둔 시간이고, 빈칸은 휴대전화를 집어 든 시간이에요.</string>
+    <string name="night_gone">이 밤의 기록은 더 이상 없어요.</string>
+
+    <!-- Settings page -->
+    <string name="theme">테마</string>
+    <string name="theme_system">시스템</string>
+    <string name="theme_light">라이트</string>
+    <string name="theme_dark">다크</string>
+    <string name="sensitivity">민감도</string>
+    <string name="feedback">피드백</string>
+    <string name="haptics">진동 피드백</string>
+    <string name="haptics_blurb">무음이 될 때와 풀릴 때 짧게 두 번 진동해요. 화면이 바닥을 향하고 있으니 이것만이 작동했다는 신호예요.</string>
+    <string name="system">시스템</string>
+    <string name="dnd_access">방해 금지 모드 접근</string>
+    <string name="dnd_granted">허용됨</string>
+    <string name="dnd_missing">허용 안 됨 — Flip이 무음으로 전환할 수 없어요</string>
+    <string name="battery">배터리</string>
+    <string name="battery_unrestricted">제한 없음</string>
+    <string name="battery_optimized">최적화 — Android가 Flip을 멈추지 않도록 제한 없음으로 설정하세요</string>
+    <string name="diagnostics">진단</string>
+
+    <!-- What still gets through while face down -->
+    <plurals name="people">
+        <item quantity="other">%d명</item>
+    </plurals>
+    <plurals name="apps">
+        <item quantity="other">앱 %d개</item>
+    </plurals>
+    <string name="still_gets_through">계속 연락받을 수 있어요</string>
+    <string name="still_get_through">계속 연락받을 수 있어요</string>
+    <string name="no_exceptions_yet">아직 예외가 없어요</string>
+    <string name="tap_to_choose_who_rings">탭해서 계속 울릴 대상을 선택하세요</string>
+    <string name="apps_need_access">앱에 알림 접근 권한이 필요해요</string>
+    <string name="gets_through">예외</string>
+    <string name="gets_through_blurb">휴대전화를 뒤집어 둔 동안에도 이들의 알림은 울려요. 나머지는 휴대전화를 집어 들 때까지 기다려요.</string>
+    <string name="people">사람</string>
+    <string name="apps">앱</string>
+    <string name="people_empty">아직 아무도 없어요. 추가한 사람의 전화는 휴대전화를 뒤집어 둬도 울려요.</string>
+    <string name="people_need_contacts">사람을 표시하고 선택하려면 Flip에 연락처 접근 권한이 필요해요.</string>
+    <string name="people_note">휴대전화의 즐겨찾기 연락처예요. 여기서 추가하면 휴대전화 전체에서 즐겨찾기에 추가되고, 삭제하면 즐겨찾기에서도 해제돼요. 즐겨찾기는 유지하면서 모두 무음으로 하려면 즐겨찾기를 끄세요.</string>
+    <string name="favourites">즐겨찾기</string>
+    <string name="favourites_blurb">즐겨찾기 연락처의 전화가 울려요</string>
+    <string name="repeat_callers">반복 발신자</string>
+    <string name="repeat_callers_blurb">15분 안에 다시 전화한 사람</string>
+    <string name="add_person">사람 추가</string>
+    <string name="apps_empty">아직 앱이 없어요. 추가한 앱은 Flip이 계속 소리를 내 줘요.</string>
+    <string name="apps_note">Flip이 무음 전 휴대전화 설정대로 직접 알려 줘요. 소리와 진동, 진동만, 또는 무음이었다면 아무것도 울리지 않아요. Android에서 제한된 설정이라고 표시되면 Flip의 애플리케이션 정보를 열고 ⋮을 누른 뒤 제한된 설정을 허용하세요.</string>
+    <string name="add_app">앱 추가</string>
+    <string name="notification_access">알림 접근</string>
+    <string name="listener_missing">허용 안 됨 — 선택한 앱도 무음이에요</string>
+    <string name="listener_ask_title">먼저 알림 접근을 허용하세요</string>
+    <string name="listener_ask_body">휴대전화를 뒤집어 둔 동안 앱 알림을 울리려면 Flip이 알림이 도착했는지 알아야 해요. 알림 내용은 절대 읽지 않아요.\n\n다음 화면에서 Flip을 켜고 여기로 돌아오세요. Android에서 제한된 설정이라고 표시되면 Flip의 애플리케이션 정보를 열고 ⋮을 누른 뒤 제한된 설정을 허용하세요.</string>
+    <string name="not_now">나중에</string>
+    <string name="open_settings">설정 열기</string>
+    <string name="remove_x">%1$s 삭제</string>
+    <string name="choose_apps">앱</string>
+    <string name="choose_apps_blurb">켜 둔 앱은 휴대전화를 뒤집어 둬도 소리가 나요.</string>
+    <string name="loading_apps">앱 불러오는 중…</string>
+    <string name="gets_through_state">알림 받음</string>
+    <string name="silenced_state">무음</string>
+
+    <!-- Main screen -->
+    <string name="power_on">켜짐</string>
+    <string name="power_off">꺼짐</string>
+    <string name="watching">감지 중</string>
+    <string name="not_watching">감지 안 함</string>
+    <string name="dnd_needed">무음으로 전환하려면 Flip에 방해 금지 모드 접근 권한이 필요해요.</string>
+    <string name="avg_7_nights">7일 평균 %1$s</string>
+    <string name="history_avg">평균 %1$s</string>
+    <string name="last_night_description">지난밤: %1$s 수면, %2$s부터 %3$s까지, %4$s 무음</string>
+    <string name="since_you_woke">%1$s 기상 이후</string>
+    <string name="today_once">오늘 %1$s에 한 번 뒤집어 뒀어요.</string>
+    <plurals name="today_many">
+        <item quantity="other">오늘 %1$d번 뒤집어 뒀어요. 가장 길었던 건 %3$s의 %2$s였어요.</item>
+    </plurals>
+    <string name="today_description">오늘: %1$s 동안 조용함. %2$s</string>
+    <string name="coach_grant">시작하려면 방해 금지 모드 접근을 허용하세요.</string>
+    <string name="coach_turn_on">켜면 감지를 시작해요.</string>
+    <string name="coach_silenced">무음 상태예요. 집어 들면 해제돼요.</string>
+    <string name="coach_starting">시작하는 중이에요.</string>
+    <string name="coach_tilting">아직 기울어져 있어요 — 손을 놓으세요.</string>
+    <string name="coach_almost">거의 다 됐어요 — 그대로 두세요.</string>
+    <string name="coach_hold_still">움직이지 마세요.</string>
+    <string name="coach_put_down">휴대전화를 평평한 곳에 뒤집어 놓으세요.</string>
+
+    <!-- The gauge -->
+    <string name="gauge_since">%1$s부터</string>
+    <string name="gauge_description">뒤집힘 기준 %1$d도</string>
+
+    <!-- Lengths of time -->
+    <string name="duration_s">%1$d초</string>
+    <string name="duration_m">%1$d분</string>
+    <string name="duration_hm">%1$d시간 %2$02d분</string>
+    <string name="times_never">없음</string>
+    <string name="times_once">1번</string>
+    <string name="times_twice">2번</string>
+    <plurals name="times_count">
+        <item quantity="other">%d번</item>
+    </plurals>
+
+    <!-- Sleep history and a single night -->
+    <plurals name="chart_description">
+        <item quantity="other">최근 %d일 밤의 취침 및 기상 시간</item>
+    </plurals>
+    <string name="one_night_so_far">지금까지 1일 밤</string>
+    <string name="shortest_longest">최단 %1$s · 최장 %2$s</string>
+    <string name="between_times">%1$s~%2$s</string>
+    <string name="open_this_night">%1$s, %2$s. 이 밤 열기</string>
+    <string name="night_row_description">%1$s, %2$s, %3$s 수면</string>
+    <string name="night_title">%1$s 밤</string>
+    <string name="put_down">내려놓은 시간</string>
+    <string name="night_laps">12시간이 넘어 안쪽 고리에서 시계를 한 바퀴 더 돕니다.</string>
+    <string name="asleep_from_to">%1$s부터 %2$s까지 수면</string>
+    <string name="about_the_same">지난주와 비슷해요</string>
+    <string name="longer_than_before">지난주보다 %1$s 더 길어요</string>
+    <string name="shorter_than_before">지난주보다 %1$s 더 짧아요</string>
+    <string name="event_alarm">알람</string>
+    <string name="at_a_glance">한눈에</string>
+    <string name="stat_woke_up">일어남</string>
+    <string name="stat_screen_on">화면 켜짐</string>
+    <string name="stat_alarms">알람</string>
+    <string name="stat_silenced_caption">그중 %1$s 뒤집어 둠</string>
+    <string name="stat_woke_none">한 번도 안 깸</string>
+    <string name="stat_woke_caption">깨어 있던 시간 총 %1$s</string>
+    <string name="stat_not_recorded">이 밤은 기록 없음</string>
+    <string name="stat_screen_none">켜지지 않음</string>
+    <string name="stat_screen_caption">총 %1$s</string>
+    <string name="stat_alarms_none">울리지 않음</string>
+    <string name="stat_alarms_caption">처음 %1$s</string>
+    <string name="tl_put_down">휴대전화를 내려놓음</string>
+    <string name="tl_put_down_silenced">뒤집어 두고 무음</string>
+    <string name="tl_put_down_sound_on">소리 켜진 상태</string>
+    <string name="tl_moved">휴대전화가 움직임</string>
+    <string name="tl_moved_detail">%1$s 동안 소리가 다시 켜짐</string>
+    <string name="tl_silenced">무음</string>
+    <string name="tl_silenced_again">다시 무음</string>
+    <string name="tl_silenced_detail">뒤집어 둠</string>
+    <string name="tl_picked_up">집어 듦</string>
+    <string name="tl_for">%1$s 동안</string>
+    <string name="tl_unlocked">잠금 해제함</string>
+    <string name="tl_screen_lit">화면이 켜짐</string>
+    <string name="tl_screen_lit_detail">%1$s, 잠금 해제 안 함</string>
+    <string name="tl_stretch_silenced">%1$s 무음</string>
+    <string name="tl_stretch_sound_on">%1$s 소리 켜짐</string>
+    <string name="tl_stretch_awake">%1$s 깨어 있음</string>
+    <string name="night_how_read">Flip은 수면 자체를 측정하지 않습니다. 휴대전화가 건드려지지 않은 시간(화면이 꺼져 있거나 뒤집혀 있던 시간)을 읽어 밤으로 계산합니다.</string>
+
+    <!-- Sensitivity -->
+    <string name="sens_strict">엄격</string>
+    <string name="sens_strict_blurb">완전히 평평하고 흔들림 없는 곳이 필요해요. 주머니 속 오작동이 가장 적지만, 푹신하거나 기울어진 곳은 무시할 수 있어요.</string>
+    <string name="sens_balanced">균형</string>
+    <string name="sens_balanced_blurb">이 휴대전화에서 실제로 측정한 놓는 방식에 맞췄어요. 여기서 시작하세요.</string>
+    <string name="sens_relaxed">느슨</string>
+    <string name="sens_relaxed_blurb">경사면이나 쿠션 위, 빠르게 내려놓아도 작동해요. 더 쉽게 무음이 되지만 주머니 속에서 작동할 가능성도 가장 높아요.</string>
+    <string name="expanded">펼침</string>
+    <string name="collapsed">접힘</string>
+
+    <!-- The service notification and the Do Not Disturb rule -->
+    <string name="channel_name">Flip 감지 중</string>
+    <string name="channel_description">Flip이 휴대전화가 뒤집히는 것을 감지하는 동안 Android에서 필요해요.</string>
+    <string name="notification_engaged">뒤집힘 — 방해 금지 모드 켜짐</string>
+    <string name="notification_watching">휴대전화가 뒤집히기를 기다리는 중</string>
+    <string name="zen_rule_name">Flip (뒤집힘)</string>
+    <string name="condition_face_down">뒤집힘</string>
+    <string name="condition_face_up">바로 놓임</string>
+
+    <!-- Language -->
+    <string name="language">언어</string>
+    <string name="language_title">언어</string>
+    <string name="language_system">시스템 기본값</string>
+    <string name="language_blurb">여기서 다른 언어를 선택하지 않으면 Flip은 휴대전화 언어를 따릅니다.</string>
+
+    <!-- Settings → sleep, and the face-down explainer under its switch. -->
+    <string name="sleep_section">수면</string>
+    <string name="sleep_monitoring">수면 기록</string>
+    <string name="sleep_monitoring_blurb">휴대폰을 엎어 둔 시간으로 지난밤 수면을 계산합니다. 끄면 새로 기록하지 않으며, 지금까지의 기록은 유지됩니다.</string>
+    <string name="explainer_step_bed">잠들기 전에 휴대폰을 화면이 아래로 가게 엎어 두세요.</string>
+    <string name="explainer_step_night">엎어 둔 동안 Flip이 무음을 유지하고 수면을 셉니다.</string>
+    <string name="explainer_step_morning">아침이면 지난밤 기록이 메인 화면에 표시됩니다.</string>
+
+    <!-- All of today's silences on a screen of their own -->
+    <string name="today_title">오늘</string>
+    <string name="show_all">모두 보기 (%1$d)</string>
+</resources>

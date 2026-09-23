@@ -1,9 +1,23 @@
+<!--
+  The turned F: the F of Flip, turned over the way the phone is, with a moss dot for the one light
+  left on. Sits well inside the 66dp safe zone of the 108dp adaptive canvas. The themed icon is the
+  same shape in one colour: ic_launcher_monochrome.
+-->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
     <path
-        android:fillColor="#FFE2C88A"
-        android:pathData="M54,28c-13.25,0 -24,10.75 -24,24s10.75,24 24,24c5.55,0 10.66,-1.89 14.72,-5.06c-12.06,-1.05 -21.54,-11.19 -21.54,-23.55c0,-6.18 2.37,-11.82 6.24,-16.05C55.85,28.12 54.93,28 54,28z" />
+        android:pathData="M44,29 A5,5 0 0,1 49,34 V74 A5,5 0 0,1 44,79 A5,5 0 0,1 39,74 V34 A5,5 0 0,1 44,29 Z"
+        android:fillColor="@color/ic_launcher_ink" />
+    <path
+        android:pathData="M44,50 H58 A5,5 0 0,1 58,60 H44 A5,5 0 0,1 44,50 Z"
+        android:fillColor="@color/ic_launcher_ink" />
+    <path
+        android:pathData="M44,69 H66 A5,5 0 0,1 66,79 H44 A5,5 0 0,1 44,69 Z"
+        android:fillColor="@color/ic_launcher_ink" />
+    <path
+        android:pathData="M61,37 A5,5 0 1,1 71,37 A5,5 0 1,1 61,37 Z"
+        android:fillColor="@color/ic_launcher_quiet" />
 </vector>

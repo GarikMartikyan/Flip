@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Two sliders: settings as things to adjust, softer than a gear. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M4,7 L14,7 M18,7 L20,7 M4,17 L8,17 M12,17 L20,17"
+        android:strokeWidth="1.8"
+        android:strokeColor="@color/ink"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M16,5 A2,2 0 1,1 16,9 A2,2 0 1,1 16,5 Z M10,15 A2,2 0 1,1 10,19 A2,2 0 1,1 10,15 Z"
+        android:strokeWidth="1.8"
+        android:strokeColor="@color/ink" />
+</vector>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Asked before notification settings open on the way to adding an app. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="true"
+        android:fontFamily="@font/plus_jakarta_sans_semibold"
+        android:letterSpacing="-0.02"
+        android:includeFontPadding="false"
+        android:text="@string/listener_ask_title"
+        android:textColor="@color/ink"
+        android:textSize="22sp" />
+
+    <TextView
+        style="@style/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/listener_ask_body" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/not_now"
+            style="@style/FlipButton.Outline"
+            android:text="@string/not_now" />
+
+        <Button
+            android:id="@+id/open_settings"
+            style="@style/FlipButton.Filled"
+            android:layout_marginStart="10dp"
+            android:text="@string/open_settings" />
+    </LinearLayout>
+</LinearLayout>

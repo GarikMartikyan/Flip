@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Timeline caches the width of its time column on the list under this key. -->
+    <item name="time_width" type="id" />
+</resources>
