@@ -128,12 +128,7 @@ class ExceptionsActivity : Activity() {
 
     private fun addPerson() {
         if (!Exceptions.hasContacts(this)) {
-            requestOrOpenSettings(
-                Exceptions.CONTACTS_PERMISSIONS,
-                REQUEST_CONTACTS,
-                Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
-                    .setData(android.net.Uri.fromParts("package", packageName, null)),
-            )
+            requestOrOpenSettings(Exceptions.CONTACTS_PERMISSIONS, REQUEST_CONTACTS, appSettings())
             return
         }
         // The phone-number picker, so only people who can actually call are offered.
@@ -150,13 +145,17 @@ class ExceptionsActivity : Activity() {
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode != REQUEST_CONTACTS) return
-        notePermissionResult(permissions, grantResults)
+        notePermissionResult(permissions, grantResults, appSettings())
         // Refused or dismissed, the answer stands; the next tap goes to settings if Android stopped asking.
         if (Exceptions.hasContacts(this)) {
             renderPeople()
             addPerson()
         }
     }
+
+    private fun appSettings(): Intent =
+        Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+            .setData(android.net.Uri.fromParts("package", packageName, null))
 
     @Deprecated("Activity result APIs need AndroidX, which Flip does not use")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

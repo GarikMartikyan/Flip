@@ -158,7 +158,7 @@ class SettingsActivity : Activity() {
         grantResults: IntArray,
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == REQUEST_NOTIFICATIONS) notePermissionResult(permissions, grantResults)
+        if (requestCode == REQUEST_NOTIFICATIONS) notePermissionResult(permissions, grantResults, notificationSettings())
         notificationSwitch.isChecked = notificationsOn()
     }
 

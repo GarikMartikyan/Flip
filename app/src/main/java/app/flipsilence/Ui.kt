@@ -8,6 +8,7 @@ import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.RippleDrawable
+import android.os.SystemClock
 import android.view.View
 import android.view.WindowInsets
 import kotlin.math.roundToInt
@@ -23,19 +24,38 @@ internal fun Context.dp(value: Float): Int = (value * resources.displayMetrics.d
 internal fun Activity.requestOrOpenSettings(permissions: Array<String>, requestCode: Int, settings: Intent) {
     val first = permissions.first()
     val refused = getSharedPreferences("flip", Context.MODE_PRIVATE).getBoolean(REFUSED_PREFIX + first, false)
-    if (refused && !shouldShowRequestPermissionRationale(first)) startActivity(settings)
-    else requestPermissions(permissions, requestCode)
-}
-
-/** Remembers a refusal the user made, so [requestOrOpenSettings] can tell it from a dismissal. */
-internal fun Activity.notePermissionResult(permissions: Array<out String>, grantResults: IntArray) {
-    val first = permissions.firstOrNull() ?: return
-    if (grantResults.firstOrNull() == PackageManager.PERMISSION_DENIED && shouldShowRequestPermissionRationale(first)) {
-        getSharedPreferences("flip", Context.MODE_PRIVATE).edit().putBoolean(REFUSED_PREFIX + first, true).apply()
+    if (refused && !shouldShowRequestPermissionRationale(first)) {
+        startActivity(settings)
+    } else {
+        requestedAt = SystemClock.elapsedRealtime()
+        requestPermissions(permissions, requestCode)
     }
 }
 
+/**
+ * Remembers a refusal the user made, so [requestOrOpenSettings] can tell it from a dismissal.
+ *
+ * A permission switched off in system settings never got a refusal here, yet Android treats it as
+ * refused for good: it answers at once, with no dialog, and would go on doing so on every tap. An
+ * answer that quick is not a person's, so it is remembered as a refusal and [settings] opens now.
+ */
+internal fun Activity.notePermissionResult(permissions: Array<out String>, grantResults: IntArray, settings: Intent) {
+    val first = permissions.firstOrNull() ?: return
+    if (grantResults.firstOrNull() != PackageManager.PERMISSION_DENIED) return
+    val rationale = shouldShowRequestPermissionRationale(first)
+    val silent = !rationale && SystemClock.elapsedRealtime() - requestedAt < NO_DIALOG_MS
+    if (rationale || silent) {
+        getSharedPreferences("flip", Context.MODE_PRIVATE).edit().putBoolean(REFUSED_PREFIX + first, true).apply()
+    }
+    if (silent) startActivity(settings)
+}
+
 private const val REFUSED_PREFIX = "refused_"
+
+/** Faster than anyone can read a permission dialog and tap it. */
+private const val NO_DIALOG_MS = 400L
+
+private var requestedAt = 0L
 
 /**
  * A fully rounded fill with press feedback clipped to the same shape. With no fill it is only the
