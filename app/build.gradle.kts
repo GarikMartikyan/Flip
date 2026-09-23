@@ -5,10 +5,12 @@ plugins {
 }
 
 /**
- * Release signing, read from `keystore.properties` at the repository root. Both it and the
- * keystore are gitignored, so a fresh clone still builds debug and an unsigned release.
+ * Release signing, read from `~/signing-keys/flip/keystore.properties`, the one place on this Mac
+ * that holds the keys; `storeFile` in it is relative to that folder. Nothing of it is in the repo,
+ * so a fresh clone elsewhere still builds debug and an unsigned release.
  */
-val signingProps = rootProject.file("keystore.properties").takeIf { it.exists() }?.let { file ->
+val signingDir = File(System.getProperty("user.home"), "signing-keys/flip")
+val signingProps = File(signingDir, "keystore.properties").takeIf { it.exists() }?.let { file ->
     Properties().apply { file.inputStream().use { load(it) } }
 }
 
@@ -27,7 +29,7 @@ android {
     signingConfigs {
         if (signingProps != null) {
             create("release") {
-                storeFile = rootProject.file(signingProps.getProperty("storeFile"))
+                storeFile = File(signingDir, signingProps.getProperty("storeFile"))
                 storePassword = signingProps.getProperty("storePassword")
                 keyAlias = signingProps.getProperty("keyAlias")
                 keyPassword = signingProps.getProperty("keyPassword")
