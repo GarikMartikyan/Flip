@@ -83,12 +83,12 @@
     <string name="repeat_callers_blurb">15분 안에 다시 전화한 사람</string>
     <string name="add_person">사람 추가</string>
     <string name="apps_empty">아직 앱이 없어요. 추가한 앱은 Flip이 계속 소리를 내 줘요.</string>
-    <string name="apps_note">Flip이 무음 전 휴대전화 설정대로 직접 알려 줘요. 소리와 진동, 진동만, 또는 무음이었다면 아무것도 울리지 않아요. Android에서 제한된 설정이라고 표시되면 Flip의 애플리케이션 정보를 열고 ⋮을 누른 뒤 제한된 설정을 허용하세요.</string>
+    <string name="apps_note">Flip이 무음 전 휴대전화 설정대로 직접 알려 줘요. 소리와 진동, 진동만, 또는 무음이었다면 아무것도 울리지 않아요.</string>
     <string name="add_app">앱 추가</string>
     <string name="notification_access">알림 접근</string>
     <string name="listener_missing">허용 안 됨 — 선택한 앱도 무음이에요</string>
     <string name="listener_ask_title">먼저 알림 접근을 허용하세요</string>
-    <string name="listener_ask_body">휴대전화를 뒤집어 둔 동안 앱 알림을 울리려면 Flip이 알림이 도착했는지 알아야 해요. 알림 내용은 절대 읽지 않아요.\n\n다음 화면에서 Flip을 켜고 여기로 돌아오세요. Android에서 제한된 설정이라고 표시되면 Flip의 애플리케이션 정보를 열고 ⋮을 누른 뒤 제한된 설정을 허용하세요.</string>
+    <string name="listener_ask_body">휴대전화를 뒤집어 둔 동안 앱 알림을 울리려면 Flip이 알림이 도착했는지 알아야 해요. 알림 내용은 절대 읽지 않아요.\n\n다음 화면에서 Flip을 켜고 여기로 돌아오세요.</string>
     <string name="not_now">나중에</string>
     <string name="open_settings">설정 열기</string>
     <string name="remove_x">%1$s 삭제</string>
@@ -258,4 +258,9 @@
     <string name="onb_done_title">Flip이 켜져 지켜보고 있어요</string>
     <string name="onb_done_body">조용히 하고 싶을 때 휴대전화를 뒤집어 놓으세요. Flip은 메인 화면에서 언제든 끌 수 있습니다.</string>
     <string name="onb_home">Flip으로 이동</string>
+
+    <!-- The main screen's nudge for a permission Flip can do without. -->
+    <string name="main_battery_needed">Android가 배터리를 아끼려고 밤에 Flip을 멈출 수 있어요. 제한 없이 실행되게 해 주세요.</string>
+    <string name="main_notifications_needed">알림이 없으면 Flip이 지켜보는 동안 Android가 닫을 수 있어요.</string>
+    <string name="hide">숨기기</string>
 </resources>

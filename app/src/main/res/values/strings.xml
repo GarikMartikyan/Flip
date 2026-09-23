@@ -86,12 +86,12 @@
     <string name="repeat_callers_blurb">Anyone who calls again within 15 minutes</string>
     <string name="add_person">Add person</string>
     <string name="apps_empty">No apps yet. Flip will still sound for the ones you add.</string>
-    <string name="apps_note">Flip sounds for these itself, the way the phone was set before it went quiet: sound and vibration, vibration only, or nothing if it was on silent. If Android says the setting is restricted, open Flip’s App info, tap ⋮ and allow restricted settings.</string>
+    <string name="apps_note">Flip sounds for these itself, the way the phone was set before it went quiet: sound and vibration, vibration only, or nothing if it was on silent.</string>
     <string name="add_app">Add app</string>
     <string name="notification_access">Notification access</string>
     <string name="listener_missing">Not granted — chosen apps stay silent</string>
     <string name="listener_ask_title">Notification access first</string>
-    <string name="listener_ask_body">To sound for an app while the phone is face down, Flip needs to see that its notifications arrived. It never reads what they say.\n\nNext, switch Flip on and come back here. If Android says the setting is restricted, open Flip’s App info, tap ⋮ and allow restricted settings.</string>
+    <string name="listener_ask_body">To sound for an app while the phone is face down, Flip needs to see that its notifications arrived. It never reads what they say.\n\nNext, switch Flip on and come back here.</string>
     <string name="not_now">Not now</string>
     <string name="open_settings">Open settings</string>
     <string name="remove_x">Remove %1$s</string>
@@ -263,4 +263,9 @@
     <string name="onb_done_title">Flip is on and watching</string>
     <string name="onb_done_body">Lay the phone face down whenever you want quiet. You can turn Flip off at any time on the main screen.</string>
     <string name="onb_home">Go to Flip</string>
+
+    <!-- The main screen's nudge for a permission Flip can do without. -->
+    <string name="main_battery_needed">Android may pause Flip at night to save battery. Let it run unrestricted.</string>
+    <string name="main_notifications_needed">Without notifications, Android may close Flip while it watches.</string>
+    <string name="hide">Hide</string>
 </resources>

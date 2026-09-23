@@ -89,12 +89,12 @@
     <string name="repeat_callers_blurb">Будь-хто, хто передзвонить протягом 15 хвилин</string>
     <string name="add_person">Додати людину</string>
     <string name="apps_empty">Програм поки немає. Для доданих Flip усе одно подаватиме звук.</string>
-    <string name="apps_note">Flip сам подає звук для цих програм — так, як телефон був налаштований до тиші: звук і вібрація, лише вібрація або нічого, якщо стояв беззвучний режим. Якщо Android пише, що налаштування обмежене, відкрийте «Відомості про програму» Flip, торкніться ⋮ і дозвольте обмежені налаштування.</string>
+    <string name="apps_note">Flip сам подає звук для цих програм — так, як телефон був налаштований до тиші: звук і вібрація, лише вібрація або нічого, якщо стояв беззвучний режим.</string>
     <string name="add_app">Додати програму</string>
     <string name="notification_access">Доступ до сповіщень</string>
     <string name="listener_missing">Не надано — вибрані програми залишаться без звуку</string>
     <string name="listener_ask_title">Спершу доступ до сповіщень</string>
-    <string name="listener_ask_body">Щоб подати звук для програми, поки телефон лежить екраном донизу, Flip має бачити, що надійшло сповіщення. Їхній вміст він ніколи не читає.\n\nДалі увімкніть Flip і поверніться сюди. Якщо Android пише, що налаштування обмежене, відкрийте «Відомості про програму» Flip, торкніться ⋮ і дозвольте обмежені налаштування.</string>
+    <string name="listener_ask_body">Щоб подати звук для програми, поки телефон лежить екраном донизу, Flip має бачити, що надійшло сповіщення. Їхній вміст він ніколи не читає.\n\nДалі увімкніть Flip і поверніться сюди.</string>
     <string name="not_now">Не зараз</string>
     <string name="open_settings">Відкрити налаштування</string>
     <string name="remove_x">Видалити: %1$s</string>
@@ -273,4 +273,9 @@
     <string name="onb_done_title">Flip увімкнено, і він уже стежить</string>
     <string name="onb_done_body">Кладіть телефон екраном донизу, коли потрібна тиша. Вимкнути Flip можна будь-коли на головному екрані.</string>
     <string name="onb_home">Перейти у Flip</string>
+
+    <!-- The main screen's nudge for a permission Flip can do without. -->
+    <string name="main_battery_needed">Android може зупинити Flip уночі, щоб берегти батарею. Дозвольте йому працювати без обмежень.</string>
+    <string name="main_notifications_needed">Без сповіщень Android може закрити Flip, поки він стежить.</string>
+    <string name="hide">Сховати</string>
 </resources>

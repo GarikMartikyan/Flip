@@ -183,11 +183,30 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/ink" />
 
-            <Button
-                android:id="@+id/dnd_button"
-                style="@style/FlipButton.Filled"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
-                android:text="@string/grant_dnd" />
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/dnd_button"
+                    style="@style/FlipButton.Filled"
+                    android:layout_width="match_parent"
+                    android:text="@string/grant_dnd" />
+
+                <!-- Only for what Flip can do without: Do Not Disturb access cannot be waved away. -->
+                <Button
+                    android:id="@+id/permission_hide"
+                    style="@style/FlipButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/button_text"
+                    android:maxLines="1"
+                    android:text="@string/hide"
+                    android:textColor="@color/ink_dim"
+                    android:visibility="gone" />
+            </LinearLayout>
         </LinearLayout>
 
         <!--

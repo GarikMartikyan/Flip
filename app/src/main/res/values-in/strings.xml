@@ -83,12 +83,12 @@
     <string name="repeat_callers_blurb">Siapa pun yang menelepon lagi dalam 15 menit</string>
     <string name="add_person">Tambah orang</string>
     <string name="apps_empty">Belum ada aplikasi. Flip tetap akan berbunyi untuk aplikasi yang Anda tambahkan.</string>
-    <string name="apps_note">Flip membunyikan aplikasi ini sendiri, sesuai pengaturan ponsel sebelum senyap: suara dan getar, hanya getar, atau tidak sama sekali jika dalam mode senyap. Jika Android menyebut pengaturan ini dibatasi, buka Info aplikasi Flip, ketuk ⋮, lalu izinkan pengaturan yang dibatasi.</string>
+    <string name="apps_note">Flip membunyikan aplikasi ini sendiri, sesuai pengaturan ponsel sebelum senyap: suara dan getar, hanya getar, atau tidak sama sekali jika dalam mode senyap.</string>
     <string name="add_app">Tambah aplikasi</string>
     <string name="notification_access">Akses notifikasi</string>
     <string name="listener_missing">Tidak diizinkan — aplikasi yang dipilih tetap senyap</string>
     <string name="listener_ask_title">Akses notifikasi dulu</string>
-    <string name="listener_ask_body">Untuk membunyikan aplikasi saat ponsel telungkup, Flip perlu tahu bahwa notifikasinya masuk. Flip tidak pernah membaca isinya.\n\nSelanjutnya, aktifkan Flip lalu kembali ke sini. Jika Android menyebut pengaturan ini dibatasi, buka Info aplikasi Flip, ketuk ⋮, lalu izinkan pengaturan yang dibatasi.</string>
+    <string name="listener_ask_body">Untuk membunyikan aplikasi saat ponsel telungkup, Flip perlu tahu bahwa notifikasinya masuk. Flip tidak pernah membaca isinya.\n\nSelanjutnya, aktifkan Flip lalu kembali ke sini.</string>
     <string name="not_now">Nanti saja</string>
     <string name="open_settings">Buka pengaturan</string>
     <string name="remove_x">Hapus %1$s</string>
@@ -258,4 +258,9 @@
     <string name="onb_done_title">Flip aktif dan berjaga</string>
     <string name="onb_done_body">Letakkan ponsel menghadap bawah kapan pun Anda ingin senyap. Flip bisa dimatikan kapan saja di layar utama.</string>
     <string name="onb_home">Buka Flip</string>
+
+    <!-- The main screen's nudge for a permission Flip can do without. -->
+    <string name="main_battery_needed">Android bisa menjeda Flip di malam hari untuk menghemat baterai. Biarkan berjalan tanpa batasan.</string>
+    <string name="main_notifications_needed">Tanpa notifikasi, Android bisa menutup Flip saat sedang berjaga.</string>
+    <string name="hide">Sembunyikan</string>
 </resources>

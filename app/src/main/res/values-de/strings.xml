@@ -85,12 +85,12 @@
     <string name="repeat_callers_blurb">Wer innerhalb von 15 Minuten erneut anruft</string>
     <string name="add_person">Person hinzufügen</string>
     <string name="apps_empty">Noch keine Apps. Flip macht weiterhin Töne für die, die du hinzufügst.</string>
-    <string name="apps_note">Flip gibt für diese selbst Töne aus, so wie das Handy vor dem Stummschalten eingestellt war: Ton und Vibration, nur Vibration oder nichts, wenn es lautlos war. Wenn Android meldet, dass die Einstellung eingeschränkt ist, öffne die App-Informationen von Flip, tippe auf ⋮ und erlaube eingeschränkte Einstellungen.</string>
+    <string name="apps_note">Flip gibt für diese selbst Töne aus, so wie das Handy vor dem Stummschalten eingestellt war: Ton und Vibration, nur Vibration oder nichts, wenn es lautlos war.</string>
     <string name="add_app">App hinzufügen</string>
     <string name="notification_access">Benachrichtigungszugriff</string>
     <string name="listener_missing">Nicht erlaubt – ausgewählte Apps bleiben stumm</string>
     <string name="listener_ask_title">Erst Benachrichtigungszugriff</string>
-    <string name="listener_ask_body">Damit eine App auch bei umgedrehtem Handy Töne macht, muss Flip sehen, dass ihre Benachrichtigungen angekommen sind. Was darin steht, liest es nie.\n\nSchalte als Nächstes Flip ein und komm hierher zurück. Wenn Android meldet, dass die Einstellung eingeschränkt ist, öffne die App-Informationen von Flip, tippe auf ⋮ und erlaube eingeschränkte Einstellungen.</string>
+    <string name="listener_ask_body">Damit eine App auch bei umgedrehtem Handy Töne macht, muss Flip sehen, dass ihre Benachrichtigungen angekommen sind. Was darin steht, liest es nie.\n\nSchalte als Nächstes Flip ein und komm hierher zurück.</string>
     <string name="not_now">Nicht jetzt</string>
     <string name="open_settings">Einstellungen öffnen</string>
     <string name="remove_x">%1$s entfernen</string>
@@ -263,4 +263,9 @@
     <string name="onb_done_title">Flip ist an und passt auf</string>
     <string name="onb_done_body">Leg das Handy mit dem Display nach unten, wann immer du Ruhe willst. Ausschalten kannst du Flip jederzeit auf dem Hauptbildschirm.</string>
     <string name="onb_home">Zu Flip</string>
+
+    <!-- The main screen's nudge for a permission Flip can do without. -->
+    <string name="main_battery_needed">Android kann Flip nachts anhalten, um Akku zu sparen. Lass es uneingeschränkt laufen.</string>
+    <string name="main_notifications_needed">Ohne Benachrichtigungen kann Android Flip beenden, während es aufpasst.</string>
+    <string name="hide">Ausblenden</string>
 </resources>

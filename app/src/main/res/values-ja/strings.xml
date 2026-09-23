@@ -83,12 +83,12 @@
     <string name="repeat_callers_blurb">15分以内に再度かけてきた相手</string>
     <string name="add_person">連絡先を追加</string>
     <string name="apps_empty">まだアプリはありません。追加したアプリは Flip が引き続き鳴らします。</string>
-    <string name="apps_note">Flip は、ミュート前のスマートフォンの設定どおりにこれらを鳴らします。音とバイブ、バイブのみ、またはマナーモードだった場合は何も鳴らしません。「制限付き設定」と表示された場合は、Flip のアプリ情報を開き、⋮ をタップして制限付き設定を許可してください。</string>
+    <string name="apps_note">Flip は、ミュート前のスマートフォンの設定どおりにこれらを鳴らします。音とバイブ、バイブのみ、またはマナーモードだった場合は何も鳴らしません。</string>
     <string name="add_app">アプリを追加</string>
     <string name="notification_access">通知へのアクセス</string>
     <string name="listener_missing">未許可 — 選んだアプリもミュートされます</string>
     <string name="listener_ask_title">まず通知へのアクセスを</string>
-    <string name="listener_ask_body">伏せている間にアプリの通知を鳴らすには、Flip が通知の到着を知る必要があります。通知の内容を読むことはありません。\n\n次の画面で Flip をオンにして、ここに戻ってください。「制限付き設定」と表示された場合は、Flip のアプリ情報を開き、⋮ をタップして制限付き設定を許可してください。</string>
+    <string name="listener_ask_body">伏せている間にアプリの通知を鳴らすには、Flip が通知の到着を知る必要があります。通知の内容を読むことはありません。\n\n次の画面で Flip をオンにして、ここに戻ってください。</string>
     <string name="not_now">後で</string>
     <string name="open_settings">設定を開く</string>
     <string name="remove_x">%1$s を削除</string>
@@ -258,4 +258,9 @@
     <string name="onb_done_title">Flip はオンで、見守っています</string>
     <string name="onb_done_body">静かにしたいときはスマートフォンを伏せて置くだけ。Flip はメイン画面からいつでもオフにできます。</string>
     <string name="onb_home">Flip へ</string>
+
+    <!-- The main screen's nudge for a permission Flip can do without. -->
+    <string name="main_battery_needed">Android は電池を節約するため、夜間に Flip を停止することがあります。制限なしで動作させてください。</string>
+    <string name="main_notifications_needed">通知がないと、Flip が見守っている間に Android が終了させることがあります。</string>
+    <string name="hide">非表示</string>
 </resources>

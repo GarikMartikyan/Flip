@@ -85,12 +85,12 @@
     <string name="repeat_callers_blurb">15 dakika içinde tekrar arayan herkes</string>
     <string name="add_person">Kişi ekle</string>
     <string name="apps_empty">Henüz uygulama yok. Eklediklerinizde Flip yine de ses çıkarır.</string>
-    <string name="apps_note">Flip bunlar için sesi kendisi çalar, telefon sessize geçmeden önceki ayara göre: ses ve titreşim, yalnızca titreşim ya da sessizdeyse hiçbir şey. Android ayarın kısıtlı olduğunu söylerse Flip\'in Uygulama bilgileri\'ni açın, ⋮ simgesine dokunun ve kısıtlanmış ayarlara izin verin.</string>
+    <string name="apps_note">Flip bunlar için sesi kendisi çalar, telefon sessize geçmeden önceki ayara göre: ses ve titreşim, yalnızca titreşim ya da sessizdeyse hiçbir şey.</string>
     <string name="add_app">Uygulama ekle</string>
     <string name="notification_access">Bildirim erişimi</string>
     <string name="listener_missing">Verilmedi — seçilen uygulamalar sessiz kalır</string>
     <string name="listener_ask_title">Önce bildirim erişimi</string>
-    <string name="listener_ask_body">Telefon yüzüstüyken bir uygulama için ses çıkarabilmek için Flip\'in bildirimlerinin geldiğini görmesi gerekir. İçeriklerini asla okumaz.\n\nArdından Flip\'i açın ve buraya geri dönün. Android ayarın kısıtlı olduğunu söylerse Flip\'in Uygulama bilgileri\'ni açın, ⋮ simgesine dokunun ve kısıtlanmış ayarlara izin verin.</string>
+    <string name="listener_ask_body">Telefon yüzüstüyken bir uygulama için ses çıkarabilmek için Flip\'in bildirimlerinin geldiğini görmesi gerekir. İçeriklerini asla okumaz.\n\nArdından Flip\'i açın ve buraya geri dönün.</string>
     <string name="not_now">Şimdi değil</string>
     <string name="open_settings">Ayarları aç</string>
     <string name="remove_x">Kaldır: %1$s</string>
@@ -263,4 +263,9 @@
     <string name="onb_done_title">Flip açık ve izliyor</string>
     <string name="onb_done_body">Sessizlik istediğinizde telefonu ekranı aşağı gelecek şekilde bırakın. Flip\'i ana ekrandan istediğiniz zaman kapatabilirsiniz.</string>
     <string name="onb_home">Flip\'e git</string>
+
+    <!-- The main screen's nudge for a permission Flip can do without. -->
+    <string name="main_battery_needed">Android pil tasarrufu için Flip\'i gece duraklatabilir. Kısıtlamasız çalışmasına izin verin.</string>
+    <string name="main_notifications_needed">Bildirimler olmadan Android, Flip izlerken onu kapatabilir.</string>
+    <string name="hide">Gizle</string>
 </resources>

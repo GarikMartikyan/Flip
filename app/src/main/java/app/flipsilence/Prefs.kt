@@ -17,6 +17,15 @@ class Prefs(ctx: Context) {
         get() = sp.getBoolean(KEY_ONBOARDED, false)
         set(v) = sp.edit().putBoolean(KEY_ONBOARDED, v).apply()
 
+    /** The main screen's nudges for the permissions Flip can do without, once waved away. */
+    var batteryHintHidden: Boolean
+        get() = sp.getBoolean(KEY_BATTERY_HINT_HIDDEN, false)
+        set(v) = sp.edit().putBoolean(KEY_BATTERY_HINT_HIDDEN, v).apply()
+
+    var notificationHintHidden: Boolean
+        get() = sp.getBoolean(KEY_NOTIFICATION_HINT_HIDDEN, false)
+        set(v) = sp.edit().putBoolean(KEY_NOTIFICATION_HINT_HIDDEN, v).apply()
+
     var ruleId: String?
         get() = sp.getString(KEY_RULE_ID, null)
         set(v) = sp.edit().putString(KEY_RULE_ID, v).apply()
@@ -73,6 +82,8 @@ class Prefs(ctx: Context) {
     private companion object {
         const val KEY_ENABLED = "enabled"
         const val KEY_ONBOARDED = "onboarded"
+        const val KEY_BATTERY_HINT_HIDDEN = "battery_hint_hidden"
+        const val KEY_NOTIFICATION_HINT_HIDDEN = "notification_hint_hidden"
         const val KEY_RULE_ID = "rule_id"
         const val KEY_SENSITIVITY = "sensitivity"
         const val KEY_HAPTICS = "haptics"

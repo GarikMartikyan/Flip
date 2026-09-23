@@ -87,12 +87,12 @@
     <string name="repeat_callers_blurb">Quien vuelva a llamar en menos de 15 minutos</string>
     <string name="add_person">Agregar persona</string>
     <string name="apps_empty">Aún no hay apps. Flip seguirá sonando para las que agregues.</string>
-    <string name="apps_note">Flip hace sonar estas apps por su cuenta, como estaba configurado el teléfono antes de silenciarse: sonido y vibración, solo vibración o nada si estaba en silencio. Si Android dice que el ajuste está restringido, abre Información de la aplicación de Flip, toca ⋮ y permite los ajustes restringidos.</string>
+    <string name="apps_note">Flip hace sonar estas apps por su cuenta, como estaba configurado el teléfono antes de silenciarse: sonido y vibración, solo vibración o nada si estaba en silencio.</string>
     <string name="add_app">Agregar app</string>
     <string name="notification_access">Acceso a notificaciones</string>
     <string name="listener_missing">No permitido: las apps elegidas quedan en silencio</string>
     <string name="listener_ask_title">Primero, acceso a notificaciones</string>
-    <string name="listener_ask_body">Para hacer sonar una app con el teléfono boca abajo, Flip necesita saber que llegaron sus notificaciones. Nunca lee lo que dicen.\n\nA continuación, activa Flip y vuelve aquí. Si Android dice que el ajuste está restringido, abre Información de la aplicación de Flip, toca ⋮ y permite los ajustes restringidos.</string>
+    <string name="listener_ask_body">Para hacer sonar una app con el teléfono boca abajo, Flip necesita saber que llegaron sus notificaciones. Nunca lee lo que dicen.\n\nA continuación, activa Flip y vuelve aquí.</string>
     <string name="not_now">Ahora no</string>
     <string name="open_settings">Abrir ajustes</string>
     <string name="remove_x">Quitar a %1$s</string>
@@ -268,4 +268,9 @@
     <string name="onb_done_title">Flip está activado y vigilando</string>
     <string name="onb_done_body">Deja el teléfono boca abajo cuando quieras silencio. Puedes desactivar Flip cuando quieras en la pantalla principal.</string>
     <string name="onb_home">Ir a Flip</string>
+
+    <!-- The main screen's nudge for a permission Flip can do without. -->
+    <string name="main_battery_needed">Android puede pausar Flip por la noche para ahorrar batería. Deja que funcione sin restricciones.</string>
+    <string name="main_notifications_needed">Sin notificaciones, Android puede cerrar Flip mientras vigila.</string>
+    <string name="hide">Ocultar</string>
 </resources>

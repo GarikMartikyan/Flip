@@ -1,11 +1,16 @@
 package app.flipsilence
 
+import android.Manifest
 import android.app.Activity
+import android.app.NotificationManager
 import android.content.Intent
 import android.content.pm.ApplicationInfo
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.os.PowerManager
+import android.provider.Settings
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.text.style.TypefaceSpan
@@ -30,6 +35,8 @@ class MainActivity : Activity() {
     private lateinit var permissionCard: LinearLayout
     private lateinit var permissionText: TextView
     private lateinit var dndButton: Button
+    private lateinit var permissionHide: Button
+    private var missing: Missing? = null
     private lateinit var dayStrip: DayStrip
     private lateinit var historyList: LinearLayout
     private lateinit var todayAll: View
@@ -94,6 +101,7 @@ class MainActivity : Activity() {
         permissionCard = findViewById(R.id.permission_card)
         permissionText = findViewById(R.id.permission_text)
         dndButton = findViewById(R.id.dnd_button)
+        permissionHide = findViewById(R.id.permission_hide)
         dayStrip = findViewById(R.id.day_strip)
         historyList = findViewById(R.id.history_list)
         todayAll = findViewById(R.id.today_all)
@@ -143,7 +151,24 @@ class MainActivity : Activity() {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
 
-        dndButton.setOnClickListener { openDndAccess() }
+        dndButton.setOnClickListener {
+            when (missing) {
+                Missing.DND -> openDndAccess()
+                Missing.BATTERY -> openBatterySettings()
+                Missing.NOTIFICATIONS -> requestOrOpenSettings(
+                    arrayOf(Manifest.permission.POST_NOTIFICATIONS), REQUEST_NOTIFICATIONS, notificationSettings(),
+                )
+                null -> Unit
+            }
+        }
+        permissionHide.setOnClickListener {
+            when (missing) {
+                Missing.BATTERY -> prefs.batteryHintHidden = true
+                Missing.NOTIFICATIONS -> prefs.notificationHintHidden = true
+                else -> Unit
+            }
+            refresh()
+        }
 
         // A recreation (rotation, theme, language) redelivers the launch intent; act on it once.
         if (savedInstanceState == null) handleIntent(intent)
@@ -197,9 +222,7 @@ class MainActivity : Activity() {
         powerToggle.contentDescription = getString(R.string.app_name)
         renderPower(FlipState.info.sample?.engaged == true)
 
-        dndButton.visibility = if (hasDnd) View.GONE else View.VISIBLE
-        permissionCard.visibility = if (hasDnd) View.GONE else View.VISIBLE
-        permissionText.setText(R.string.dnd_needed)
+        renderMissing(hasDnd)
 
         renderExceptions()
 
@@ -389,6 +412,53 @@ class MainActivity : Activity() {
         exceptionsCaption.setTextColor(getColor(if (appsMuted) R.color.ink else R.color.ink_dim))
     }
 
+    /**
+     * The one thing still in the way, most important first. Without Do Not Disturb access Flip can
+     * do nothing, so that always shows. The other two only matter while Flip is on, and each can
+     * be hidden, since Flip works without them and someone who said "not now" meant it.
+     */
+    private fun renderMissing(hasDnd: Boolean) {
+        val on = prefs.enabled
+        missing = when {
+            !hasDnd -> Missing.DND
+            on && !prefs.batteryHintHidden && !unrestricted() -> Missing.BATTERY
+            on && !prefs.notificationHintHidden && !notificationsAllowed() -> Missing.NOTIFICATIONS
+            else -> null
+        }
+        val m = missing
+        permissionCard.visibility = if (m == null) View.GONE else View.VISIBLE
+        if (m == null) return
+        permissionText.setText(m.text)
+        dndButton.setText(m.action)
+        permissionHide.visibility = if (m == Missing.DND) View.GONE else View.VISIBLE
+    }
+
+    private fun unrestricted(): Boolean =
+        getSystemService(PowerManager::class.java).isIgnoringBatteryOptimizations(packageName)
+
+    private fun notificationsAllowed(): Boolean =
+        checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED &&
+            getSystemService(NotificationManager::class.java).areNotificationsEnabled()
+
+    private fun notificationSettings(): Intent =
+        Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, packageName)
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray,
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == REQUEST_NOTIFICATIONS) notePermissionResult(permissions, grantResults, notificationSettings())
+        refresh()
+    }
+
+    private enum class Missing(val text: Int, val action: Int) {
+        DND(R.string.dnd_needed, R.string.grant_dnd),
+        BATTERY(R.string.main_battery_needed, R.string.onb_open_batt),
+        NOTIFICATIONS(R.string.main_notifications_needed, R.string.onb_allow_notif),
+    }
+
     /** The header switch: off, on and watching, or on and holding the phone quiet right now. */
     private fun renderPower(engaged: Boolean) {
         val on = prefs.enabled
@@ -436,6 +506,7 @@ class MainActivity : Activity() {
     private companion object {
         const val EXTRA_ENABLE = "enable"
         const val EXTRA_FORCE = "force"
+        const val REQUEST_NOTIFICATIONS = 1
         const val STRIP_MARKS = 3
         const val STRIP_MARK_DP = 30f
         /** Stand-ins of each kind while nothing is chosen. */
