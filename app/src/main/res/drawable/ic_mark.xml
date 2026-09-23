@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The turned F from the launcher, cropped to itself and drawn in the theme's ink, for the app's name
+  inside the app. The dot keeps the quiet colour: the one light left on.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+    <group android:translateX="-24" android:translateY="-24">
+        <path
+            android:pathData="M44,29 A5,5 0 0,1 49,34 V74 A5,5 0 0,1 44,79 A5,5 0 0,1 39,74 V34 A5,5 0 0,1 44,29 Z"
+            android:fillColor="@color/ink" />
+        <path
+            android:pathData="M44,50 H58 A5,5 0 0,1 58,60 H44 A5,5 0 0,1 44,50 Z"
+            android:fillColor="@color/ink" />
+        <path
+            android:pathData="M44,69 H66 A5,5 0 0,1 66,79 H44 A5,5 0 0,1 44,69 Z"
+            android:fillColor="@color/ink" />
+        <path
+            android:pathData="M61,37 A5,5 0 1,1 71,37 A5,5 0 1,1 61,37 Z"
+            android:fillColor="@color/quiet" />
+    </group>
+</vector>

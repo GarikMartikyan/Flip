@@ -12,6 +12,11 @@ class Prefs(ctx: Context) {
         get() = sp.getBoolean(KEY_ENABLED, false)
         set(v) = sp.edit().putBoolean(KEY_ENABLED, v).apply()
 
+    /** Whether the first-launch setup has run to its end, or was never needed. */
+    var onboarded: Boolean
+        get() = sp.getBoolean(KEY_ONBOARDED, false)
+        set(v) = sp.edit().putBoolean(KEY_ONBOARDED, v).apply()
+
     var ruleId: String?
         get() = sp.getString(KEY_RULE_ID, null)
         set(v) = sp.edit().putString(KEY_RULE_ID, v).apply()
@@ -67,6 +72,7 @@ class Prefs(ctx: Context) {
 
     private companion object {
         const val KEY_ENABLED = "enabled"
+        const val KEY_ONBOARDED = "onboarded"
         const val KEY_RULE_ID = "rule_id"
         const val KEY_SENSITIVITY = "sensitivity"
         const val KEY_HAPTICS = "haptics"

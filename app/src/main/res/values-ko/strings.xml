@@ -220,4 +220,42 @@
     <!-- All of today's silences on a screen of their own -->
     <string name="today_title">오늘</string>
     <string name="show_all">모두 보기 (%1$d)</string>
+
+    <!-- First launch: the phone on the table, then the three permissions, then Flip switched on. -->
+    <string name="onb_chip_sound">소리 켜짐</string>
+    <string name="onb_chip_quiet">무음 · 방해 금지 모드</string>
+    <string name="onb_chip_hold">움직임 없음 · %1$s</string>
+    <string name="onb_stage_up">화면이 위를 향하게 테이블에 놓인 휴대전화, 소리 켜짐</string>
+    <string name="onb_stage_down">화면이 아래를 향하게 테이블에 놓인 휴대전화, 무음</string>
+    <string name="onb_progress">%2$d단계 중 %1$d단계</string>
+    <string name="onb_welcome_eyebrow">환영합니다</string>
+    <string name="onb_welcome_title">한 번의 동작으로 조용히</string>
+    <string name="onb_welcome_body">Flip은 한 가지만 합니다. 휴대전화를 뒤집어 놓으면 소리를 끕니다. 어떻게 보이는지 보여 드릴게요.</string>
+    <string name="onb_show">보여 주기</string>
+    <string name="onb_how_1">작동 방식 · 1/2</string>
+    <string name="onb_down_title">뒤집으면 조용히</string>
+    <string name="onb_down_body">화면을 아래로 향하게 두고 %1$s 동안 움직이지 않으면 Flip이 방해 금지 모드를 켭니다. 주머니나 손 안에서는 켜지지 않아요.</string>
+    <string name="onb_next">다음</string>
+    <string name="onb_how_2">작동 방식 · 2/2</string>
+    <string name="onb_up_title">들어 올리면 소리가 돌아와요</string>
+    <string name="onb_up_body">누를 것은 없습니다. 중요한 사람과 앱은 조용할 때도 울릴 수 있으며, 나중에 고를 수 있어요.</string>
+    <string name="onb_set_up">Flip 설정</string>
+    <string name="onb_perm_1">권한 1/3 · 필수</string>
+    <string name="onb_dnd_body">이 권한이 없으면 Flip은 아무것도 무음으로 만들 수 없습니다. Flip에 꼭 필요한 유일한 권한이에요.</string>
+    <string name="onb_open_settings">설정 열기</string>
+    <string name="onb_dnd_hint">스위치를 켠 뒤 돌아오세요</string>
+    <string name="onb_perm_2">권한 2/3</string>
+    <string name="onb_notif_body">Flip이 지켜보는 동안 Android는 알림창에 작은 아이콘을 표시합니다. 없으면 시스템이 Flip을 닫을 수 있어요.</string>
+    <string name="onb_allow_notif">알림 허용</string>
+    <string name="onb_notif_hint">Android가 물어보면 허용을 누르세요</string>
+    <string name="onb_perm_3">권한 3/3</string>
+    <string name="onb_batt_title">백그라운드에서 실행</string>
+    <string name="onb_batt_body">Android는 배터리를 아끼려고 앱을 잠재웁니다. Flip이 제한 없이 실행되게 해 주세요. 배터리를 거의 쓰지 않습니다.</string>
+    <string name="onb_open_batt">배터리 설정 열기</string>
+    <string name="onb_batt_hint">백그라운드 사용을 누르고 제한 없음을 고른 뒤 돌아오세요</string>
+    <string name="onb_not_now">나중에</string>
+    <string name="onb_done_eyebrow">완료</string>
+    <string name="onb_done_title">Flip이 켜져 지켜보고 있어요</string>
+    <string name="onb_done_body">조용히 하고 싶을 때 휴대전화를 뒤집어 놓으세요. Flip은 메인 화면에서 언제든 끌 수 있습니다.</string>
+    <string name="onb_home">Flip으로 이동</string>
 </resources>

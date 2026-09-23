@@ -6,7 +6,6 @@ import android.content.pm.ApplicationInfo
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.provider.Settings
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.text.style.TypefaceSpan
@@ -62,8 +61,18 @@ class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         prefs = Prefs(this)
+        if (!prefs.onboarded) {
+            // Someone who set Flip up before there was a setup screen does not need it now.
+            if (prefs.enabled || DndController.hasAccess(this)) {
+                prefs.onboarded = true
+            } else {
+                startActivity(Intent(this, OnboardingActivity::class.java))
+                finish()
+                return
+            }
+        }
+        setContentView(R.layout.activity_main)
 
         applySystemBarInsets(findViewById(R.id.scroll), findViewById(R.id.content))
 
@@ -163,7 +172,7 @@ class MainActivity : Activity() {
     }
 
     private fun openDndAccess() {
-        startActivity(Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS))
+        DndController.openAccessSettings(this)
     }
 
     override fun onResume() {

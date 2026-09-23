@@ -119,13 +119,13 @@ class SettingsActivity : Activity() {
         }
 
         findViewById<View>(R.id.dnd_row).setOnClickListener {
-            startActivity(Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS))
+            DndController.openAccessSettings(this)
         }
         findViewById<View>(R.id.language_row).setOnClickListener {
             startActivity(Intent(this, LanguageActivity::class.java))
         }
         findViewById<View>(R.id.battery_row).setOnClickListener {
-            startActivity(Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS))
+            openBatterySettings()
         }
 
         diagnosticsToggle.setOnClickListener {

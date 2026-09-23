@@ -220,4 +220,42 @@
     <!-- All of today's silences on a screen of their own -->
     <string name="today_title">Hari ini</string>
     <string name="show_all">Lihat semua %1$d</string>
+
+    <!-- First launch: the phone on the table, then the three permissions, then Flip switched on. -->
+    <string name="onb_chip_sound">Suara aktif</string>
+    <string name="onb_chip_quiet">Senyap · Jangan ganggu</string>
+    <string name="onb_chip_hold">Diam · %1$s</string>
+    <string name="onb_stage_up">Ponsel tergeletak menghadap atas di meja, suara aktif</string>
+    <string name="onb_stage_down">Ponsel tergeletak menghadap bawah di meja, senyap</string>
+    <string name="onb_progress">Langkah %1$d dari %2$d</string>
+    <string name="onb_welcome_eyebrow">Selamat datang</string>
+    <string name="onb_welcome_title">Senyap dengan satu gerakan</string>
+    <string name="onb_welcome_body">Flip melakukan satu hal: menyenyapkan ponsel saat Anda meletakkannya menghadap bawah. Begini tampilannya.</string>
+    <string name="onb_show">Tunjukkan</string>
+    <string name="onb_how_1">Cara kerjanya · 1 dari 2</string>
+    <string name="onb_down_title">Menghadap bawah berarti senyap</string>
+    <string name="onb_down_body">Letakkan menghadap bawah dan biarkan: setelah diam selama %1$s, Flip menyalakan Jangan ganggu. Di saku atau di tangan, ini tidak pernah terjadi.</string>
+    <string name="onb_next">Berikutnya</string>
+    <string name="onb_how_2">Cara kerjanya · 2 dari 2</string>
+    <string name="onb_up_title">Diangkat, suaranya kembali</string>
+    <string name="onb_up_body">Tidak ada yang perlu diketuk. Orang dan aplikasi penting tetap bisa berbunyi; Anda bisa memilihnya nanti.</string>
+    <string name="onb_set_up">Siapkan Flip</string>
+    <string name="onb_perm_1">Izin 1 dari 3 · wajib</string>
+    <string name="onb_dnd_body">Tanpa izin ini Flip tidak bisa menyenyapkan apa pun. Hanya ini yang benar-benar dibutuhkan Flip.</string>
+    <string name="onb_open_settings">Buka setelan</string>
+    <string name="onb_dnd_hint">Aktifkan tombolnya, lalu kembali</string>
+    <string name="onb_perm_2">Izin 2 dari 3</string>
+    <string name="onb_notif_body">Selama Flip berjaga, Android menampilkan ikon kecil di panel notifikasi. Tanpanya, sistem bisa menutup Flip.</string>
+    <string name="onb_allow_notif">Izinkan notifikasi</string>
+    <string name="onb_notif_hint">Android akan bertanya: ketuk Izinkan</string>
+    <string name="onb_perm_3">Izin 3 dari 3</string>
+    <string name="onb_batt_title">Berjalan di latar belakang</string>
+    <string name="onb_batt_body">Android menidurkan aplikasi untuk menghemat baterai. Biarkan Flip berjalan tanpa batasan; hampir tidak memakai daya.</string>
+    <string name="onb_open_batt">Buka setelan baterai</string>
+    <string name="onb_batt_hint">Ketuk Penggunaan latar belakang, pilih Tidak dibatasi, lalu kembali</string>
+    <string name="onb_not_now">Nanti saja</string>
+    <string name="onb_done_eyebrow">Selesai</string>
+    <string name="onb_done_title">Flip aktif dan berjaga</string>
+    <string name="onb_done_body">Letakkan ponsel menghadap bawah kapan pun Anda ingin senyap. Flip bisa dimatikan kapan saja di layar utama.</string>
+    <string name="onb_home">Buka Flip</string>
 </resources>

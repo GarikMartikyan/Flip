@@ -225,4 +225,42 @@
     <!-- All of today's silences on a screen of their own -->
     <string name="today_title">Bugün</string>
     <string name="show_all">Tümünü göster (%1$d)</string>
+
+    <!-- First launch: the phone on the table, then the three permissions, then Flip switched on. -->
+    <string name="onb_chip_sound">Ses açık</string>
+    <string name="onb_chip_quiet">Sessiz · Rahatsız Etmeyin</string>
+    <string name="onb_chip_hold">Hareketsiz · %1$s</string>
+    <string name="onb_stage_up">Masada ekranı yukarı bakan bir telefon, ses açık</string>
+    <string name="onb_stage_down">Masada ekranı aşağı bakan bir telefon, sessiz</string>
+    <string name="onb_progress">Adım %1$d / %2$d</string>
+    <string name="onb_welcome_eyebrow">Hoş geldiniz</string>
+    <string name="onb_welcome_title">Tek hareketle sessizlik</string>
+    <string name="onb_welcome_body">Flip tek bir şey yapar: telefonu ekranı aşağı gelecek şekilde bıraktığınızda sessize alır. İşte böyle görünüyor.</string>
+    <string name="onb_show">Göster</string>
+    <string name="onb_how_1">Nasıl çalışır · 1 / 2</string>
+    <string name="onb_down_title">Ekran aşağıda, ses yok</string>
+    <string name="onb_down_body">Ekranı aşağı gelecek şekilde bırakın: %1$s hareketsiz kaldıktan sonra Flip Rahatsız Etmeyin\'i açar. Cepte ya da elde bu asla olmaz.</string>
+    <string name="onb_next">İleri</string>
+    <string name="onb_how_2">Nasıl çalışır · 2 / 2</string>
+    <string name="onb_up_title">Elinize alın, ses geri gelsin</string>
+    <string name="onb_up_body">Dokunacak bir şey yok. Önemli kişiler ve uygulamalar sessizlikte de çalabilir; onları sonra seçebilirsiniz.</string>
+    <string name="onb_set_up">Flip\'i kur</string>
+    <string name="onb_perm_1">İzin 1 / 3 · gerekli</string>
+    <string name="onb_dnd_body">Bu olmadan Flip hiçbir şeyi sessize alamaz. Flip\'in gerçekten ihtiyaç duyduğu tek şey bu.</string>
+    <string name="onb_open_settings">Ayarları aç</string>
+    <string name="onb_dnd_hint">Anahtarı açın ve geri dönün</string>
+    <string name="onb_perm_2">İzin 2 / 3</string>
+    <string name="onb_notif_body">Flip izlerken Android bildirim panelinde küçük bir simge gösterir. Bu olmadan sistem Flip\'i kapatabilir.</string>
+    <string name="onb_allow_notif">Bildirimlere izin ver</string>
+    <string name="onb_notif_hint">Android soracak: İzin ver\'e dokunun</string>
+    <string name="onb_perm_3">İzin 3 / 3</string>
+    <string name="onb_batt_title">Arka planda çalışma</string>
+    <string name="onb_batt_body">Android pil tasarrufu için uygulamaları uyutur. Flip\'in kısıtlamasız çalışmasına izin verin; neredeyse hiç pil harcamaz.</string>
+    <string name="onb_open_batt">Pil ayarlarını aç</string>
+    <string name="onb_batt_hint">Arka plan kullanımı\'na dokunun, Kısıtlanmamış\'ı seçin ve geri dönün</string>
+    <string name="onb_not_now">Şimdi değil</string>
+    <string name="onb_done_eyebrow">Hazır</string>
+    <string name="onb_done_title">Flip açık ve izliyor</string>
+    <string name="onb_done_body">Sessizlik istediğinizde telefonu ekranı aşağı gelecek şekilde bırakın. Flip\'i ana ekrandan istediğiniz zaman kapatabilirsiniz.</string>
+    <string name="onb_home">Flip\'e git</string>
 </resources>

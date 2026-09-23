@@ -235,4 +235,42 @@
     <!-- All of today's silences on a screen of their own -->
     <string name="today_title">Сьогодні</string>
     <string name="show_all">Показати всі (%1$d)</string>
+
+    <!-- First launch: the phone on the table, then the three permissions, then Flip switched on. -->
+    <string name="onb_chip_sound">Звук увімкнено</string>
+    <string name="onb_chip_quiet">Тиша · «Не турбувати»</string>
+    <string name="onb_chip_hold">Лежить нерухомо · %1$s</string>
+    <string name="onb_stage_up">Телефон лежить на столі екраном догори, звук увімкнено</string>
+    <string name="onb_stage_down">Телефон лежить на столі екраном донизу, звук вимкнено</string>
+    <string name="onb_progress">Крок %1$d з %2$d</string>
+    <string name="onb_welcome_eyebrow">Ласкаво просимо</string>
+    <string name="onb_welcome_title">Тиша одним рухом</string>
+    <string name="onb_welcome_body">Flip робить одну річ: вимикає звук телефона, коли ви кладете його екраном донизу. Покажемо, як це виглядає.</string>
+    <string name="onb_show">Показати</string>
+    <string name="onb_how_1">Як це працює · 1 з 2</string>
+    <string name="onb_down_title">Екраном донизу — тиша</string>
+    <string name="onb_down_body">Покладіть його екраном донизу й залиште: через %1$s нерухомості Flip увімкне «Не турбувати». У кишені чи в руці цього не станеться.</string>
+    <string name="onb_next">Далі</string>
+    <string name="onb_how_2">Як це працює · 2 з 2</string>
+    <string name="onb_up_title">Взяли в руки — звук повернувся</string>
+    <string name="onb_up_body">Нічого натискати не треба. А важливі люди й застосунки зможуть звучати навіть у тиші — їх можна вибрати пізніше.</string>
+    <string name="onb_set_up">Налаштувати Flip</string>
+    <string name="onb_perm_1">Дозвіл 1 з 3 · обов’язково</string>
+    <string name="onb_dnd_body">Без нього Flip не зможе нічого заглушити. Це єдине, що йому потрібно обов’язково.</string>
+    <string name="onb_open_settings">Відкрити налаштування</string>
+    <string name="onb_dnd_hint">Увімкніть перемикач і поверніться</string>
+    <string name="onb_perm_2">Дозвіл 2 з 3</string>
+    <string name="onb_notif_body">Поки Flip стежить, Android тримає в шторці невеликий значок. Без нього система може закрити Flip.</string>
+    <string name="onb_allow_notif">Дозволити сповіщення</string>
+    <string name="onb_notif_hint">Android запитає — натисніть «Дозволити»</string>
+    <string name="onb_perm_3">Дозвіл 3 з 3</string>
+    <string name="onb_batt_title">Робота у фоні</string>
+    <string name="onb_batt_body">Android присипляє застосунки, щоб берегти батарею. Дозвольте Flip працювати без обмежень — він майже не витрачає заряд.</string>
+    <string name="onb_open_batt">Відкрити налаштування батареї</string>
+    <string name="onb_batt_hint">Натисніть «Використання у фоні», виберіть «Без обмежень» і поверніться</string>
+    <string name="onb_not_now">Не зараз</string>
+    <string name="onb_done_eyebrow">Готово</string>
+    <string name="onb_done_title">Flip увімкнено, і він уже стежить</string>
+    <string name="onb_done_body">Кладіть телефон екраном донизу, коли потрібна тиша. Вимкнути Flip можна будь-коли на головному екрані.</string>
+    <string name="onb_home">Перейти у Flip</string>
 </resources>

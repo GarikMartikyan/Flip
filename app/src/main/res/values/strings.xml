@@ -225,4 +225,42 @@
     <!-- All of today's silences on a screen of their own -->
     <string name="today_title">Today</string>
     <string name="show_all">Show all %1$d</string>
+
+    <!-- First launch: the phone on the table, then the three permissions, then Flip switched on. -->
+    <string name="onb_chip_sound">Sound on</string>
+    <string name="onb_chip_quiet">Quiet · Do Not Disturb</string>
+    <string name="onb_chip_hold">Lying still · %1$s</string>
+    <string name="onb_stage_up">A phone lying face up on a table, sound on</string>
+    <string name="onb_stage_down">A phone lying face down on a table, silenced</string>
+    <string name="onb_progress">Step %1$d of %2$d</string>
+    <string name="onb_welcome_eyebrow">Welcome</string>
+    <string name="onb_welcome_title">Silence in one move</string>
+    <string name="onb_welcome_body">Flip does one thing: it silences your phone when you lay it face down. Here is how that looks.</string>
+    <string name="onb_show">Show me</string>
+    <string name="onb_how_1">How it works · 1 of 2</string>
+    <string name="onb_down_title">Face down means quiet</string>
+    <string name="onb_down_body">Lay it face down and leave it: after %1$s without moving, Flip turns on Do Not Disturb. In a pocket or a hand it never happens.</string>
+    <string name="onb_next">Next</string>
+    <string name="onb_how_2">How it works · 2 of 2</string>
+    <string name="onb_up_title">Pick it up and the sound is back</string>
+    <string name="onb_up_body">Nothing to tap. The people and apps that matter can still get through the quiet; you can choose them later.</string>
+    <string name="onb_set_up">Set up Flip</string>
+    <string name="onb_perm_1">Permission 1 of 3 · required</string>
+    <string name="onb_dnd_body">Without it Flip cannot silence anything. It is the only thing Flip truly needs.</string>
+    <string name="onb_open_settings">Open settings</string>
+    <string name="onb_dnd_hint">Turn on the switch, then come back</string>
+    <string name="onb_perm_2">Permission 2 of 3</string>
+    <string name="onb_notif_body">While Flip is watching, Android keeps a small icon in the notification shade. Without it the system may close Flip.</string>
+    <string name="onb_allow_notif">Allow notifications</string>
+    <string name="onb_notif_hint">Android will ask: tap Allow</string>
+    <string name="onb_perm_3">Permission 3 of 3</string>
+    <string name="onb_batt_title">Running in the background</string>
+    <string name="onb_batt_body">Android puts apps to sleep to save battery. Let Flip run unrestricted; it uses hardly any charge.</string>
+    <string name="onb_open_batt">Open battery settings</string>
+    <string name="onb_batt_hint">Tap Allow background usage, choose Unrestricted, then come back</string>
+    <string name="onb_not_now">Not now</string>
+    <string name="onb_done_eyebrow">All set</string>
+    <string name="onb_done_title">Flip is on and watching</string>
+    <string name="onb_done_body">Lay the phone face down whenever you want quiet. You can turn Flip off at any time on the main screen.</string>
+    <string name="onb_home">Go to Flip</string>
 </resources>

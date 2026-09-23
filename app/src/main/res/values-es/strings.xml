@@ -230,4 +230,42 @@
     <!-- All of today's silences on a screen of their own -->
     <string name="today_title">Hoy</string>
     <string name="show_all">Ver los %1$d</string>
+
+    <!-- First launch: the phone on the table, then the three permissions, then Flip switched on. -->
+    <string name="onb_chip_sound">Sonido activado</string>
+    <string name="onb_chip_quiet">Silencio · No molestar</string>
+    <string name="onb_chip_hold">Quieto · %1$s</string>
+    <string name="onb_stage_up">Un teléfono boca arriba sobre la mesa, con sonido</string>
+    <string name="onb_stage_down">Un teléfono boca abajo sobre la mesa, en silencio</string>
+    <string name="onb_progress">Paso %1$d de %2$d</string>
+    <string name="onb_welcome_eyebrow">Te damos la bienvenida</string>
+    <string name="onb_welcome_title">Silencio con un gesto</string>
+    <string name="onb_welcome_body">Flip hace una sola cosa: silencia el teléfono cuando lo dejas boca abajo. Así se ve.</string>
+    <string name="onb_show">Mostrar</string>
+    <string name="onb_how_1">Cómo funciona · 1 de 2</string>
+    <string name="onb_down_title">Boca abajo es silencio</string>
+    <string name="onb_down_body">Déjalo boca abajo y sin moverlo: tras %1$s quieto, Flip activa No molestar. En el bolsillo o en la mano nunca pasa.</string>
+    <string name="onb_next">Siguiente</string>
+    <string name="onb_how_2">Cómo funciona · 2 de 2</string>
+    <string name="onb_up_title">Lo levantas y vuelve el sonido</string>
+    <string name="onb_up_body">No hay que tocar nada. Las personas y apps importantes pueden seguir sonando; puedes elegirlas más tarde.</string>
+    <string name="onb_set_up">Configurar Flip</string>
+    <string name="onb_perm_1">Permiso 1 de 3 · obligatorio</string>
+    <string name="onb_dnd_body">Sin él, Flip no puede silenciar nada. Es lo único que Flip necesita de verdad.</string>
+    <string name="onb_open_settings">Abrir ajustes</string>
+    <string name="onb_dnd_hint">Activa el interruptor y vuelve</string>
+    <string name="onb_perm_2">Permiso 2 de 3</string>
+    <string name="onb_notif_body">Mientras Flip vigila, Android muestra un pequeño icono en la barra. Sin él, el sistema puede cerrar Flip.</string>
+    <string name="onb_allow_notif">Permitir notificaciones</string>
+    <string name="onb_notif_hint">Android te preguntará: toca Permitir</string>
+    <string name="onb_perm_3">Permiso 3 de 3</string>
+    <string name="onb_batt_title">Funcionar en segundo plano</string>
+    <string name="onb_batt_body">Android duerme las apps para ahorrar batería. Deja que Flip funcione sin restricciones; apenas gasta batería.</string>
+    <string name="onb_open_batt">Abrir ajustes de batería</string>
+    <string name="onb_batt_hint">Toca Uso en segundo plano, elige Sin restricciones y vuelve</string>
+    <string name="onb_not_now">Ahora no</string>
+    <string name="onb_done_eyebrow">Listo</string>
+    <string name="onb_done_title">Flip está activado y vigilando</string>
+    <string name="onb_done_body">Deja el teléfono boca abajo cuando quieras silencio. Puedes desactivar Flip cuando quieras en la pantalla principal.</string>
+    <string name="onb_home">Ir a Flip</string>
 </resources>

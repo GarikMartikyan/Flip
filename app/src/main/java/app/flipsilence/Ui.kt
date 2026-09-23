@@ -1,6 +1,7 @@
 package app.flipsilence
 
 import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.pm.PackageManager
 import android.content.Intent
@@ -8,7 +9,9 @@ import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.RippleDrawable
+import android.net.Uri
 import android.os.SystemClock
+import android.provider.Settings
 import android.view.View
 import android.view.WindowInsets
 import kotlin.math.roundToInt
@@ -49,6 +52,25 @@ internal fun Activity.notePermissionResult(permissions: Array<out String>, grant
     }
     if (silent) startActivity(settings)
 }
+
+/**
+ * Opens Flip's own battery page, where "Allow background usage" leads to Unrestricted, rather than
+ * the list of every app. That page's action is a system API that Settings exports (it is there on
+ * One UI 8.5); where it is missing, Flip's app info, which has a Battery row, is the next nearest.
+ */
+internal fun Activity.openBatterySettings() {
+    val pkg = Uri.fromParts("package", packageName, null)
+    try {
+        startActivity(Intent(ACTION_POWER_USAGE_DETAIL, pkg))
+    } catch (_: ActivityNotFoundException) {
+        startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, pkg))
+    } catch (_: SecurityException) {
+        startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, pkg))
+    }
+}
+
+/** Settings.ACTION_VIEW_ADVANCED_POWER_USAGE_DETAIL, which apps cannot name directly. */
+private const val ACTION_POWER_USAGE_DETAIL = "android.settings.VIEW_ADVANCED_POWER_USAGE_DETAIL"
 
 private const val REFUSED_PREFIX = "refused_"
 

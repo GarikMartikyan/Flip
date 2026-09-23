@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A stopwatch: the moment the phone has to lie still before Flip silences it. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M12,21a7.5,7.5 0,1 0,0 -15a7.5,7.5 0,1 0,0 15Z"
+        android:strokeWidth="2"
+        android:strokeColor="@color/ink_dim"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M12,13.5V10M10,3h4"
+        android:strokeWidth="2"
+        android:strokeColor="@color/ink_dim"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

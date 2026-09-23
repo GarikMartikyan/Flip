@@ -1,11 +1,15 @@
 package app.flipsilence
 
+import android.app.Activity
 import android.app.AutomaticZenRule
 import android.app.NotificationManager
+import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
+import android.content.Intent
 import android.net.Uri
 import android.os.Build
+import android.provider.Settings
 import android.service.notification.Condition
 import android.service.notification.ZenPolicy
 import android.util.Log
@@ -31,6 +35,25 @@ object DndController {
         ctx.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
     fun hasAccess(ctx: Context): Boolean = nm(ctx).isNotificationPolicyAccessGranted
+
+    /**
+     * Opens Flip's own Do Not Disturb access page, one switch, rather than the list of every app
+     * that asked. That page's action is a system API, but Settings exports it (it is there on
+     * One UI 8.5); where it is missing, the list it is.
+     */
+    fun openAccessSettings(activity: Activity) {
+        val own = Intent(ACTION_ACCESS_DETAIL, Uri.fromParts("package", activity.packageName, null))
+        try {
+            activity.startActivity(own)
+        } catch (_: ActivityNotFoundException) {
+            activity.startActivity(Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS))
+        } catch (_: SecurityException) {
+            activity.startActivity(Intent(Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS))
+        }
+    }
+
+    /** Settings.ACTION_NOTIFICATION_POLICY_ACCESS_DETAIL_SETTINGS, which apps cannot name directly. */
+    private const val ACTION_ACCESS_DETAIL = "android.settings.NOTIFICATION_POLICY_ACCESS_DETAIL_SETTINGS"
 
     /**
      * Returns the id of our rule, creating it if the user deleted it or this is a first run.

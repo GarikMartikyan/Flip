@@ -220,4 +220,42 @@
     <!-- All of today's silences on a screen of their own -->
     <string name="today_title">今日</string>
     <string name="show_all">すべて表示（%1$d）</string>
+
+    <!-- First launch: the phone on the table, then the three permissions, then Flip switched on. -->
+    <string name="onb_chip_sound">サウンドオン</string>
+    <string name="onb_chip_quiet">サイレント · サイレントモード</string>
+    <string name="onb_chip_hold">静止中 · %1$s</string>
+    <string name="onb_stage_up">テーブルに画面を上にして置かれたスマートフォン、サウンドオン</string>
+    <string name="onb_stage_down">テーブルに画面を下にして置かれたスマートフォン、サイレント</string>
+    <string name="onb_progress">ステップ %1$d / %2$d</string>
+    <string name="onb_welcome_eyebrow">ようこそ</string>
+    <string name="onb_welcome_title">ひと動作で静かに</string>
+    <string name="onb_welcome_body">Flip がすることはひとつだけ。スマートフォンを伏せて置くと音を消します。どう動くかお見せします。</string>
+    <string name="onb_show">見てみる</string>
+    <string name="onb_how_1">しくみ · 1 / 2</string>
+    <string name="onb_down_title">伏せると静かに</string>
+    <string name="onb_down_body">伏せて置いたままにすると、%1$s動かなければ Flip がサイレントモードをオンにします。ポケットや手の中では作動しません。</string>
+    <string name="onb_next">次へ</string>
+    <string name="onb_how_2">しくみ · 2 / 2</string>
+    <string name="onb_up_title">手に取ると音が戻る</string>
+    <string name="onb_up_body">操作は不要です。大切な人やアプリは静かなときも鳴らせます。あとで選べます。</string>
+    <string name="onb_set_up">Flip を設定</string>
+    <string name="onb_perm_1">許可 1 / 3 · 必須</string>
+    <string name="onb_dnd_body">これがないと Flip は何も消音できません。Flip に本当に必要なのはこれだけです。</string>
+    <string name="onb_open_settings">設定を開く</string>
+    <string name="onb_dnd_hint">スイッチをオンにして戻ってください</string>
+    <string name="onb_perm_2">許可 2 / 3</string>
+    <string name="onb_notif_body">Flip が見守っている間、Android は通知領域に小さなアイコンを表示します。これがないとシステムが Flip を終了することがあります。</string>
+    <string name="onb_allow_notif">通知を許可</string>
+    <string name="onb_notif_hint">Android が確認します。「許可」をタップしてください</string>
+    <string name="onb_perm_3">許可 3 / 3</string>
+    <string name="onb_batt_title">バックグラウンドで動作</string>
+    <string name="onb_batt_body">Android は電池を節約するためにアプリを休止させます。Flip を「制限なし」で動かしてください。電池はほとんど使いません。</string>
+    <string name="onb_open_batt">バッテリー設定を開く</string>
+    <string name="onb_batt_hint">「バックグラウンドでの使用」をタップし、「制限なし」を選んで戻ってください</string>
+    <string name="onb_not_now">あとで</string>
+    <string name="onb_done_eyebrow">完了</string>
+    <string name="onb_done_title">Flip はオンで、見守っています</string>
+    <string name="onb_done_body">静かにしたいときはスマートフォンを伏せて置くだけ。Flip はメイン画面からいつでもオフにできます。</string>
+    <string name="onb_home">Flip へ</string>
 </resources>
