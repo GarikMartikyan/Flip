@@ -18,14 +18,14 @@
     <string name="legend_left_alone">置いたまま（音あり）</string>
     <string name="legend_awake">スマートフォンを使用</string>
     <string name="night_not_silenced">ミュートなし — 伏せていませんでした</string>
-    <string name="sleep_history">睡眠の記録</string>
+    <string name="sleep_history">夜の睡眠の記録</string>
     <string name="today_empty">起床後のミュートはまだありません。スマートフォンを伏せて置くと、ここに表示されます。</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">睡眠</string>
+    <string name="sleep">夜の睡眠</string>
     <string name="nights_7">7夜</string>
     <string name="nights_30">30夜</string>
-    <string name="average_sleep">平均睡眠</string>
+    <string name="average_sleep">夜の平均睡眠</string>
     <string name="a_night">1夜あたり</string>
     <string name="bedtime">就寝</string>
     <string name="wake_up">起床</string>
@@ -37,7 +37,7 @@
     <string name="every_night">毎晩</string>
     <string name="through_the_night">夜の間</string>
     <string name="history_empty_nights">この期間の夜の記録はまだありません。Flip をオンにしたまま一晩過ごすと、毎朝ここに追加されます。</string>
-    <string name="sleep_footnote">Flip は睡眠そのものは検知できません。夜とは画面がオフのままスマートフォンが置かれていた時間で、途切れている部分は手に取った時間です。</string>
+    <string name="sleep_footnote">Flip は睡眠そのものは検知できません。夜とは画面がオフのままスマートフォンが置かれていた時間で、途切れている部分は手に取った時間です。数えるのは夜の睡眠だけで、昼寝は記録されません。</string>
     <string name="night_gone">この夜の記録はもうありません。</string>
 
     <!-- Settings page -->
@@ -182,7 +182,7 @@
     <string name="tl_stretch_silenced">%1$s ミュート</string>
     <string name="tl_stretch_sound_on">%1$s 音あり</string>
     <string name="tl_stretch_awake">%1$s 起きていた</string>
-    <string name="night_how_read">Flip は睡眠そのものを測っていません。スマートフォンが触れられずに置かれていた時間（画面オフまたは伏せた状態）を読み取り、それを夜として数えます。</string>
+    <string name="night_how_read">Flip は睡眠そのものを測っていません。スマートフォンが触れられずに置かれていた時間（画面オフまたは伏せた状態）を読み取り、それを夜として数えます。数えるのは夜の睡眠だけで、昼寝は記録されません。</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">厳しめ</string>

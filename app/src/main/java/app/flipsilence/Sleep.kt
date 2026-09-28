@@ -55,8 +55,6 @@ object Sleep {
     /** A screen-on within this of an alarm going off is the alarm lighting it, not a glance. */
     private const val ALARM_SLACK_MS = 60_000L
 
-    /** Alarms are looked for this far past the end of a night: the one that ended it rings then. */
-    private const val ALARM_AFTER_MS = 15 * 60_000L
 
     /** Finished nights outlive the raw stretches they were read from, so history can go back. */
     private const val NIGHTS_KEY = "nights"
@@ -217,7 +215,9 @@ object Sleep {
                 val moments = entry.optJSONArray(2)?.let { m ->
                     (0 until m.length() / 3).map { Moment(Span(m.getLong(3 * it), m.getLong(3 * it + 1)), m.getInt(3 * it + 2)) }
                 }.orEmpty()
-                if (pieces.isEmpty()) null else Night(pieces, unflatten(entry.getJSONArray(1)), moments)
+                // Nights filed before alarms stopped at waking still carry the ones after it.
+                if (pieces.isEmpty()) null
+                else Night(pieces, unflatten(entry.getJSONArray(1)), moments.filter { beforeWaking(it, pieces.first().startMs, pieces.last().endMs) })
             }
         }.getOrDefault(emptyList())
     }
@@ -289,10 +289,11 @@ object Sleep {
     /**
      * What lit the screen between [startMs] and [endMs]: each gap between two dark stretches is
      * one time the screen was on, told apart by whether an unlock fell inside it or an alarm rang
-     * as it began. The alarms themselves are kept too, including the one that ended the night.
+     * as it began. The alarms themselves are kept too, up to the one that woke you: any ringing
+     * after you were up belongs to the day, not the night.
      */
     private fun moments(rests: List<Span>, marks: List<Moment>, startMs: Long, endMs: Long): List<Moment> {
-        val alarms = marks.filter { it.kind == Moment.ALARM && it.span.startMs in startMs..endMs + ALARM_AFTER_MS }
+        val alarms = marks.filter { it.kind == Moment.ALARM && beforeWaking(it, startMs, endMs) }
         val unlocks = marks.filter { it.kind == Moment.UNLOCK }.map { it.span.startMs }
         val dark = merge(rests.filter { it.endMs > startMs && it.startMs < endMs }, 0L)
         val lit = dark.zipWithNext { a, b -> Span(a.endMs, b.startMs) }.mapNotNull { on ->
@@ -302,6 +303,10 @@ object Sleep {
         }
         return (lit + alarms).sortedBy { it.span.startMs }
     }
+
+    /** Whether [m] is part of the night: not an alarm, or one that rang by the time you woke. */
+    private fun beforeWaking(m: Moment, startMs: Long, endMs: Long): Boolean =
+        m.kind != Moment.ALARM || m.span.startMs in startMs..endMs + ALARM_SLACK_MS
 
     /** Sorted, with overlaps and anything no more than [gapMs] apart joined into one. */
     internal fun merge(spans: List<Span>, gapMs: Long): List<Span> {

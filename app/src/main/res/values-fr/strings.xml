@@ -18,14 +18,14 @@
     <string name="legend_left_alone">Posé, son activé</string>
     <string name="legend_awake">Éveillé avec le téléphone</string>
     <string name="night_not_silenced">Pas en silencieux — il n’était pas écran vers le bas</string>
-    <string name="sleep_history">Historique du sommeil</string>
+    <string name="sleep_history">Historique du sommeil nocturne</string>
     <string name="today_empty">Aucun silence depuis votre réveil. Posez le téléphone écran vers le bas et cela s’affichera ici.</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">Sommeil</string>
+    <string name="sleep">Sommeil nocturne</string>
     <string name="nights_7">7 nuits</string>
     <string name="nights_30">30 nuits</string>
-    <string name="average_sleep">Sommeil moyen</string>
+    <string name="average_sleep">Sommeil nocturne moyen</string>
     <string name="a_night">par nuit</string>
     <string name="bedtime">Coucher</string>
     <string name="wake_up">Réveil</string>
@@ -37,7 +37,7 @@
     <string name="every_night">chaque nuit</string>
     <string name="through_the_night">au fil de la nuit</string>
     <string name="history_empty_nights">Aucune nuit sur cette période. Laissez Flip activé pendant la nuit et chaque nuit s’ajoutera ici le matin.</string>
-    <string name="sleep_footnote">Flip ne voit pas le sommeil lui-même. Une nuit correspond au temps pendant lequel le téléphone est resté posé écran éteint, et les interruptions aux moments où vous l’avez pris en main.</string>
+    <string name="sleep_footnote">Flip ne voit pas le sommeil lui-même. Une nuit correspond au temps pendant lequel le téléphone est resté posé écran éteint, et les interruptions aux moments où vous l’avez pris en main. Seul le sommeil de nuit est compté ; les siestes en journée ne sont pas enregistrées.</string>
     <string name="night_gone">Cette nuit n’est plus enregistrée.</string>
 
     <!-- Settings page -->
@@ -192,7 +192,7 @@
     <string name="tl_stretch_silenced">%1$s en silencieux</string>
     <string name="tl_stretch_sound_on">%1$s avec le son</string>
     <string name="tl_stretch_awake">%1$s éveillé</string>
-    <string name="night_how_read">Flip ne mesure pas le sommeil lui-même. Il lit les heures où votre téléphone est resté intact, écran éteint ou retourné, et les compte comme la nuit.</string>
+    <string name="night_how_read">Flip ne mesure pas le sommeil lui-même. Il lit les heures où votre téléphone est resté intact, écran éteint ou retourné, et les compte comme la nuit. Seul le sommeil de nuit est compté ; les siestes en journée ne sont pas enregistrées.</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">Stricte</string>

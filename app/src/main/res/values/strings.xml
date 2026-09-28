@@ -19,14 +19,14 @@
     <string name="legend_left_alone">Left alone, sound on</string>
     <string name="legend_awake">Awake with the phone</string>
     <string name="night_not_silenced">Not silenced — it wasn’t face down</string>
-    <string name="sleep_history">Sleep history</string>
+    <string name="sleep_history">Night sleep history</string>
     <string name="today_empty">No silences since you woke up. Put the phone face down and it’ll show up here.</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">Sleep</string>
+    <string name="sleep">Night sleep</string>
     <string name="nights_7">7 nights</string>
     <string name="nights_30">30 nights</string>
-    <string name="average_sleep">Average sleep</string>
+    <string name="average_sleep">Average night sleep</string>
     <string name="a_night">a night</string>
     <string name="bedtime">Bedtime</string>
     <string name="wake_up">Wake-up</string>
@@ -38,7 +38,7 @@
     <string name="every_night">every night</string>
     <string name="through_the_night">through the night</string>
     <string name="history_empty_nights">No nights in this range yet. Leave Flip on overnight and each night will be added here in the morning.</string>
-    <string name="sleep_footnote">Flip can’t see sleep itself. A night is the time the phone was left alone with its screen off, and the gaps are the times you picked it up.</string>
+    <string name="sleep_footnote">Flip can’t see sleep itself. A night is the time the phone was left alone with its screen off, and the gaps are the times you picked it up. Only night sleep is counted; daytime naps are not recorded.</string>
     <string name="night_gone">This night is no longer on record.</string>
 
     <!-- Settings page -->
@@ -187,7 +187,7 @@
     <string name="tl_stretch_silenced">%1$s silenced</string>
     <string name="tl_stretch_sound_on">%1$s with sound on</string>
     <string name="tl_stretch_awake">%1$s awake</string>
-    <string name="night_how_read">Flip doesn’t measure sleep itself. It reads the hours your phone lay untouched, screen off or face down, and counts those as the night.</string>
+    <string name="night_how_read">Flip doesn’t measure sleep itself. It reads the hours your phone lay untouched, screen off or face down, and counts those as the night. Only night sleep is counted; daytime naps are not recorded.</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">Strict</string>

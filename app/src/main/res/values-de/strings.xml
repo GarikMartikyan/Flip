@@ -18,14 +18,14 @@
     <string name="legend_left_alone">Liegen gelassen, Ton an</string>
     <string name="legend_awake">Wach mit dem Handy</string>
     <string name="night_not_silenced">Nicht stumm – Display war nicht unten</string>
-    <string name="sleep_history">Schlafverlauf</string>
+    <string name="sleep_history">Nachtschlaf-Verlauf</string>
     <string name="today_empty">Seit dem Aufwachen keine Stille. Leg das Handy mit dem Display nach unten, dann erscheint es hier.</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">Schlaf</string>
+    <string name="sleep">Nachtschlaf</string>
     <string name="nights_7">7 Nächte</string>
     <string name="nights_30">30 Nächte</string>
-    <string name="average_sleep">Ø Schlaf</string>
+    <string name="average_sleep">Ø Nachtschlaf</string>
     <string name="a_night">pro Nacht</string>
     <string name="bedtime">Schlafenszeit</string>
     <string name="wake_up">Aufwachen</string>
@@ -37,7 +37,7 @@
     <string name="every_night">jede Nacht</string>
     <string name="through_the_night">durch die Nacht</string>
     <string name="history_empty_nights">In diesem Zeitraum noch keine Nächte. Lass Flip über Nacht an, dann kommt jede Nacht morgens hier dazu.</string>
-    <string name="sleep_footnote">Flip kann Schlaf selbst nicht sehen. Eine Nacht ist die Zeit, in der das Handy mit ausgeschaltetem Bildschirm liegen blieb, und die Lücken sind die Momente, in denen du es in die Hand genommen hast.</string>
+    <string name="sleep_footnote">Flip kann Schlaf selbst nicht sehen. Eine Nacht ist die Zeit, in der das Handy mit ausgeschaltetem Bildschirm liegen blieb, und die Lücken sind die Momente, in denen du es in die Hand genommen hast. Gezählt wird nur der Nachtschlaf; Nickerchen am Tag werden nicht erfasst.</string>
     <string name="night_gone">Diese Nacht ist nicht mehr gespeichert.</string>
 
     <!-- Settings page -->
@@ -187,7 +187,7 @@
     <string name="tl_stretch_silenced">%1$s stumm</string>
     <string name="tl_stretch_sound_on">%1$s mit Ton</string>
     <string name="tl_stretch_awake">%1$s wach</string>
-    <string name="night_how_read">Flip misst den Schlaf nicht direkt. Es liest die Stunden, in denen dein Handy unberührt lag – Display aus oder nach unten – und zählt sie als Nacht.</string>
+    <string name="night_how_read">Flip misst den Schlaf nicht direkt. Es liest die Stunden, in denen dein Handy unberührt lag – Display aus oder nach unten – und zählt sie als Nacht. Gezählt wird nur der Nachtschlaf; Nickerchen am Tag werden nicht erfasst.</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">Streng</string>

@@ -18,14 +18,14 @@
     <string name="legend_left_alone">Appoggiato, suono attivo</string>
     <string name="legend_awake">Sveglio con il telefono</string>
     <string name="night_not_silenced">Non silenziato — non era a faccia in giù</string>
-    <string name="sleep_history">Cronologia del sonno</string>
+    <string name="sleep_history">Cronologia del sonno notturno</string>
     <string name="today_empty">Nessun silenzio da quando ti sei svegliato. Appoggia il telefono a faccia in giù e comparirà qui.</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">Sonno</string>
+    <string name="sleep">Sonno notturno</string>
     <string name="nights_7">7 notti</string>
     <string name="nights_30">30 notti</string>
-    <string name="average_sleep">Sonno medio</string>
+    <string name="average_sleep">Sonno notturno medio</string>
     <string name="a_night">a notte</string>
     <string name="bedtime">A letto</string>
     <string name="wake_up">Sveglia</string>
@@ -37,7 +37,7 @@
     <string name="every_night">ogni notte</string>
     <string name="through_the_night">nel corso della notte</string>
     <string name="history_empty_nights">Ancora nessuna notte in questo periodo. Lascia Flip attivo durante la notte e ogni notte verrà aggiunta qui al mattino.</string>
-    <string name="sleep_footnote">Flip non può vedere il sonno in sé. Una notte è il tempo in cui il telefono è rimasto appoggiato con lo schermo spento, e le interruzioni sono i momenti in cui l’hai preso in mano.</string>
+    <string name="sleep_footnote">Flip non può vedere il sonno in sé. Una notte è il tempo in cui il telefono è rimasto appoggiato con lo schermo spento, e le interruzioni sono i momenti in cui l’hai preso in mano. Conta solo il sonno notturno; i pisolini di giorno non vengono registrati.</string>
     <string name="night_gone">Questa notte non è più registrata.</string>
 
     <!-- Settings page -->
@@ -192,7 +192,7 @@
     <string name="tl_stretch_silenced">%1$s in silenzioso</string>
     <string name="tl_stretch_sound_on">%1$s con suono</string>
     <string name="tl_stretch_awake">%1$s sveglio</string>
-    <string name="night_how_read">Flip non misura il sonno in sé. Legge le ore in cui il telefono è rimasto intatto, a schermo spento o a faccia in giù, e le conta come la notte.</string>
+    <string name="night_how_read">Flip non misura il sonno in sé. Legge le ore in cui il telefono è rimasto intatto, a schermo spento o a faccia in giù, e le conta come la notte. Conta solo il sonno notturno; i pisolini di giorno non vengono registrati.</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">Rigida</string>

@@ -18,14 +18,14 @@
     <string name="legend_left_alone">놓아 둠, 소리 켜짐</string>
     <string name="legend_awake">휴대전화 사용 중</string>
     <string name="night_not_silenced">무음 안 됨 — 뒤집어 두지 않았어요</string>
-    <string name="sleep_history">수면 기록</string>
+    <string name="sleep_history">밤 수면 기록</string>
     <string name="today_empty">일어난 뒤로 무음 기록이 없어요. 휴대전화를 뒤집어 놓으면 여기에 표시돼요.</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">수면</string>
+    <string name="sleep">밤 수면</string>
     <string name="nights_7">7일 밤</string>
     <string name="nights_30">30일 밤</string>
-    <string name="average_sleep">평균 수면</string>
+    <string name="average_sleep">평균 밤 수면</string>
     <string name="a_night">하룻밤</string>
     <string name="bedtime">취침</string>
     <string name="wake_up">기상</string>
@@ -37,7 +37,7 @@
     <string name="every_night">매일 밤</string>
     <string name="through_the_night">밤사이</string>
     <string name="history_empty_nights">이 기간에는 아직 기록된 밤이 없어요. 밤새 Flip을 켜 두면 매일 아침 여기에 추가돼요.</string>
-    <string name="sleep_footnote">Flip은 수면 자체를 감지하지 못해요. 밤은 화면이 꺼진 채 휴대전화를 놓아 둔 시간이고, 빈칸은 휴대전화를 집어 든 시간이에요.</string>
+    <string name="sleep_footnote">Flip은 수면 자체를 감지하지 못해요. 밤은 화면이 꺼진 채 휴대전화를 놓아 둔 시간이고, 빈칸은 휴대전화를 집어 든 시간이에요. 밤 수면만 계산하며 낮잠은 기록하지 않아요.</string>
     <string name="night_gone">이 밤의 기록은 더 이상 없어요.</string>
 
     <!-- Settings page -->
@@ -182,7 +182,7 @@
     <string name="tl_stretch_silenced">%1$s 무음</string>
     <string name="tl_stretch_sound_on">%1$s 소리 켜짐</string>
     <string name="tl_stretch_awake">%1$s 깨어 있음</string>
-    <string name="night_how_read">Flip은 수면 자체를 측정하지 않습니다. 휴대전화가 건드려지지 않은 시간(화면이 꺼져 있거나 뒤집혀 있던 시간)을 읽어 밤으로 계산합니다.</string>
+    <string name="night_how_read">Flip은 수면 자체를 측정하지 않습니다. 휴대전화가 건드려지지 않은 시간(화면이 꺼져 있거나 뒤집혀 있던 시간)을 읽어 밤으로 계산합니다. 밤 수면만 계산하며 낮잠은 기록하지 않습니다.</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">엄격</string>

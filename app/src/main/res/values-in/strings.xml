@@ -18,14 +18,14 @@
     <string name="legend_left_alone">Dibiarkan, suara aktif</string>
     <string name="legend_awake">Terjaga dengan ponsel</string>
     <string name="night_not_silenced">Tidak disenyapkan — ponsel tidak telungkup</string>
-    <string name="sleep_history">Riwayat tidur</string>
+    <string name="sleep_history">Riwayat tidur malam</string>
     <string name="today_empty">Belum ada senyap sejak Anda bangun. Telungkupkan ponsel dan hasilnya akan muncul di sini.</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">Tidur</string>
+    <string name="sleep">Tidur malam</string>
     <string name="nights_7">7 malam</string>
     <string name="nights_30">30 malam</string>
-    <string name="average_sleep">Rata-rata tidur</string>
+    <string name="average_sleep">Rata-rata tidur malam</string>
     <string name="a_night">per malam</string>
     <string name="bedtime">Waktu tidur</string>
     <string name="wake_up">Waktu bangun</string>
@@ -37,7 +37,7 @@
     <string name="every_night">setiap malam</string>
     <string name="through_the_night">sepanjang malam</string>
     <string name="history_empty_nights">Belum ada malam dalam rentang ini. Biarkan Flip aktif semalaman dan setiap malam akan ditambahkan di sini pada pagi hari.</string>
-    <string name="sleep_footnote">Flip tidak dapat melihat tidur itu sendiri. Satu malam adalah waktu ponsel dibiarkan dengan layar mati, dan celahnya adalah saat Anda mengangkatnya.</string>
+    <string name="sleep_footnote">Flip tidak dapat melihat tidur itu sendiri. Satu malam adalah waktu ponsel dibiarkan dengan layar mati, dan celahnya adalah saat Anda mengangkatnya. Hanya tidur malam yang dihitung; tidur siang tidak dicatat.</string>
     <string name="night_gone">Malam ini sudah tidak tercatat.</string>
 
     <!-- Settings page -->
@@ -182,7 +182,7 @@
     <string name="tl_stretch_silenced">%1$s senyap</string>
     <string name="tl_stretch_sound_on">%1$s dengan suara</string>
     <string name="tl_stretch_awake">%1$s terjaga</string>
-    <string name="night_how_read">Flip tidak mengukur tidur secara langsung. Flip membaca jam-jam saat ponsel dibiarkan tak tersentuh, layar mati atau telungkup, lalu menghitungnya sebagai malam.</string>
+    <string name="night_how_read">Flip tidak mengukur tidur secara langsung. Flip membaca jam-jam saat ponsel dibiarkan tak tersentuh, layar mati atau telungkup, lalu menghitungnya sebagai malam. Hanya tidur malam yang dihitung; tidur siang tidak dicatat.</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">Ketat</string>

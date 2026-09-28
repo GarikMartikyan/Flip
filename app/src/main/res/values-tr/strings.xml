@@ -18,14 +18,14 @@
     <string name="legend_left_alone">Kendi hâlinde, ses açık</string>
     <string name="legend_awake">Uyanık, telefon elde</string>
     <string name="night_not_silenced">Sessize alınmadı — yüzüstü değildi</string>
-    <string name="sleep_history">Uyku geçmişi</string>
+    <string name="sleep_history">Gece uykusu geçmişi</string>
     <string name="today_empty">Uyandığınızdan beri sessizlik yok. Telefonu yüzüstü koyun, burada görünecek.</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">Uyku</string>
+    <string name="sleep">Gece uykusu</string>
     <string name="nights_7">7 gece</string>
     <string name="nights_30">30 gece</string>
-    <string name="average_sleep">Ortalama uyku</string>
+    <string name="average_sleep">Ortalama gece uykusu</string>
     <string name="a_night">gecelik</string>
     <string name="bedtime">Yatış</string>
     <string name="wake_up">Uyanış</string>
@@ -37,7 +37,7 @@
     <string name="every_night">her gece</string>
     <string name="through_the_night">gece boyunca</string>
     <string name="history_empty_nights">Bu aralıkta henüz gece yok. Flip\'i gece boyunca açık bırakın, her gece sabah buraya eklenecek.</string>
-    <string name="sleep_footnote">Flip uykunun kendisini göremez. Bir gece, telefonun ekranı kapalı ve dokunulmadan kaldığı süredir; aradaki boşluklar onu elinize aldığınız anlardır.</string>
+    <string name="sleep_footnote">Flip uykunun kendisini göremez. Bir gece, telefonun ekranı kapalı ve dokunulmadan kaldığı süredir; aradaki boşluklar onu elinize aldığınız anlardır. Yalnızca gece uykusu sayılır; gündüz şekerlemeleri kaydedilmez.</string>
     <string name="night_gone">Bu gece artık kayıtlarda yok.</string>
 
     <!-- Settings page -->
@@ -187,7 +187,7 @@
     <string name="tl_stretch_silenced">%1$s sessiz</string>
     <string name="tl_stretch_sound_on">%1$s sesli</string>
     <string name="tl_stretch_awake">%1$s uyanık</string>
-    <string name="night_how_read">Flip uykuyu doğrudan ölçmez. Telefonunuzun dokunulmadan kaldığı saatleri (ekran kapalı ya da yüzüstü) okur ve bunları gece olarak sayar.</string>
+    <string name="night_how_read">Flip uykuyu doğrudan ölçmez. Telefonunuzun dokunulmadan kaldığı saatleri (ekran kapalı ya da yüzüstü) okur ve bunları gece olarak sayar. Yalnızca gece uykusu sayılır; gündüz şekerlemeleri kaydedilmez.</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">Katı</string>

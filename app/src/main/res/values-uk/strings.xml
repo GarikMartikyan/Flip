@@ -18,14 +18,14 @@
     <string name="legend_left_alone">Лежав, звук увімкнено</string>
     <string name="legend_awake">Не спали, з телефоном</string>
     <string name="night_not_silenced">Звук не вимикався — телефон не лежав екраном донизу</string>
-    <string name="sleep_history">Історія сну</string>
+    <string name="sleep_history">Історія нічного сну</string>
     <string name="today_empty">Відколи ви прокинулися, тиші не було. Покладіть телефон екраном донизу, і тут з’явиться запис.</string>
 
     <!-- Sleep screens -->
-    <string name="sleep">Сон</string>
+    <string name="sleep">Нічний сон</string>
     <string name="nights_7">7 ночей</string>
     <string name="nights_30">30 ночей</string>
-    <string name="average_sleep">Середній сон</string>
+    <string name="average_sleep">Середній нічний сон</string>
     <string name="a_night">за ніч</string>
     <string name="bedtime">Відбій</string>
     <string name="wake_up">Підйом</string>
@@ -37,7 +37,7 @@
     <string name="every_night">щоночі</string>
     <string name="through_the_night">за ніч</string>
     <string name="history_empty_nights">У цьому періоді ночей поки немає. Залишайте Flip увімкненим на ніч, і щоранку тут з’являтиметься нова ніч.</string>
-    <string name="sleep_footnote">Сам сон Flip не бачить. Ніч — це час, коли телефон лежав незайманим із вимкненим екраном, а розриви — моменти, коли ви брали його в руки.</string>
+    <string name="sleep_footnote">Сам сон Flip не бачить. Ніч — це час, коли телефон лежав незайманим із вимкненим екраном, а розриви — моменти, коли ви брали його в руки. Враховується лише нічний сон; денний сон не записується.</string>
     <string name="night_gone">Цієї ночі більше немає в записах.</string>
 
     <!-- Settings page -->
@@ -197,7 +197,7 @@
     <string name="tl_stretch_silenced">%1$s без звуку</string>
     <string name="tl_stretch_sound_on">%1$s зі звуком</string>
     <string name="tl_stretch_awake">%1$s без сну</string>
-    <string name="night_how_read">Flip не вимірює сон напряму. Він дивиться, скільки годин телефон лежав незайманим — з вимкненим екраном або екраном донизу, — і вважає це ніччю.</string>
+    <string name="night_how_read">Flip не вимірює сон напряму. Він дивиться, скільки годин телефон лежав незайманим — з вимкненим екраном або екраном донизу, — і вважає це ніччю. Враховується лише нічний сон; денний сон не записується.</string>
 
     <!-- Sensitivity -->
     <string name="sens_strict">Сувора</string>
