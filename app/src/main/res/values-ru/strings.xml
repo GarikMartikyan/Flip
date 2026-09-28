@@ -2,6 +2,8 @@
 <resources>
     <string name="today">сегодня</string>
     <string name="notification_show">Уведомления</string>
+    <string name="notification_status">Статус Flip в уведомлении</string>
+    <string name="notification_status_blurb">Уведомление меняется каждый раз, когда телефон ложится экраном вниз или его поднимают. Если выключить, оно остаётся как есть и не возвращается, если его смахнуть.</string>
     <string name="settings">Настройки</string>
     <string name="back">Назад</string>
     <string name="grant_dnd">Дать доступ к «Не беспокоить»</string>
@@ -49,7 +51,10 @@
     <string name="feedback">отклик</string>
     <string name="haptics">Вибро-щелчки</string>
     <string name="haptics_blurb">Два коротких щелчка, когда звук выключается, и ещё два, когда включается. Экран лежит на столе, так что это единственный знак, что всё сработало.</string>
-    <string name="system">система</string>
+    <string name="permissions">разрешения</string>
+    <string name="permissions_count">Выдано %1$d из %2$d</string>
+    <string name="contacts">Контакты</string>
+    <string name="contacts_missing">Не выдано — нужно, только чтобы выбрать, чьи звонки звучат</string>
     <string name="dnd_access">Доступ к «Не беспокоить»</string>
     <string name="dnd_granted">Разрешён</string>
     <string name="dnd_missing">Не разрешён — Flip ничего не сможет заглушить</string>

@@ -2,6 +2,8 @@
 <resources>
     <string name="today">сьогодні</string>
     <string name="notification_show">Сповіщення</string>
+    <string name="notification_status">Статус Flip у сповіщенні</string>
+    <string name="notification_status_blurb">Сповіщення змінюється щоразу, коли телефон лягає екраном донизу або його піднімають. Якщо вимкнути, воно лишається як є і не повертається, якщо його змахнути.</string>
     <string name="settings">Налаштування</string>
     <string name="back">Назад</string>
     <string name="grant_dnd">Надати доступ до «Не турбувати»</string>
@@ -49,7 +51,10 @@
     <string name="feedback">відгук</string>
     <string name="haptics">Вібро-клацання</string>
     <string name="haptics_blurb">Два коротких клацання, коли звук вимикається, і ще два, коли вмикається. Екран лежить на столі, тож це єдиний знак, що все спрацювало.</string>
-    <string name="system">система</string>
+    <string name="permissions">дозволи</string>
+    <string name="permissions_count">Надано %1$d з %2$d</string>
+    <string name="contacts">Контакти</string>
+    <string name="contacts_missing">Не надано — потрібно, лише щоб вибрати, чиї дзвінки звучать</string>
     <string name="dnd_access">Доступ до «Не турбувати»</string>
     <string name="dnd_granted">Надано</string>
     <string name="dnd_missing">Не надано — Flip нічого не зможе заглушити</string>

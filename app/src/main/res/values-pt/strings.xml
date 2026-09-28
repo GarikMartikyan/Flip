@@ -2,6 +2,8 @@
 <resources>
     <string name="today">hoje</string>
     <string name="notification_show">Notificações</string>
+    <string name="notification_status">Status do Flip na notificação</string>
+    <string name="notification_status_blurb">A notificação muda sempre que o celular fica com a tela para baixo ou é levantado. Desativado, ela fica como está e não volta depois de deslizada.</string>
     <string name="settings">Configurações</string>
     <string name="back">Voltar</string>
     <string name="grant_dnd">Permitir acesso ao Não perturbe</string>
@@ -49,7 +51,10 @@
     <string name="feedback">retorno</string>
     <string name="haptics">Toques de vibração</string>
     <string name="haptics_blurb">Dois toques rápidos ao silenciar e de novo ao liberar. A tela fica contra a mesa, então este é o único sinal de que funcionou.</string>
-    <string name="system">sistema</string>
+    <string name="permissions">permissões</string>
+    <string name="permissions_count">%1$d de %2$d concedidas</string>
+    <string name="contacts">Contatos</string>
+    <string name="contacts_missing">Não concedido — só é preciso para escolher quem pode tocar</string>
     <string name="dnd_access">Acesso ao Não perturbe</string>
     <string name="dnd_granted">Permitido</string>
     <string name="dnd_missing">Não permitido — o Flip não consegue silenciar nada</string>

@@ -6,6 +6,8 @@ import android.app.NotificationManager
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.res.ColorStateList
+import android.graphics.drawable.GradientDrawable
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -33,8 +35,9 @@ class SettingsActivity : Activity() {
     private lateinit var sleepSwitch: Switch
     private lateinit var explainer: SleepExplainer
     private lateinit var notificationSwitch: Switch
-    private lateinit var dndStatus: TextView
-    private lateinit var batteryStatus: TextView
+    private lateinit var statusSwitch: Switch
+    private lateinit var permissionsList: LinearLayout
+    private lateinit var permissionsSummary: TextView
     private lateinit var diagnosticsToggle: TextView
     private lateinit var diagnosticsBody: LinearLayout
     private lateinit var readout: TextView
@@ -51,8 +54,9 @@ class SettingsActivity : Activity() {
         sensBlurb = findViewById(R.id.sens_blurb)
         hapticsSwitch = findViewById(R.id.haptics_switch)
         notificationSwitch = findViewById(R.id.notification_switch)
-        dndStatus = findViewById(R.id.dnd_status)
-        batteryStatus = findViewById(R.id.battery_status)
+        statusSwitch = findViewById(R.id.status_switch)
+        permissionsList = findViewById(R.id.permissions_list)
+        permissionsSummary = findViewById(R.id.permissions_summary)
         diagnosticsToggle = findViewById(R.id.diagnostics_toggle)
         diagnosticsBody = findViewById(R.id.diagnostics_body)
         readout = findViewById(R.id.readout)
@@ -111,21 +115,19 @@ class SettingsActivity : Activity() {
         notificationSwitch.setOnCheckedChangeListener { _, checked ->
             if (checked == notificationsOn()) return@setOnCheckedChangeListener
             notificationSwitch.isChecked = !checked
-            if (checked && !hasNotificationPermission()) {
-                requestOrOpenSettings(arrayOf(Manifest.permission.POST_NOTIFICATIONS), REQUEST_NOTIFICATIONS, notificationSettings())
-            } else {
-                openNotificationSettings()
-            }
+            if (checked) askForNotifications() else openNotificationSettings()
         }
 
-        findViewById<View>(R.id.dnd_row).setOnClickListener {
-            DndController.openAccessSettings(this)
+        statusSwitch.isChecked = prefs.statusNotification
+        statusSwitch.setOnCheckedChangeListener { _, checked ->
+            prefs.statusNotification = checked
+            // The reload re-posts the notification, which puts back the watching text if it was
+            // left saying silenced.
+            FlipService.reload(this)
         }
+
         findViewById<View>(R.id.language_row).setOnClickListener {
             startActivity(Intent(this, LanguageActivity::class.java))
-        }
-        findViewById<View>(R.id.battery_row).setOnClickListener {
-            openBatterySettings()
         }
 
         diagnosticsToggle.setOnClickListener {
@@ -142,7 +144,7 @@ class SettingsActivity : Activity() {
         // Both of these can change behind our back: the user returns here from the system screens.
         renderSensitivity()
         renderLanguage()
-        renderSystem()
+        renderPermissions()
         notificationSwitch.isChecked = notificationsOn()
         FlipState.observe { info -> main.post { renderReadout(info) } }
     }
@@ -158,8 +160,12 @@ class SettingsActivity : Activity() {
         grantResults: IntArray,
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == REQUEST_NOTIFICATIONS) notePermissionResult(permissions, grantResults, notificationSettings())
+        when (requestCode) {
+            REQUEST_NOTIFICATIONS -> notePermissionResult(permissions, grantResults, notificationSettings())
+            REQUEST_CONTACTS -> notePermissionResult(permissions, grantResults, appSettings())
+        }
         notificationSwitch.isChecked = notificationsOn()
+        renderPermissions()
     }
 
     private fun hasNotificationPermission(): Boolean =
@@ -172,6 +178,102 @@ class SettingsActivity : Activity() {
         Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, packageName)
 
     private fun openNotificationSettings() = startActivity(notificationSettings())
+
+    /** The permission when it is missing, or the page to turn notifications back on when it is not. */
+    private fun askForNotifications() {
+        if (hasNotificationPermission()) {
+            openNotificationSettings()
+        } else {
+            requestOrOpenSettings(arrayOf(Manifest.permission.POST_NOTIFICATIONS), REQUEST_NOTIFICATIONS, notificationSettings())
+        }
+    }
+
+    private fun appSettings(): Intent =
+        Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).setData(Uri.fromParts("package", packageName, null))
+
+    /** One thing Flip can be allowed: its name, whether it has it, and what it costs to go without. */
+    private class Permission(
+        val title: Int,
+        val granted: Boolean,
+        val grantedText: Int,
+        val missingText: Int,
+        val open: () -> Unit,
+    )
+
+    /**
+     * Required first, then what only some features need. Every row opens the place to change it,
+     * granted or not, since a permission can be taken back there too.
+     */
+    private fun permissions() = listOf(
+        Permission(R.string.dnd_access, DndController.hasAccess(this), R.string.dnd_granted, R.string.dnd_missing) {
+            DndController.openAccessSettings(this)
+        },
+        Permission(R.string.notification_show, notificationsOn(), R.string.dnd_granted, R.string.main_notifications_needed) {
+            askForNotifications()
+        },
+        Permission(
+            R.string.battery,
+            getSystemService(PowerManager::class.java).isIgnoringBatteryOptimizations(packageName),
+            R.string.battery_unrestricted,
+            R.string.battery_optimized,
+        ) { openBatterySettings() },
+        Permission(R.string.notification_access, Exceptions.hasListenerAccess(this), R.string.dnd_granted, R.string.listener_missing) {
+            startActivity(Exceptions.listenerSettingsIntent(this))
+        },
+        Permission(R.string.contacts, Exceptions.hasContacts(this), R.string.dnd_granted, R.string.contacts_missing) {
+            requestOrOpenSettings(Exceptions.CONTACTS_PERMISSIONS, REQUEST_CONTACTS, appSettings())
+        },
+    )
+
+    private fun renderPermissions() {
+        val all = permissions()
+        permissionsSummary.text = getString(R.string.permissions_count, all.count { it.granted }, all.size)
+        permissionsList.removeAllViews()
+        all.forEachIndexed { i, p ->
+            if (i > 0) permissionsList.addRowDivider()
+            permissionsList.addView(permissionRow(p))
+        }
+    }
+
+    private fun permissionRow(p: Permission): View {
+        val row = LinearLayout(this, null, 0, R.style.CardRow_Clickable).apply {
+            layoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+            setOnClickListener { p.open() }
+        }
+        // A tick when granted, an empty ring when not: the state reads before the words do.
+        row.addView(ImageView(this).apply {
+            layoutParams = LinearLayout.LayoutParams(dp(20f), dp(20f)).apply { marginEnd = dp(14f) }
+            importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
+            if (p.granted) {
+                setImageResource(R.drawable.ic_check)
+                imageTintList = ColorStateList.valueOf(getColor(R.color.ink_dim))
+            } else {
+                setImageDrawable(GradientDrawable().apply {
+                    shape = GradientDrawable.OVAL
+                    setStroke(dp(2f), getColor(R.color.ink))
+                })
+                setPadding(dp(3f), dp(3f), dp(3f), dp(3f))
+            }
+        })
+        row.addView(LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            layoutParams = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f)
+            addView(TextView(this@SettingsActivity, null, 0, R.style.RowTitle).apply { setText(p.title) })
+            addView(TextView(this@SettingsActivity, null, 0, R.style.RowCaption).apply {
+                layoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
+                    .apply { topMargin = dp(2f) }
+                setText(if (p.granted) p.grantedText else p.missingText)
+                // Only what is missing is raised; the rest stays quiet.
+                if (!p.granted) setTextColor(getColor(R.color.ink))
+            })
+        })
+        row.addView(ImageView(this).apply {
+            layoutParams = LinearLayout.LayoutParams(dp(20f), dp(20f)).apply { marginStart = dp(16f) }
+            importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO
+            setImageResource(R.drawable.ic_chevron_right)
+        })
+        return row
+    }
 
     /** Off, the explainer stops on its first frame and fades back, like a setting that is not in use. */
     private fun renderSleep() {
@@ -221,17 +323,6 @@ class SettingsActivity : Activity() {
         sensBlurb.setText(level.blurb)
     }
 
-    private fun renderSystem() {
-        val hasDnd = DndController.hasAccess(this)
-        dndStatus.setText(if (hasDnd) R.string.dnd_granted else R.string.dnd_missing)
-        dndStatus.setTextColor(getColor(if (hasDnd) R.color.ink_dim else R.color.ink))
-
-        val unrestricted = getSystemService(PowerManager::class.java)
-            .isIgnoringBatteryOptimizations(packageName)
-        batteryStatus.setText(if (unrestricted) R.string.battery_unrestricted else R.string.battery_optimized)
-        batteryStatus.setTextColor(getColor(if (unrestricted) R.color.ink_dim else R.color.ink))
-    }
-
     private fun renderDiagnosticsToggle(open: Boolean) {
         diagnosticsToggle.compoundDrawablesRelative[2]?.level = if (open) 10_000 else 0
         diagnosticsToggle.stateDescription = getString(if (open) R.string.expanded else R.string.collapsed)
@@ -273,5 +364,6 @@ class SettingsActivity : Activity() {
 
     private companion object {
         const val REQUEST_NOTIFICATIONS = 1
+        const val REQUEST_CONTACTS = 2
     }
 }

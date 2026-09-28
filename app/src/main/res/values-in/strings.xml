@@ -2,6 +2,8 @@
 <resources>
     <string name="today">hari ini</string>
     <string name="notification_show">Notifikasi</string>
+    <string name="notification_status">Status Flip di notifikasi</string>
+    <string name="notification_status_blurb">Notifikasi berubah setiap kali ponsel ditelungkupkan atau diangkat. Jika nonaktif, notifikasi tetap seperti semula dan tidak muncul lagi setelah digeser.</string>
     <string name="settings">Pengaturan</string>
     <string name="back">Kembali</string>
     <string name="grant_dnd">Izinkan akses Jangan ganggu</string>
@@ -49,7 +51,10 @@
     <string name="feedback">umpan balik</string>
     <string name="haptics">Getaran haptik</string>
     <string name="haptics_blurb">Dua getaran singkat saat menyenyapkan dan sekali lagi saat melepaskan. Layar menghadap meja, jadi hanya ini tanda bahwa Flip bekerja.</string>
-    <string name="system">sistem</string>
+    <string name="permissions">izin</string>
+    <string name="permissions_count">%1$d dari %2$d diberikan</string>
+    <string name="contacts">Kontak</string>
+    <string name="contacts_missing">Belum diberikan — hanya diperlukan untuk memilih siapa yang boleh berdering</string>
     <string name="dnd_access">Akses Jangan ganggu</string>
     <string name="dnd_granted">Diizinkan</string>
     <string name="dnd_missing">Tidak diizinkan — Flip tidak dapat menyenyapkan apa pun</string>

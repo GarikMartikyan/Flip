@@ -45,6 +45,14 @@ class Prefs(ctx: Context) {
         set(v) = sp.edit().putBoolean(KEY_HAPTICS, v).apply()
 
     /**
+     * Whether the service notification follows each flip. Off, it keeps its watching text and is
+     * never posted again on a transition, so once swiped away it stays away.
+     */
+    var statusNotification: Boolean
+        get() = sp.getBoolean(KEY_STATUS_NOTIFICATION, true)
+        set(v) = sp.edit().putBoolean(KEY_STATUS_NOTIFICATION, v).apply()
+
+    /**
      * Whether screen-dark stretches are recorded as sleep. Off stops recording and hides last
      * night; nights already recorded are kept for when it is turned back on.
      */
@@ -87,6 +95,7 @@ class Prefs(ctx: Context) {
         const val KEY_RULE_ID = "rule_id"
         const val KEY_SENSITIVITY = "sensitivity"
         const val KEY_HAPTICS = "haptics"
+        const val KEY_STATUS_NOTIFICATION = "status_notification"
         const val KEY_SLEEP_MONITORING = "sleep_monitoring"
         const val KEY_THEME = "theme"
         const val KEY_ALLOWED_APPS = "allowed_apps"

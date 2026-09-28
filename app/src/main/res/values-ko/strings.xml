@@ -2,6 +2,8 @@
 <resources>
     <string name="today">오늘</string>
     <string name="notification_show">알림</string>
+    <string name="notification_status">알림에 Flip 상태 표시</string>
+    <string name="notification_status_blurb">휴대전화를 뒤집거나 들어 올릴 때마다 알림 내용이 바뀌어요. 끄면 알림이 그대로 유지되고, 밀어서 지운 뒤에는 다시 나타나지 않아요.</string>
     <string name="settings">설정</string>
     <string name="back">뒤로</string>
     <string name="grant_dnd">방해 금지 모드 접근 허용</string>
@@ -49,7 +51,10 @@
     <string name="feedback">피드백</string>
     <string name="haptics">진동 피드백</string>
     <string name="haptics_blurb">무음이 될 때와 풀릴 때 짧게 두 번 진동해요. 화면이 바닥을 향하고 있으니 이것만이 작동했다는 신호예요.</string>
-    <string name="system">시스템</string>
+    <string name="permissions">권한</string>
+    <string name="permissions_count">%2$d개 중 %1$d개 허용됨</string>
+    <string name="contacts">연락처</string>
+    <string name="contacts_missing">허용 안 됨 — 전화가 울릴 사람을 고를 때만 필요해요</string>
     <string name="dnd_access">방해 금지 모드 접근</string>
     <string name="dnd_granted">허용됨</string>
     <string name="dnd_missing">허용 안 됨 — Flip이 무음으로 전환할 수 없어요</string>

@@ -2,6 +2,8 @@
 <resources>
     <string name="today">oggi</string>
     <string name="notification_show">Notifiche</string>
+    <string name="notification_status">Stato di Flip nella notifica</string>
+    <string name="notification_status_blurb">La notifica cambia ogni volta che il telefono viene girato a faccia in giù o sollevato. Se disattivato, resta com’è e non ricompare dopo averla scartata con uno swipe.</string>
     <string name="settings">Impostazioni</string>
     <string name="back">Indietro</string>
     <string name="grant_dnd">Consenti l’accesso a Non disturbare</string>
@@ -49,7 +51,10 @@
     <string name="feedback">riscontro</string>
     <string name="haptics">Vibrazioni</string>
     <string name="haptics_blurb">Due brevi vibrazioni quando silenzia e di nuovo quando rilascia. Lo schermo è contro il tavolo, quindi è l’unico segnale che ha funzionato.</string>
-    <string name="system">sistema</string>
+    <string name="permissions">autorizzazioni</string>
+    <string name="permissions_count">%1$d di %2$d concesse</string>
+    <string name="contacts">Contatti</string>
+    <string name="contacts_missing">Non concesso — serve solo per scegliere chi può squillare</string>
     <string name="dnd_access">Accesso a Non disturbare</string>
     <string name="dnd_granted">Consentito</string>
     <string name="dnd_missing">Non consentito — Flip non può silenziare nulla</string>

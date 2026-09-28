@@ -36,17 +36,6 @@
                 android:textColor="@color/ink"
                 android:textSize="30sp" />
 
-            <!-- Settings sit by the name, so a long day of flips can never push them off screen. -->
-            <ImageButton
-                android:id="@+id/settings_button"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginStart="4dp"
-                android:background="?android:attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/settings"
-                android:src="@drawable/ic_settings"
-                android:tooltipText="@string/settings" />
-
             <Space
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -526,6 +515,43 @@
                         android:importantForAccessibility="no"
                         android:src="@drawable/ic_chevron_right" />
                 </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Settings last, as a row of their own: set once and then left alone, like the page. -->
+        <LinearLayout
+            style="@style/Card.Rows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_gap"
+            android:background="@drawable/card_pill">
+
+            <LinearLayout
+                android:id="@+id/settings_button"
+                style="@style/CardRow.Clickable">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_track"
+                    android:importantForAccessibility="no"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_settings" />
+
+                <TextView
+                    style="@style/RowTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:text="@string/settings" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_chevron_right" />
             </LinearLayout>
         </LinearLayout>
 

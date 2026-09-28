@@ -152,6 +152,8 @@
       low because it is in sp too: at 200% font on a 320dp screen, 10sp no longer fits.
     -->
     <style name="Segment">
+        <!-- The font's own padding sits mostly above the letters and pushes them below centre. -->
+        <item name="android:includeFontPadding">false</item>
         <item name="android:layout_height">44dp</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
@@ -184,6 +186,8 @@
     </style>
 
     <style name="IconSegmentText">
+        <!-- The font's own padding sits mostly above the letters and pushes them below centre. -->
+        <item name="android:includeFontPadding">false</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:maxLines">1</item>

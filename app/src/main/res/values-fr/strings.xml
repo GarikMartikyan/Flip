@@ -2,6 +2,8 @@
 <resources>
     <string name="today">aujourd’hui</string>
     <string name="notification_show">Notifications</string>
+    <string name="notification_status">État de Flip dans la notification</string>
+    <string name="notification_status_blurb">La notification change chaque fois que le téléphone est posé écran vers le bas ou repris. Désactivée, elle reste telle quelle et ne revient pas une fois balayée.</string>
     <string name="settings">Paramètres</string>
     <string name="back">Retour</string>
     <string name="grant_dnd">Autoriser l’accès à Ne pas déranger</string>
@@ -49,7 +51,10 @@
     <string name="feedback">retour</string>
     <string name="haptics">Vibrations</string>
     <string name="haptics_blurb">Deux petites vibrations quand il passe en silencieux, et de nouveau quand il le quitte. L’écran est contre la table, c’est donc le seul signe que cela a fonctionné.</string>
-    <string name="system">système</string>
+    <string name="permissions">autorisations</string>
+    <string name="permissions_count">%1$d sur %2$d accordées</string>
+    <string name="contacts">Contacts</string>
+    <string name="contacts_missing">Non accordé — nécessaire seulement pour choisir qui peut sonner</string>
     <string name="dnd_access">Accès à Ne pas déranger</string>
     <string name="dnd_granted">Autorisé</string>
     <string name="dnd_missing">Non autorisé — Flip ne peut rien mettre en silencieux</string>

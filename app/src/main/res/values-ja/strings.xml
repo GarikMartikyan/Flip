@@ -2,6 +2,8 @@
 <resources>
     <string name="today">今日</string>
     <string name="notification_show">通知</string>
+    <string name="notification_status">通知にFlipの状態を表示</string>
+    <string name="notification_status_blurb">スマートフォンを伏せたときや持ち上げたときに、通知の内容が切り替わります。オフにすると通知はそのままで、スワイプで消した後も再表示されません。</string>
     <string name="settings">設定</string>
     <string name="back">戻る</string>
     <string name="grant_dnd">サイレントモードへのアクセスを許可</string>
@@ -49,7 +51,10 @@
     <string name="feedback">フィードバック</string>
     <string name="haptics">振動フィードバック</string>
     <string name="haptics_blurb">ミュートになったときと解除されたときに、短く2回振動します。画面はテーブル側を向いているので、これが動作した唯一の合図です。</string>
-    <string name="system">システム</string>
+    <string name="permissions">権限</string>
+    <string name="permissions_count">%2$d件中%1$d件を許可済み</string>
+    <string name="contacts">連絡先</string>
+    <string name="contacts_missing">未許可 — 着信を鳴らす相手を選ぶときだけ必要です</string>
     <string name="dnd_access">サイレントモードへのアクセス</string>
     <string name="dnd_granted">許可済み</string>
     <string name="dnd_missing">未許可 — Flip はミュートできません</string>

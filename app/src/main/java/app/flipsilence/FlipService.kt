@@ -399,7 +399,8 @@ class FlipService : Service() {
      * What it can be is unobtrusive: dismissible by swipe, and gone from the shade entirely when
      * notifications are off, since Android then shows foreground services only in its task manager.
      */
-    private fun buildNotification(engaged: Boolean): Notification {
+    private fun buildNotification(engagedNow: Boolean): Notification {
+        val engaged = engagedNow && Prefs(this).statusNotification
         val open = PendingIntent.getActivity(
             this,
             0,
@@ -419,7 +420,9 @@ class FlipService : Service() {
             .build()
     }
 
+    /** Re-posting brings back a notification that was swiped away, so it only happens when asked for. */
     private fun pushNotification() {
+        if (!Prefs(this).statusNotification) return
         val nm = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         nm.notify(NOTIFICATION_ID, buildNotification(detector?.engaged == true))
     }

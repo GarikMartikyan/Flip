@@ -2,6 +2,8 @@
 <resources>
     <string name="today">bugün</string>
     <string name="notification_show">Bildirimler</string>
+    <string name="notification_status">Bildirimde Flip durumu</string>
+    <string name="notification_status_blurb">Telefon her yüzüstü konduğunda veya kaldırıldığında bildirim değişir. Kapalıyken olduğu gibi kalır ve kaydırıp kapattıktan sonra geri gelmez.</string>
     <string name="settings">Ayarlar</string>
     <string name="back">Geri</string>
     <string name="grant_dnd">Rahatsız Etmeyin erişimi ver</string>
@@ -49,7 +51,10 @@
     <string name="feedback">geri bildirim</string>
     <string name="haptics">Titreşimli tıklar</string>
     <string name="haptics_blurb">Sessize aldığında iki kısa tık, bıraktığında yine iki tık. Ekran masaya dönük olduğu için işe yaradığının tek işareti bu.</string>
-    <string name="system">sistem</string>
+    <string name="permissions">izinler</string>
+    <string name="permissions_count">%2$d izinden %1$d tanesi verildi</string>
+    <string name="contacts">Kişiler</string>
+    <string name="contacts_missing">Verilmedi — yalnızca kimin çalabileceğini seçmek için gerekli</string>
     <string name="dnd_access">Rahatsız Etmeyin erişimi</string>
     <string name="dnd_granted">Verildi</string>
     <string name="dnd_missing">Verilmedi — Flip hiçbir şeyi sessize alamaz</string>

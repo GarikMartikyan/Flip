@@ -358,59 +358,10 @@
                     android:thumb="@drawable/switch_thumb"
                     android:track="@drawable/switch_track" />
             </LinearLayout>
-        </LinearLayout>
-
-        <TextView
-            style="@style/SectionLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/section_gap"
-            android:accessibilityHeading="true"
-            android:text="@string/system" />
-
-        <LinearLayout
-            style="@style/Card.Rows"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-
-            <LinearLayout
-                android:id="@+id/dnd_row"
-                style="@style/CardRow.Clickable">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/RowTitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/dnd_access" />
-
-                    <TextView
-                        android:id="@+id/dnd_status"
-                        style="@style/RowCaption"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="16dp"
-                    android:importantForAccessibility="no"
-                    android:src="@drawable/ic_chevron_right" />
-            </LinearLayout>
 
             <View style="@style/RowDivider" />
 
-            <LinearLayout
-                android:id="@+id/battery_row"
-                style="@style/CardRow.Clickable">
+            <LinearLayout style="@style/CardRow">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -422,24 +373,60 @@
                         style="@style/RowTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/battery" />
+                        android:text="@string/notification_status" />
 
                     <TextView
-                        android:id="@+id/battery_status"
                         style="@style/RowCaption"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp" />
+                        android:layout_marginTop="2dp"
+                        android:text="@string/notification_status_blurb" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <Switch
+                    android:id="@+id/status_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:importantForAccessibility="no"
-                    android:src="@drawable/ic_chevron_right" />
+                    android:contentDescription="@string/notification_status"
+                    android:minHeight="48dp"
+                    android:showText="false"
+                    android:switchMinWidth="0dp"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
             </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_gap"
+            android:baselineAligned="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SectionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:accessibilityHeading="true"
+                android:text="@string/permissions" />
+
+            <TextView
+                android:id="@+id/permissions_summary"
+                style="@style/SectionAside"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- One row per permission, made in code: what it is for, and whether Flip has it. -->
+        <LinearLayout
+            android:id="@+id/permissions_list"
+            style="@style/Card.Rows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/diagnostics_toggle"
