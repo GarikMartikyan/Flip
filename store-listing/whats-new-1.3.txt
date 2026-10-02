@@ -1,0 +1,84 @@
+<en-US>
+• New first-launch walkthrough that shows how Flip works and asks for permissions one at a time
+• All of Flip's permissions in one place in Settings, with what each one is for
+• The main screen now points out a missing permission
+• New switch: keep the notification from changing on every flip
+• Night sleep counts only the alarms that rang before you woke up
+</en-US>
+<de-DE>
+• Neue Einführung beim ersten Start: zeigt, wie Flip funktioniert, und fragt Berechtigungen einzeln ab
+• Alle Berechtigungen von Flip an einem Ort in den Einstellungen – mit Erklärung, wofür sie da sind
+• Der Hauptbildschirm weist auf eine fehlende Berechtigung hin
+• Neuer Schalter: Benachrichtigung nicht bei jedem Umdrehen ändern
+• Nachtschlaf zählt nur die Wecker, die vor dem Aufwachen geklingelt haben
+</de-DE>
+<es-ES>
+• Nueva introducción al abrir la app por primera vez: muestra cómo funciona Flip y pide los permisos uno a uno
+• Todos los permisos de Flip en un solo lugar en Ajustes, con la explicación de cada uno
+• La pantalla principal avisa si falta algún permiso
+• Nuevo interruptor: la notificación deja de cambiar con cada giro
+• El sueño nocturno solo cuenta las alarmas que sonaron antes de despertarte
+</es-ES>
+<fr-FR>
+• Nouvelle présentation au premier lancement : elle montre comment Flip fonctionne et demande les autorisations une par une
+• Toutes les autorisations de Flip réunies dans les réglages, avec leur utilité
+• L'écran principal signale une autorisation manquante
+• Nouvel interrupteur : la notification ne change plus à chaque retournement
+• Le sommeil nocturne ne compte que les alarmes qui ont sonné avant votre réveil
+</fr-FR>
+<id>
+• Panduan baru saat pertama dibuka: menunjukkan cara kerja Flip dan meminta izin satu per satu
+• Semua izin Flip di satu tempat di Setelan, lengkap dengan kegunaannya
+• Layar utama kini memberi tahu jika ada izin yang belum diberikan
+• Sakelar baru: notifikasi tidak lagi berubah setiap kali ponsel dibalik
+• Tidur malam hanya menghitung alarm yang berbunyi sebelum Anda bangun
+</id>
+<it-IT>
+• Nuova introduzione al primo avvio: mostra come funziona Flip e chiede le autorizzazioni una alla volta
+• Tutte le autorizzazioni di Flip in un unico posto nelle impostazioni, con la spiegazione di ciascuna
+• La schermata principale segnala un'autorizzazione mancante
+• Nuovo interruttore: la notifica non cambia più a ogni capovolgimento
+• Il sonno notturno conta solo le sveglie suonate prima del risveglio
+</it-IT>
+<ja-JP>
+• 初回起動時のガイドを追加：Flip の使い方を紹介し、権限を一つずつ確認します
+• Flip の権限を設定の一か所にまとめ、それぞれの用途を表示
+• 足りない権限をメイン画面でお知らせ
+• 新しいスイッチ：裏返すたびに通知が変わらないようにできます
+• 夜の睡眠は、起きる前に鳴ったアラームだけを数えるようになりました
+</ja-JP>
+<ko-KR>
+• 첫 실행 안내 추가: Flip의 작동 방식을 보여 주고 권한을 하나씩 요청합니다
+• Flip의 모든 권한을 설정 한곳에 모으고 각 권한의 용도를 표시
+• 빠진 권한을 메인 화면에서 알려 줍니다
+• 새 스위치: 뒤집을 때마다 알림이 바뀌지 않도록 설정
+• 밤잠은 깨기 전에 울린 알람만 계산합니다
+</ko-KR>
+<pt-BR>
+• Nova apresentação na primeira abertura: mostra como o Flip funciona e pede as permissões uma de cada vez
+• Todas as permissões do Flip em um só lugar nas configurações, com a explicação de cada uma
+• A tela principal avisa quando falta alguma permissão
+• Novo interruptor: a notificação deixa de mudar a cada virada
+• O sono noturno conta apenas os alarmes que tocaram antes de você acordar
+</pt-BR>
+<ru-RU>
+• Новое знакомство при первом запуске: показывает, как работает Flip, и запрашивает разрешения по одному
+• Все разрешения Flip собраны в настройках — с объяснением, зачем нужно каждое
+• Главный экран подсказывает, какого разрешения не хватает
+• Новый переключатель: уведомление не меняется при каждом перевороте
+• Ночной сон учитывает только будильники, прозвеневшие до пробуждения
+</ru-RU>
+<tr-TR>
+• İlk açılışta yeni tanıtım: Flip'in nasıl çalıştığını gösterir ve izinleri tek tek ister
+• Flip'in tüm izinleri Ayarlar'da tek bir yerde, her birinin ne işe yaradığıyla birlikte
+• Ana ekran eksik izni artık gösteriyor
+• Yeni anahtar: bildirim her çevirmede değişmesin
+• Gece uykusu yalnızca siz uyanmadan önce çalan alarmları sayar
+</tr-TR>
+<uk>
+• Нове знайомство під час першого запуску: показує, як працює Flip, і запитує дозволи по одному
+• Усі дозволи Flip зібрано в налаштуваннях — із поясненням, навіщо потрібен кожен
+• Головний екран підказує, якого дозволу бракує
+• Новий перемикач: сповіщення не змінюється під час кожного перевертання
+• Нічний сон враховує лише будильники, що продзвеніли до пробудження
+</uk>
