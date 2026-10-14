@@ -198,7 +198,7 @@
     <string name="sens_strict">Strict</string>
     <string name="sens_strict_blurb">Wants a properly flat, properly still surface. Fewest pocket false alarms, and the most likely to ignore a soft or sloped one.</string>
     <string name="sens_balanced">Balanced</string>
-    <string name="sens_balanced_blurb">Tuned against the placements actually measured on this phone. Start here.</string>
+    <string name="sens_balanced_blurb">Tuned against the placements actually measured on this phone.</string>
     <string name="sens_relaxed">Relaxed</string>
     <string name="sens_relaxed_blurb">Triggers on a slope, a cushion, or a quick set-down. Silences more readily, and is the most likely to fire in a pocket.</string>
     <string name="expanded">Expanded</string>

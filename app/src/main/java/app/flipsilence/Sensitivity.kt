@@ -9,6 +9,12 @@ import kotlin.math.acos
  * -9.53 and -9.73 with motion between 0.002 and 0.072, so Balanced keeps roughly 3x headroom over
  * the worst of those while still leaving room for an imperfect table. Strict rejects the shallow
  * -9.08 kind of placement seen on a surface that was not properly flat; Relaxed accepts it.
+ *
+ * Strict is the one meant to never fire in a pocket, and its numbers come from recording both. A
+ * desk held motion under 0.017 and drifted under 0.035 degrees in any 2 s; a front pocket while
+ * sitting, face to the thigh, sat 12-14 degrees off flat and never went a full 2 s below 0.018
+ * motion *and* 0.07 degrees of drift together -- the body is never as quiet as wood. The old Strict
+ * (0.12, 1.5 degrees, 14 degrees of tilt) let that pocket through in 2.6 s.
  */
 enum class Sensitivity(
     /** String resources, so the choice reads in the phone's language. */
@@ -34,10 +40,10 @@ enum class Sensitivity(
 ) {
     STRICT(
         label = R.string.sens_strict,
-        engageGz = -9.5f,
+        engageGz = -9.6f,
         releaseGz = -7.5f,
-        stillMax = 0.12f,
-        maxDriftDeg = 1.5f,
+        stillMax = 0.03f,
+        maxDriftDeg = 0.2f,
         holdMs = 2_000L,
         blurb = R.string.sens_strict_blurb,
     ),
@@ -65,7 +71,7 @@ enum class Sensitivity(
         get() = Math.toDegrees(acos((-engageGz / 9.81f).coerceIn(-1f, 1f).toDouble())).toFloat()
 
     companion object {
-        val DEFAULT = BALANCED
+        val DEFAULT = STRICT
 
         fun fromName(name: String?): Sensitivity =
             entries.firstOrNull { it.name == name } ?: DEFAULT

@@ -193,7 +193,7 @@
     <string name="sens_strict">厳しめ</string>
     <string name="sens_strict_blurb">完全に平らで静止した場所が必要です。ポケット内の誤作動が最も少ない一方、柔らかい場所や傾いた場所では反応しないことがあります。</string>
     <string name="sens_balanced">標準</string>
-    <string name="sens_balanced_blurb">このスマートフォンで実際に測定した置き方に合わせて調整しています。まずはこちらから。</string>
+    <string name="sens_balanced_blurb">このスマートフォンで実際に測定した置き方に合わせて調整しています。</string>
     <string name="sens_relaxed">ゆるめ</string>
     <string name="sens_relaxed_blurb">傾いた場所やクッションの上、さっと置いたときにも反応します。ミュートしやすい反面、ポケット内で作動する可能性も最も高くなります。</string>
     <string name="expanded">展開</string>

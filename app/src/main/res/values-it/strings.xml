@@ -203,7 +203,7 @@
     <string name="sens_strict">Rigida</string>
     <string name="sens_strict_blurb">Richiede una superficie davvero piana e ferma. Meno falsi allarmi in tasca, ma è la più propensa a ignorare una superficie morbida o inclinata.</string>
     <string name="sens_balanced">Bilanciata</string>
-    <string name="sens_balanced_blurb">Tarata sulle posizioni misurate davvero su questo telefono. Inizia da qui.</string>
+    <string name="sens_balanced_blurb">Tarata sulle posizioni misurate davvero su questo telefono.</string>
     <string name="sens_relaxed">Tollerante</string>
     <string name="sens_relaxed_blurb">Si attiva su un piano inclinato, un cuscino o un appoggio veloce. Silenzia più facilmente ed è la più propensa ad attivarsi in tasca.</string>
     <string name="expanded">Espanso</string>

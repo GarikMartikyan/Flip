@@ -203,7 +203,7 @@
     <string name="sens_strict">Stricte</string>
     <string name="sens_strict_blurb">Exige une surface bien plane et bien immobile. Le moins de fausses alertes en poche, mais le plus susceptible d’ignorer une surface molle ou inclinée.</string>
     <string name="sens_balanced">Équilibrée</string>
-    <string name="sens_balanced_blurb">Réglée sur des poses réellement mesurées avec ce téléphone. Commencez ici.</string>
+    <string name="sens_balanced_blurb">Réglée sur des poses réellement mesurées avec ce téléphone.</string>
     <string name="sens_relaxed">Souple</string>
     <string name="sens_relaxed_blurb">Se déclenche sur une pente, un coussin ou une pose rapide. Passe plus facilement en silencieux, et risque le plus de se déclencher en poche.</string>
     <string name="expanded">Développé</string>

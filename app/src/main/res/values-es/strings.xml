@@ -203,7 +203,7 @@
     <string name="sens_strict">Estricta</string>
     <string name="sens_strict_blurb">Pide una superficie bien plana y bien quieta. Menos falsas alarmas en el bolsillo, pero es la que más probablemente ignore una superficie blanda o inclinada.</string>
     <string name="sens_balanced">Equilibrada</string>
-    <string name="sens_balanced_blurb">Ajustada con colocaciones medidas de verdad en este teléfono. Empieza por aquí.</string>
+    <string name="sens_balanced_blurb">Ajustada con colocaciones medidas de verdad en este teléfono.</string>
     <string name="sens_relaxed">Flexible</string>
     <string name="sens_relaxed_blurb">Se activa en una pendiente, sobre un cojín o al dejarlo rápido. Silencia con más facilidad y es la que más probablemente se active en el bolsillo.</string>
     <string name="expanded">Expandido</string>

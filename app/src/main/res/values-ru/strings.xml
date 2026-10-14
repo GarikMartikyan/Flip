@@ -208,7 +208,7 @@
     <string name="sens_strict">Строгая</string>
     <string name="sens_strict_blurb">Нужна по-настоящему ровная и неподвижная поверхность. Меньше всего ложных срабатываний в кармане, но может не сработать на мягком или наклонном.</string>
     <string name="sens_balanced">Обычная</string>
-    <string name="sens_balanced_blurb">Настроена по замерам реальных положений на этом телефоне. Начните с неё.</string>
+    <string name="sens_balanced_blurb">Настроена по замерам реальных положений на этом телефоне.</string>
     <string name="sens_relaxed">Мягкая</string>
     <string name="sens_relaxed_blurb">Срабатывает на наклоне, на подушке и при быстром касании стола. Глушит охотнее всех, но чаще срабатывает в кармане.</string>
     <string name="expanded">Развёрнуто</string>

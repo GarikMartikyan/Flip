@@ -203,7 +203,7 @@
     <string name="sens_strict">Rígida</string>
     <string name="sens_strict_blurb">Exige uma superfície bem plana e bem parada. Menos alarmes falsos no bolso, e a mais propensa a ignorar uma superfície macia ou inclinada.</string>
     <string name="sens_balanced">Equilibrada</string>
-    <string name="sens_balanced_blurb">Ajustada com posições realmente medidas neste celular. Comece por aqui.</string>
+    <string name="sens_balanced_blurb">Ajustada com posições realmente medidas neste celular.</string>
     <string name="sens_relaxed">Flexível</string>
     <string name="sens_relaxed_blurb">Ativa numa inclinação, numa almofada ou ao largar rápido. Silencia com mais facilidade e é a mais propensa a disparar no bolso.</string>
     <string name="expanded">Expandido</string>

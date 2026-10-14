@@ -193,7 +193,7 @@
     <string name="sens_strict">엄격</string>
     <string name="sens_strict_blurb">완전히 평평하고 흔들림 없는 곳이 필요해요. 주머니 속 오작동이 가장 적지만, 푹신하거나 기울어진 곳은 무시할 수 있어요.</string>
     <string name="sens_balanced">균형</string>
-    <string name="sens_balanced_blurb">이 휴대전화에서 실제로 측정한 놓는 방식에 맞췄어요. 여기서 시작하세요.</string>
+    <string name="sens_balanced_blurb">이 휴대전화에서 실제로 측정한 놓는 방식에 맞췄어요.</string>
     <string name="sens_relaxed">느슨</string>
     <string name="sens_relaxed_blurb">경사면이나 쿠션 위, 빠르게 내려놓아도 작동해요. 더 쉽게 무음이 되지만 주머니 속에서 작동할 가능성도 가장 높아요.</string>
     <string name="expanded">펼침</string>

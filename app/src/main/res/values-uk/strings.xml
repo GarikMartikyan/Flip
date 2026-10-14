@@ -208,7 +208,7 @@
     <string name="sens_strict">Сувора</string>
     <string name="sens_strict_blurb">Потрібна справді рівна й нерухома поверхня. Найменше хибних спрацювань у кишені, але може не спрацювати на м’якому чи похилому.</string>
     <string name="sens_balanced">Звичайна</string>
-    <string name="sens_balanced_blurb">Налаштована за вимірами реальних положень на цьому телефоні. Почніть із неї.</string>
+    <string name="sens_balanced_blurb">Налаштована за вимірами реальних положень на цьому телефоні.</string>
     <string name="sens_relaxed">М’яка</string>
     <string name="sens_relaxed_blurb">Спрацьовує на схилі, на подушці й від швидкого торкання столу. Глушить найохочіше, але найчастіше спрацьовує в кишені.</string>
     <string name="expanded">Розгорнуто</string>

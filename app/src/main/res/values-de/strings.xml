@@ -198,7 +198,7 @@
     <string name="sens_strict">Streng</string>
     <string name="sens_strict_blurb">Braucht eine wirklich ebene, ruhige Fläche. Die wenigsten Fehlalarme in der Tasche, ignoriert aber am ehesten eine weiche oder schräge Unterlage.</string>
     <string name="sens_balanced">Ausgewogen</string>
-    <string name="sens_balanced_blurb">Abgestimmt auf echte Messungen an diesem Handy. Hier anfangen.</string>
+    <string name="sens_balanced_blurb">Abgestimmt auf echte Messungen an diesem Handy.</string>
     <string name="sens_relaxed">Locker</string>
     <string name="sens_relaxed_blurb">Reagiert auf Schrägen, Kissen oder schnelles Hinlegen. Schaltet bereitwilliger stumm und löst am ehesten in der Tasche aus.</string>
     <string name="expanded">Ausgeklappt</string>

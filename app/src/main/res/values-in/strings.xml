@@ -193,7 +193,7 @@
     <string name="sens_strict">Ketat</string>
     <string name="sens_strict_blurb">Memerlukan permukaan yang benar-benar datar dan diam. Paling sedikit salah picu di saku, tetapi paling mungkin mengabaikan permukaan yang empuk atau miring.</string>
     <string name="sens_balanced">Seimbang</string>
-    <string name="sens_balanced_blurb">Disetel berdasarkan posisi yang benar-benar diukur di ponsel ini. Mulai dari sini.</string>
+    <string name="sens_balanced_blurb">Disetel berdasarkan posisi yang benar-benar diukur di ponsel ini.</string>
     <string name="sens_relaxed">Longgar</string>
     <string name="sens_relaxed_blurb">Aktif di permukaan miring, di atas bantal, atau saat diletakkan dengan cepat. Lebih mudah menyenyapkan, dan paling mungkin terpicu di saku.</string>
     <string name="expanded">Diperluas</string>
