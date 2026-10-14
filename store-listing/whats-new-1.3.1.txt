@@ -1,0 +1,48 @@
+<en-US>
+• Flip no longer silences your phone in your pocket while you sit: Strict sensitivity is retuned on real measurements of a desk and a pocket
+• Strict is now the default sensitivity
+</en-US>
+<de-DE>
+• Flip schaltet das Handy nicht mehr stumm, wenn es beim Sitzen in der Tasche steckt: Die strenge Empfindlichkeit ist anhand echter Messungen auf dem Tisch und in der Tasche neu abgestimmt
+• Streng ist jetzt die Standard-Empfindlichkeit
+</de-DE>
+<es-ES>
+• Flip ya no silencia el teléfono en el bolsillo mientras estás sentado: la sensibilidad estricta se ha reajustado con mediciones reales sobre una mesa y en un bolsillo
+• La sensibilidad estricta es ahora la predeterminada
+</es-ES>
+<fr-FR>
+• Flip ne coupe plus le son du téléphone dans votre poche quand vous êtes assis : la sensibilité « Stricte » a été réglée sur de vraies mesures, sur une table et dans une poche
+• « Stricte » est désormais la sensibilité par défaut
+</fr-FR>
+<id>
+• Flip tidak lagi membisukan ponsel di saku saat Anda duduk: sensitivitas ketat disetel ulang berdasarkan pengukuran nyata di meja dan di saku
+• Ketat kini menjadi sensitivitas default
+</id>
+<it-IT>
+• Flip non silenzia più il telefono in tasca mentre sei seduto: la sensibilità «Rigida» è stata ritarata su misure reali, su un tavolo e in tasca
+• «Rigida» ora è la sensibilità predefinita
+</it-IT>
+<ja-JP>
+• 座っているときにポケットの中でサイレントにならないようになりました：机の上とポケットの中で実際に測定し、「厳しめ」の感度を調整し直しました
+• 感度の初期設定が「厳しめ」になりました
+</ja-JP>
+<ko-KR>
+• 앉아 있을 때 주머니 속에서 더 이상 무음으로 바뀌지 않아요: 책상과 주머니에서 실제로 측정해 '엄격' 감도를 다시 맞췄어요
+• 이제 기본 감도는 '엄격'이에요
+</ko-KR>
+<pt-BR>
+• O Flip não silencia mais o celular no bolso enquanto você está sentado: a sensibilidade “Rígida” foi reajustada com medições reais na mesa e no bolso
+• “Rígida” agora é a sensibilidade padrão
+</pt-BR>
+<ru-RU>
+• Flip больше не включает «Не беспокоить», когда телефон в кармане, а вы сидите: строгая чувствительность перенастроена по реальным замерам на столе и в кармане
+• Строгая чувствительность теперь включена по умолчанию
+</ru-RU>
+<tr-TR>
+• Flip artık otururken cebinizdeki telefonu sessize almıyor: katı hassasiyet, masada ve cepte yapılan gerçek ölçümlere göre yeniden ayarlandı
+• Katı artık varsayılan hassasiyet
+</tr-TR>
+<uk>
+• Flip більше не вмикає «Не турбувати», коли телефон у кишені, а ви сидите: сувору чутливість переналаштовано за реальними вимірами на столі та в кишені
+• Сувора чутливість тепер увімкнена за замовчуванням
+</uk>

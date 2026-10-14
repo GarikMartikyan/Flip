@@ -22,8 +22,8 @@ android {
         applicationId = "app.flipsilence"
         minSdk = 34
         targetSdk = 36
-        versionCode = 5
-        versionName = "1.3"
+        versionCode = 6
+        versionName = "1.3.1"
     }
 
     signingConfigs {
