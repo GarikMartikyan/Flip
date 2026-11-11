@@ -1,0 +1,36 @@
+<en-US>
+• Smaller and lighter: the app is now optimized, so it uses less memory and storage
+</en-US>
+<de-DE>
+• Kleiner und leichter: Die App ist jetzt optimiert und braucht weniger Arbeits- und Speicherplatz
+</de-DE>
+<es-ES>
+• Más ligera: la app ahora está optimizada y usa menos memoria y almacenamiento
+</es-ES>
+<fr-FR>
+• Plus légère : l’app est désormais optimisée et utilise moins de mémoire et d’espace de stockage
+</fr-FR>
+<id>
+• Lebih kecil dan ringan: aplikasi kini dioptimalkan sehingga memakai lebih sedikit memori dan penyimpanan
+</id>
+<it-IT>
+• Più leggera: l’app ora è ottimizzata e usa meno memoria e spazio di archiviazione
+</it-IT>
+<ja-JP>
+• 軽くなりました：アプリを最適化し、メモリとストレージの使用量を減らしました
+</ja-JP>
+<ko-KR>
+• 더 가벼워졌어요: 앱을 최적화해 메모리와 저장 공간을 덜 사용해요
+</ko-KR>
+<pt-BR>
+• Mais leve: o app agora é otimizado e usa menos memória e armazenamento
+</pt-BR>
+<ru-RU>
+• Легче и компактнее: приложение оптимизировано и теперь занимает меньше памяти
+</ru-RU>
+<tr-TR>
+• Daha küçük ve hafif: uygulama artık optimize edildi, daha az bellek ve depolama alanı kullanıyor
+</tr-TR>
+<uk>
+• Легший і компактніший: застосунок оптимізовано, тепер він займає менше пам’яті
+</uk>

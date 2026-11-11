@@ -22,8 +22,8 @@ android {
         applicationId = "app.flipsilence"
         minSdk = 34
         targetSdk = 36
-        versionCode = 6
-        versionName = "1.3.1"
+        versionCode = 7
+        versionName = "1.3.2"
     }
 
     signingConfigs {
@@ -40,7 +40,19 @@ android {
     buildTypes {
         getByName("release") {
             signingConfigs.findByName("release")?.let { signingConfig = it }
-            isMinifyEnabled = false
+            // R8 shrinks, optimizes and obfuscates the release; Play Vitals flags apps without it
+            // for memory use from Feb 2027. The mapping file travels inside the AAB.
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        // Same code as release, debug-signed and installable next to the Play build, so the
+        // minified app can be tried on a phone without uninstalling the real one.
+        create("r8check") {
+            initWith(getByName("release"))
+            signingConfig = signingConfigs.getByName("debug")
+            applicationIdSuffix = ".r8check"
+            matchingFallbacks += "release"
         }
     }
 
