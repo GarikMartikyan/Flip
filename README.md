@@ -13,6 +13,10 @@ Put the phone face down on a table and it goes quiet. Pick it up and the sound c
   <sub>On Google Play · Android 14 or newer</sub>
 </p>
 
+<p align="center">
+  <img src=".github/demo.gif" alt="Animation: a phone buzzing late at night is flipped face down and goes quiet" width="270">
+</p>
+
 This is Pixel's **Flip to Shhh** rebuilt for a Samsung phone, which does not ship it — One UI's
 Modes and Routines has no orientation or face-down condition, Good Lock's Routines+ adds only
 fingerprint, S Pen and button triggers, and "Mute with gestures" only silences a call or alarm that
@@ -176,3 +180,8 @@ The two `am start` hooks work in debug builds only.
 
 The heartbeat line is the only way to know whether the sensor keeps delivering once the screen is
 off and the device idles.
+
+## License
+
+Flip is free software under the [GNU General Public License v3.0](LICENSE): you may use, study,
+change and share it, and anything built from it must stay under the same licence.
